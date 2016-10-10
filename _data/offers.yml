@@ -1,26 +1,168 @@
-  - title: An offer
-    category: category-1
-    class: unique-offer-class
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
+
+########## JAMAICA ##########
+
+  - title: Sandals Ochi Beach Resort
+    category: jamaica
+    class: sandals-ochi-beach-resort
+    location: Jamaica
+    description: On the beautiful north coast of Jamaica Ochi Beach Resort hugs the lush mountains of St.Ann and capitalises on its spectacular ocean views.
+    price: 1,348
     price-description: per room per night
     link: #
 
-  - title: Another offer
-    category: category-2
-    class: unique-offer-class
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
+  - title: Sandals Montego Bay
+    category: jamaica
+    class: sandals-montego-bay
+    location: Jamaica
+    description: Set on the longest private beach in Jamaica and with all rooms merely steps from the water’s edge, this was the first Sandals resort and is still a favourite!
+    price: 1,499
     price-description: per room per night
     link: #
 
-  - title: A third offer
-    category: category-3
-    class: unique-offer-class
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
+  - title: Sandals Negril Beach Resort & Spa
+    category: jamaica
+    class: sandals-negril-beach-resort-spa
+    location: Jamaica
+    description: Amidst a pristine tropical setting, this world-class beachfront resort spans the longest and best stretch of Jamaica’s famous seven-mile beach and has impressive eco-friendly credentials.
+    price: 1,529
     price-description: per room per night
     link: #
+
+  - title: Sandals Whitehouse European Village & Spa
+    category: jamaica
+    class: sandals-whitehouse-european-village-spa
+    location: Jamaica
+    description: Set on Jamaica’s undiscovered south coast, boasting over 2 miles of unspoilt beach, every room and suite enjoys ocean views.
+    price: 1,599
+    price-description: per room per night
+    link: #
+
+  - title: Sandals Royal Plantation
+    category: jamaica
+    class: sandals-royal-plantation
+    location: Jamaica
+    description: This glamorous resort boasts just 74 suites, each with stunning ocean views and Personal Butler Service.
+    price: 1,665
+    price-description: per room per night
+    link: #
+
+  - title: Beaches Ocho Rios - A Spa, Golf & Waterpark Resort
+    category: jamaica
+    class: beaches-ocho-rios
+    location: Jamaica
+    description: This vibrant all-inclusive resort is surrounded by 22 acres of tropical gardens and is perfect for families, with its huge waterpark, championship golf and private white-sand beach.
+    price: 1,599
+    price-description: per room per night
+    link: #
+
+  - title: Sandals Royal Caribbean Resort & Private Island
+    category: jamaica
+    class: sandals-royal-caribbean-resort-private-island
+    location: Jamaica
+    description: The only resort in Jamaica with an exclusive offshore island, offering 2 luxurious holidays in 1.
+    price: 1,698
+    price-description: per room per night
+    link: #
+
+  - title: Beaches Negril Resort & Spa
+    category: jamaica
+    class: beaches-negril-resort-spa
+    location: Jamaica
+    description: Everything you can possibly imagine is beachside at Beaches Negril — from lively pools to restaurants and bars, right on the widest stretch of Jamaica’s seven-mile beach.
+    price: 1,745
+    price-description: per room per night
+    link: #
+
+########## SAINT LUCIA ##########
+
+  - title: Sandals Halcyon Beach
+    category: saint-lucia
+    class: sandals-halcyon-beach
+    location: Saint Lucia
+    description: The most intimate Sandals' resort in Saint Lucia, with hammocks and cabanas in lush tropical gardens, and unspoilt views of the Caribbean
+    price: 1,299
+    price-description: per room per night
+    link: #
+
+  - title: Sandals Grande Saint Lucian Spa & Beach Resort
+    category: saint-lucia
+    class: sandals-grande-saint-lucian-spa-beach-resort
+    location: Saint Lucia
+    description: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
+    price: 1,559
+    price-description: per room per night
+    link: #
+
+  - title: Sandals Regency La Toc Golf Resort & Spa
+    category: saint-lucia
+    class: sandals-regency-la-toc-golf-resort-spa
+    location: Saint Lucia
+    description: Experience the executive-style golf course, luxury oceanfront suites, Five-Star Diamond French cuisine and access to a total of 27 restaurants at this glamorous Saint Lucia hideaway.
+    price: 1,499
+    price-description: per room per night
+    link: #
+
+########## ANTIGUA ##########
+
+  - title: Sandals Grande Antigua Resort & Spa
+    category: antigua
+    class: sandals-grande-antigua-resort-spa
+    location: Antigua
+    description: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted 'World's Most Romantic Resort' for many years.
+    price: 1,499
+    price-description: per room per night
+    link: #
+
+########## BAHAMAS ##########
+
+  - title: Sandals Royal Bahamian Spa Resort & Offshore Island
+    category: bahamas
+    class: sandals-royal-bahamian-spa-resort-offshore-island
+    location: Bahamas
+    description: Enjoy the unprecedented luxury of two holidays in one, featuring an exotic offshore island escape, this resort has it all.
+    price: 1,559
+    price-description: per room per night
+    link: #
+
+  - title: Sandals Emerald Bay Golf, Tennis & Spa Resort
+    category: bahamas
+    class: sandals-emerald-bay
+    location: Bahamas
+    description: Unwind at this 500-acre resort on idyllic Emerald Bay, Great Exuma. This all-suite resort has a stunning Greg Norman-designed championship golf course, reputed to be among the best in the Caribbean.
+    price: 1,699
+    price-description: per room per night
+    link: #
+
+########## GRENADA ##########
+
+  - title: Sandals LaSource Grenada Resort & Spa
+    category: grenada
+    class: sandals-la-source-grenada-resort-spa
+    location: Grenada
+    description: Located on the exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandlas first, a steakhouse.
+    price: 1,469
+    price-description: per room per night
+    link: #
+
+########## BARBADOS ##########
+
+  - title: Sandals Barbados
+    category: barbados
+    class: sandals-barbados
+    location: Barbados
+    description: The newest resort in the collection, this heavenly hideaway offers undeniable luxury and is Barbados' only Luxury Included® 5 Star Resort.
+    price: 1,545
+    price-description: per room per night
+    link: #
+
+########## TURKS AND CAICOS ##########
+
+  - title: Beaches Turks & Caicos Resort Villages & Spa
+    category: turks-and-caicos
+    class: beaches-turks-caicos-resort-villages-spa
+    location: Turks & Caicos
+    description: Discover a 45,000 square-foot waterpark, plus an exciting array of activities and entertainment for the whole family, all located on one of the world’s best beaches.
+    price: 1,799
+    price-description: per room per night
+    link: #
+

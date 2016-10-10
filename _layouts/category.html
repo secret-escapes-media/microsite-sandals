@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+
+<section class="section--fixed-bg banner site-header__offset" style="background-image:url({{site.baseurl}}/img/bg/banner-{{page.class}}.jpg);">
+  <h1>{{ page.title }}</h1>
+</section>
+
+<div class="page-content">
+
+  <section class="intro  align-center">
+    <div class="row row--padding ">
+      <p class="lead-paragraph">{{ page.introduction }}</p>
+    </div>
+  </section>
+
+  <section class="section--fixed-bg page-break" style="background-image:url({{site.baseurl}}/img/bg/banner-{{page.class}}-2.jpg);">
+  </section>
+
+
+
+  <section class="section--padding-top">
+    <div class="row align-center">
+      <h2 class="line-title"><span>{{page.title}} Offers</span></h2>
+    </div>
+  </section>
+
+  <section class="offers">
+
+    {% assign offers = site.data.offers | where:"category", page.class %}
+    {% for offer in offers %}
+      {% include offer-block.html %}
+    {% endfor %}
+  </section>
+
+</div>

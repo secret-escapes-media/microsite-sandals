@@ -19,7 +19,7 @@ gulp.task('serve', function () {
       server: {
         baseDir: '_site/',
         routes: {
-          '/se-microsite-template': '_site/'
+          '/sandals': '_site/'
         }
       }
     });

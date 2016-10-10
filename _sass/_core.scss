@@ -33,6 +33,11 @@ $se-dark-grey-5:  rgba(41,39,40,.5);
 $se-dark-grey-66: rgba(41,39,40,.66);
 $se-dark-grey-85: rgba(41,39,40,.85);
 
+$sandals-green: #809a00;
+$sandals-blue: #00a8c2;
+$text-paragraph: #6b6867;
+$text-headings: #333333;
+
 
 // -------- breakpoints --------
 
@@ -61,6 +66,27 @@ $small:     300px;
   }
   @if $width == small {
     @media (min-width:$small) {@content;}
+  }
+}
+
+@mixin max-bp($width){
+  @if $width == xxxlarge {
+    @media (max-width:$xxxlarge) {@content;}
+  }
+  @if $width == xxlarge {
+    @media (max-width:$xxlarge) {@content;}
+  }
+  @if $width == xlarge {
+    @media (max-width:$xlarge) {@content;}
+  }
+  @if $width == large {
+    @media (max-width:$large) {@content;}
+  }
+  @if $width == medium {
+    @media (max-width:$medium) {@content;}
+  }
+  @if $width == small {
+    @media (max-width:$small) {@content;}
   }
 }
 

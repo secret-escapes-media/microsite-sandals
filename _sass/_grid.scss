@@ -23,6 +23,22 @@ section {
     padding-bottom: 6.192em;
   }
 }
+.section{
+  &--padding-top {
+    padding-top: 5.063em;
+    padding-bottom: 0;
+    @include bp(large) {
+      padding-top: 6.192em;
+    }
+  }
+  &--padding-bottom {
+    padding-top: 0;
+    padding-bottom: 5.063em;
+    @include bp(large) {
+      padding-bottom: 6.192em;
+    }
+  }
+}
 
 .row {
   @include container( $xxlarge );

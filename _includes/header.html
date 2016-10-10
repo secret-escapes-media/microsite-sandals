@@ -30,10 +30,16 @@
 
   <!-- SITE NAV -->
   <div class="site-nav">
-    <div class="row">
+    <div class="row row--padding">
       <ul class="site-nav__list">
         {% assign nav-order = site.pages | sort:"nav-order" %}
-        {% for page in nav-order %}{% if page.title %}<li class="site-nav__item site-nav__item--{{ page.class }}"><a class="site-nav__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
+        {% for page in nav-order %}
+        {% if page.title %}
+        <li class="site-nav__item site-nav__item--{{ page.class }}">
+          <a class="site-nav__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
       </ul>
     </div><!-- END - .row -->
   </div><!-- END - .site-nav -->

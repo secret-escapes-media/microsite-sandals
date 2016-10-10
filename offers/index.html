@@ -1,0 +1,33 @@
+---
+layout: default
+title: Offers
+class: offers
+nav-order: 9
+
+introduction: >
+  <p class="lead-paragraph">With 15 resorts spanning the most breathtaking hideaways of the Caribbean, Sandals is no longer the best kept secret in this bountiful corner of the world. Yet with up to a 50% discount on all suites and rooms across all Caribbean resorts, plus a further £125 off summer 2017 departures, you can be dipping your toes in crystal waters and golden sands in no time.</p>
+---
+
+
+<section class="section--fixed-bg banner site-header__offset" style="background-image:url({{site.baseurl}}/img/bg/banner-{{page.class}}.jpg);">
+  <h1>{{ page.title }}</h1>
+</section>
+
+<div class="page-content">
+
+  <section class="intro align-center">
+    <div class="row row--padding">
+      {{ page.introduction }}
+    </div>
+  </section>
+
+  <section class="offers">
+
+    {% assign offers = site.data.offers %}
+    {% for offer in offers %}
+      {% include offer-block.html %}
+    {% endfor %}
+
+  </section>
+
+</div>

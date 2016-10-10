@@ -1,8 +1,8 @@
 # Site settings
-title: se-microsite-template
+title: Sandals
 description: >
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam voluptatibus totam accusantium laborum quo dolore.
-baseurl: "/se-microsite-template" # the subpath of your site, e.g. /blog/
+baseurl: "/sandals" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 
 # Build settings

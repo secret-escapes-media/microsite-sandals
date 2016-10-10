@@ -2,27 +2,19 @@
 
 
 .offer {
-  background-color: $light-grey;
+  background-color: white;
   .row__column{
     margin-top: 0;
   }
 }
 
 .offer__image {
+  display: block;
   position: relative;
-  height: 18em;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   background-size: cover;
-  @include bp(large) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: auto;
-  }
 }
 
 .offer__image-link {
@@ -41,17 +33,23 @@
 .offer__content-title {
   margin-bottom: .482em;
   font-size: 1.728em;
+  font-weight: 600;
+}
+
+.offer__content-description {
+  font-style: italic;
 }
 
 .offer__content-subtitle {
   margin-bottom: .833em;
-  font-size: 1.2em;
   line-height: 1.44;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   &:before {
     content: "";
     display: inline-block;
     height: 1em;
-    width: .833em;
+    width: .7em;
     margin-right: .482em;
     margin-bottom: .2em;
     vertical-align: bottom;

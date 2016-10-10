@@ -35,15 +35,147 @@
 
 .btn {
   @include transition;
-  display:inline-block;
-  padding: .5em 1.5em;
-  border: 1px solid $se-orange;
-  font-weight: 500;
-  border-radius: 10em;
+  display: inline-block;
+  border: 1px solid #000;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #000;
+  padding: 16px 24px;
+  margin-top: 30px;
+  text-transform: uppercase;
   &:hover {
-    color: white;
-    background-color: $se-orange;
     text-decoration: none;
+    background-color: $sandals-green;
+    border: 1px solid $sandals-green;
+    color: #fff;
   }
   * + & { margin-top: 1em; }
 }
+
+// ---------- site custom styles ----------
+
+.page-content {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+section { background-color: #eee; overflow: hidden; }
+
+section.banner {
+  background-attachment: scroll;
+  position: relative;
+  height: 650px;
+  width: 100%;
+  &--map {
+    background-attachment: fixed; background-position: top center; background-size: auto;
+    height: 700px;
+    h1 { top: 455px !important; }
+    @include max-bp(xlarge) {
+      background-attachment: scroll;
+      background-image: url(../img/bg/banner-overview-mobile.jpg) !important;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  h1 {
+    font-weight: 900;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    letter-spacing: 0px;
+    position: fixed;
+    top: 360px;
+    line-height: 1.4;
+    text-shadow: 0 0 100px #000;
+    margin-bottom: 0;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 25%;
+      height: 8px;
+      margin: .2592em auto;
+      border: 0;
+      border-top: 2px solid rgba(255, 255, 255, .75);
+      border-bottom: 2px solid rgba(255, 255, 255, .75);
+    }
+    span {
+      font-size: 20px;
+      display: block;
+      font-weight: 100;
+      letter-spacing: 7px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+section.intro {
+  background-color: #fff;
+  text-align: center;
+}
+
+section.page-break {
+  padding: 18em 0;
+}
+
+section.offers {
+}
+
+
+
+
+.map-destinations {
+  width:970px;
+  height: 380px;
+  left:50%;
+  position:fixed;
+  margin-left:-485px;
+  top: 167px;
+
+  display: none;
+  @include bp(xlarge) {
+    display: block;
+  }
+}
+
+.map-destination {
+  background: url(../img/icon/map-pin-white.svg) no-repeat center top;
+  background-size: 17px;
+  position: absolute;
+  height: 25px;
+  width: 27px;
+}
+
+.map-destination h2 {
+  color: #FFFFFF;
+  font-size:13px;
+  text-transform:none;
+  position:absolute;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  transition:all ease 0.3s;
+}
+
+.map-destination:hover h2 {
+  color:#70C1F1
+}
+
+.map-jamaica     { top: 252px; left: 217px; }
+.map-jamaica h2  { top: 50px; left: -17px; }
+.map-bahamas     { top: 103px; left: 285px; }
+.map-bahamas h2  { top: -9px; left: 28px; }
+.map-antigua     { top: 184px; left: 777px; }
+.map-antigua h2  { top: 0px; left: 31px; }
+.map-grenada     { top: 303px; left: 819px; }
+.map-grenada h2  { top: 9px; left: -73px; }
+.map-barbados    { top: 261px; left: 881px; }
+.map-barbados h2 { top: 37px; left: -9px; }
+.map-turks-and-caicos { top: 143px; left: 402px; }
+.map-turks-and-caicos h2 { top: 3px; left: 32px; width: 160px; line-height: 1.3; }
+.map-saint-lucia { top: 254px; left: 828px; }
+.map-saint-lucia h2 { top: 10px; left: -103px; width: 103px; }
+
+

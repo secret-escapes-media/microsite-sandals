@@ -3,33 +3,57 @@ layout: default
 title: Overview
 class: overview
 nav-order: 1
+
+introduction: >
+  <p class="lead-paragraph">From volcanic landscapes in St Lucia, to the rocksteady saunter of Jamaica, the Caribbean is a patchwork of sheer beauty and vibrant culture, ready for any intrepid paradise seeker. From white sands and beach bars, to the sheer luxury of a Sandals resort, your perfect island getaway is just around the corner.</p>
+  <p>Whether you’re after the perfect romantic getaway in a couples-only resort, or wish to take the whole family, you needn’t compromise on comfort. With Autumn causing a shiver, Sandals exclusive offer will have you warmed up in no time, dreaming of golden shorelines and your very own island paradise.</p>
 ---
 
-<section class="section--fixed-bg intro site-header__offset">
-  <div class="row row--padding">
-    <h1>{{ page.title }}</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <a href="offers.html" class="btn">Offers</a>
+
+<section class="section--fixed-bg banner banner--map site-header__offset" style="background-image:url({{site.baseurl}}/img/bg/banner-{{page.class}}.jpg);">
+  <h1>
+    The Caribbean
+    <span>is set to inspire you</span>
+  </h1>
+
+  <div class="map-destinations">
+    {% assign locations = site.pages | sort:"nav-order" %}
+    {% for location in locations %}
+    {% if location.layout == 'category' %}
+      <a href="{{ site.baseurl }}{{ location.url }}">
+        <div class="map-destination map-{{ location.class }}">
+          <h2>{{ location.title }}</h2>
+        </div>
+      </a>
+    {% endif %}
+    {% endfor %}
   </div>
+
 </section>
 
-<section>
-  <div class="row row--padding row--columns-4-4-4-gutters">
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-  </div>
-  <div class="row row--padding">
-    <a href="#" class="btn">button</a>
-  </div>
-</section>
+<div class="page-content">
 
-<section class="section--fixed-bg another">
-  <div class="row row--padding row--columns-4-8-gutters">
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <div class="row__column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
+  <section class="intro align-center">
+
+    <div class="row row--padding">
+      {{ page.introduction }}
     </div>
-  </div>
-</section>
+
+    <div class="row row--padding">
+      <div class='content-video'>
+          <iframe height="380" width="680" src='https://www.youtube.com/embed/Riz-sqygEwg?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="offers">
+
+    {% assign offers = site.data.offers %}
+    {% for offer in offers %}
+      {% include offer-block.html %}
+    {% endfor %}
+
+  </section>
+
+</div>

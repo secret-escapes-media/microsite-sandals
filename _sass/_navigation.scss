@@ -24,7 +24,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   font-family: $core-font-family;
   color: $white;
   text-align: center;
-  background-color: $black-66;
+  background-color: $black-85;
   * { vertical-align: middle; }
   &__wrap {
     position: relative;
@@ -35,7 +35,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   &__column {
     position: absolute;
     &--left {
-      padding-top: 1em;
+      padding-top: 0.75em;
       .csstransforms.csstransforms3d & {
         top: 50%;
         padding-top: 0;
@@ -141,7 +141,7 @@ $nav-arrow-width: 66px;
   line-height: 1.2;
   letter-spacing: .066em;
   text-transform: uppercase;
-  background-color: $se-dark-grey-66;
+  background-color: $black-66;
   overflow: hidden;
   &__list {
     overflow-x: auto;
@@ -186,7 +186,7 @@ $nav-arrow-width: 66px;
       @include transition;
     }
     &:hover,
-    &--current { color: $se-orange; }
+    &--current { color: $sandals-blue; }
     &:hover { background-color: $black-25; }
   }
   &__link {
@@ -299,5 +299,8 @@ $icon-size: 27px;
     max-width: 180px;
     padding-top: 4px;
   }
-  &--partner { max-width: 130px; }
+  &--partner {
+    max-width: 100px;
+    margin-left: 0.5em;
+  }
 }
