@@ -1,7 +1,7 @@
 # Site settings
 title: Sandals
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam voluptatibus totam accusantium laborum quo dolore.
+  From volcanic landscapes in St Lucia, to the rocksteady saunter of Jamaica, the Caribbean is a patchwork of sheer beauty and vibrant culture, ready for any intrepid paradise seeker. From white sands and beach bars, to the sheer luxury of a Sandals resort, your perfect island getaway is just around the corner.
 baseurl: "/sandals" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 
