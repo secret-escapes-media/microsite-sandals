@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body id="top" class="{% if page.class %}{{ page.class }}{% endif %}" {% if page.class %}data-current-page="{{ page.class }}"{% endif %}>
+  <body id="top" {% if page.title %}class="{{ page.title | slugify }}" data-current-page="{{ page.title | slugify }}"{% endif %}>
 
     {% include tracking.html %}
 
@@ -12,6 +12,8 @@
     {{ content }}
 
     {% include footer.html %}
+
+    {% include modal-terms.html %}
 
   </body>
 

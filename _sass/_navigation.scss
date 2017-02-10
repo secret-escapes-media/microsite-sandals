@@ -20,11 +20,14 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   }
 }
 
+
+// ---------- NAV FOR CORE SE SITE ----------
+
 .core-nav {
   font-family: $core-font-family;
   color: $white;
   text-align: center;
-  background-color: $black-85;
+  background-color: $black-75;
   * { vertical-align: middle; }
   &__wrap {
     position: relative;
@@ -35,7 +38,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   &__column {
     position: absolute;
     &--left {
-      padding-top: 0.75em;
+      padding-top: 1em;
       .csstransforms.csstransforms3d & {
         top: 50%;
         padding-top: 0;
@@ -72,7 +75,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
         }
       }
     }
-    @include bp( xxlarge ){
+    @include bp( xlarge ){
       &--left {
         display: none;
       }
@@ -94,12 +97,12 @@ $site-header-height: ($core-nav-height + $site-nav-height);
     height: ($core-nav-height / 1.5);
     width: 0.5em;
     margin-left: 0.5em;
-    border-left: 1px solid $white-15;
+    border-left: 1px solid $white-25;
     @include bp( medium ) {
       width: 1em;
       margin-left: 1em;
     }
-    @include bp( xxlarge ){
+    @include bp( xlarge ){
       display: inline-block;
     }
   }
@@ -109,7 +112,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
     font-size: .833em;
     font-weight: 700;
     color: $se-light-grey;
-    @include bp( xxlarge ){
+    @include bp( xlarge ){
       display: inline-block;
     }
   }
@@ -131,6 +134,9 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   }
 }
 
+
+// ---------- NAV FOR MICROSITE ----------
+
 $nav-arrow-width: 66px;
 .site-nav {
   height: $site-nav-height;
@@ -141,33 +147,37 @@ $nav-arrow-width: 66px;
   line-height: 1.2;
   letter-spacing: .066em;
   text-transform: uppercase;
-  background-color: $black-66;
+  background-color: $se-dark-grey-66;
   overflow: hidden;
   &__list {
+    padding-right: $nav-arrow-width;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    .touch & {
-      padding-right: $nav-arrow-width;
-      &:before {
-        // prompt for horizontal scroll on phone
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: $z-nav-upper;
-        display: block;
-        width: $nav-arrow-width;
-        height: auto;
-        background-image: url("../img/icon/nav-arrow-dark.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: $nav-arrow-width auto;
-      }
+    &:before {
+      // prompt for horizontal scroll on phone
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-nav-upper;
+      display: block;
+      width: $nav-arrow-width;
+      height: $site-nav-height;
+      background-image: url("../img/icons/nav-arrow-dark.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: $nav-arrow-width auto;
+    }
+    @include bp(xlarge){
+      padding-right: 0;
+      overflow: visible;
+      &:before { display: none; }
     }
   }
   &__item {
+    height: $site-nav-height;
     position: relative;
     display: inline-block;
     white-space: nowrap;
@@ -193,9 +203,12 @@ $nav-arrow-width: 66px;
     display: inline-block;
     width: 100%;
     padding: 15px 1.2em;
-    &:hover { text-decoration: none; }
+    &:hover,
+    &--current { text-decoration: none; }
   }
-  @include bp(xxlarge){
+  @include bp(xlarge){
+    overflow: visible;
+    height: auto;
     .flexbox & {
       &__list {
         display: flex;
@@ -205,7 +218,52 @@ $nav-arrow-width: 66px;
       &__item { flex-grow: 1; }
     }
   }
+  // resets the nav for the footer to stop side scrolling
+  @media (max-width: $xlarge) {
+    &--footer {
+      height: auto;
+      background-color: $se-dark-grey-85;
+    }
+    &--footer & {
+      &__list{
+        padding-right: 0;
+        border-top: 1px solid $white-15;
+        white-space: normal;
+        &:before {
+          content: none;
+        }
+        .svg & {
+          display: flex;
+          flex-flow: row wrap;
+        }
+      }
+      &__item {
+        display: inline-block;
+        width: 33.33%;
+        border-bottom: 1px solid $white-15;
+        &:before { content: none; }
+        .svg & {
+          flex-grow: 1;
+        }
+        @media (max-width: $medium) {
+          width: 100%;
+        }
+      }
+      &__link {
+        border: 0;
+        &:hover,
+        &--current {
+          padding-bottom: ($site-nav-height / 3);
+          border: 0;
+        }
+      }
+    }
+  }
 }
+
+
+
+// ---------- MOBILE NAV OFF CANVAS ----------
 
 $mobile-nav-width: 75%;
 .mobile-nav {
@@ -261,6 +319,9 @@ $mobile-nav-width: 75%;
     padding: 1em;
     background: $se-dark-grey-85;
     text-align: center;
+     > * {
+       vertical-align: middle;
+     }
     @include bp-vertical {
       position: static;
     }
@@ -268,10 +329,33 @@ $mobile-nav-width: 75%;
       display: none;
     }
   }
-  @include bp(xxlarge){
+  @include bp(xlarge){
     display: none;
   }
 }
+
+
+// ---------- SITE FOOTER ----------
+.footer {
+  background-color: $black;
+  &__logos {
+    font-size: .9em;
+    border-top: 1px solid $white-15;
+    padding-top: $margin;
+    padding-bottom: $margin;
+  }
+  .logo {
+    vertical-align: middle;
+    margin-left: ($margin/4);
+    margin-right: ($margin/4);
+  }
+  .logo--secret-escapes { max-width: 110px; }
+  .logo--sandals { max-width: 80px; }
+  .logo--beaches { max-width: 80px; }
+}
+
+
+// ---------- ICONS ----------
 
 $icon-size: 27px;
 .icon {
@@ -284,23 +368,33 @@ $icon-size: 27px;
   background-repeat: no-repeat;
   background-size: $icon-size;
   &--menu {
-    background-image: url("../img/icon/menu.png");
-    svg & { background-image: url("../img/icon/menu.svg"); }
+    background-image: url("../img/icons/menu.png");
+    svg & { background-image: url("../img/icons/menu.svg"); }
   }
   &--close {
-    background-image: url("../img/icon/close.png");
-    svg & { background-image: url("../img/icon/close.svg"); }
+    background-image: url("../img/icons/close.png");
+    svg & { background-image: url("../img/icons/close.svg"); }
   }
 }
+
+
+// ---------- LOGOS ----------
 
 .logo {
   display: inline-block;
   &--secret-escapes {
     max-width: 180px;
     padding-top: 4px;
+    .footer__logos & {
+      padding-top: 0;
+    }
   }
-  &--partner {
-    max-width: 100px;
-    margin-left: 0.5em;
+  &--sandals { max-width: 90px; }
+  &--beaches {
+    max-width: 90px;
+    padding-top: 6px;
+  }
+  & + & {
+    margin-left: 1em;
   }
 }

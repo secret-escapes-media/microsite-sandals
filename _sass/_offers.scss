@@ -1,68 +1,60 @@
-// styles for the offer blocks that appear on the terrain pages
+// Offer block styles for {{ include offer-block.html }}
 
 
 .offer {
-  background-color: white;
+  border: 1px solid $light-grey;
+  background-color: $white;
   .row__column{
     margin-top: 0;
   }
-}
-
-.offer__image {
-  display: block;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-size: cover;
-}
-
-.offer__image-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.offer__content {
-  padding: $margin ($margin * 1.2);
-  p + p { margin-top: .2em; }
-}
-
-.offer__content-title {
-  margin-bottom: .482em;
-  font-size: 1.728em;
-  font-weight: 600;
-}
-
-.offer__content-description {
-  font-style: italic;
-}
-
-.offer__content-subtitle {
-  margin-bottom: .833em;
-  line-height: 1.44;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  &:before {
-    content: "";
-    display: inline-block;
-    height: 1em;
-    width: .7em;
-    margin-right: .482em;
-    margin-bottom: .2em;
-    vertical-align: bottom;
-    background-image: url( "../img/icon/map-pin.png" );
-    background-position: center;
+  &__image {
+    position: relative;
+    height: 22em;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100%;
-    background-size: contain;
-    .svg & { background-image: url( "../img/icon/map-pin.svg" ); }
+    background-size: cover;
+    background-color: $sandals-blue;
+    @include bp(xlarge) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: auto;
+    }
+    &-link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
-}
-
-.offer__content-price {
-  font-weight: bold;
-  font-size: 1.44em;
+  &__content {
+    padding: ($margin / 1.2);
+    @include bp(large){
+      padding: ($margin * 1.33);
+    }
+  }
+  &__location {
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    &:before {
+      // Map marker icon
+      content: "";
+      display: inline-block;
+      height: 1em;
+      width: .833em;
+      margin-right: .482em;
+      margin-bottom: .35em;
+      vertical-align: bottom;
+      background-image: url( "../img/icons/map-pin.png" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+      .svg & { background-image: url( "../img/icons/map-pin.svg" ); }
+    }
+  }
 }

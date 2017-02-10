@@ -1,0 +1,4 @@
+{% assign offers = site.data.offers | where: "category", page-class %}
+{% for offer in offers %}
+  {% include offer/full-width-multi.html %}
+{% endfor %}
