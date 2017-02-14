@@ -1,9 +1,10 @@
 # Site settings
 title: Sandals
 description: >
-  From volcanic landscapes in St Lucia, to the rocksteady saunter of Jamaica, the Caribbean is a patchwork of sheer beauty and vibrant culture, ready for any intrepid paradise seeker. From white sands and beach bars, to the sheer luxury of a Sandals resort, your perfect island getaway is just around the corner.
+  From volcanic landscapes in St. Lucia, to the rocksteady saunter of Jamaica, the Caribbean is a patchwork of sheer beauty and vibrant culture, ready for any intrepid paradise seeker. From white sands and beach bars, to the sheer luxury of a Sandals resort, your perfect island getaway is just around the corner.
 baseurl: "/sandals" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
+sandals-url: "http://www.sandals.co.uk/specials/uk-offers/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17"
 
 # Build settings
 markdown: kramdown

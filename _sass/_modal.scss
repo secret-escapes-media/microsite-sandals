@@ -20,9 +20,10 @@
     left: ($margin / 2);
     right: ($margin / 2);
     bottom: ($margin * 1.5);
+    max-width: $large;
+    margin-top: 0 !important;
     cursor: auto;
     overflow-y: auto;
-    margin-top: 0 !important;
     @include bp(large){
       left: $margin;
       right: $margin;
@@ -44,7 +45,7 @@
     height: 3em;
     width: 3em;
     background-color: $se-dark-grey-85;
-    background-image: url('../img/icon/close.png');
+    background-image: url('../img/icons/close.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1em;
@@ -52,7 +53,7 @@
     z-index: $z-overlay-upper;
     @include transition;
     .svg & {
-      background-image: url('../img/icon/close.svg');
+      background-image: url('../img/icons/close.svg');
     }
   }
 }

@@ -15,33 +15,13 @@ $margin: 2em;
 
 // -------- grid sections --------
 
-section {
-  padding-top: 5.063em;
-  padding-bottom: 5.063em;
-  @include bp(large) {
-    padding-top: 6.192em;
-    padding-bottom: 6.192em;
-  }
-}
-.section{
-  &--padding-top {
-    padding-top: 5.063em;
-    padding-bottom: 0;
-    @include bp(large) {
-      padding-top: 6.192em;
-    }
-  }
-  &--padding-bottom {
-    padding-top: 0;
-    padding-bottom: 5.063em;
-    @include bp(large) {
-      padding-bottom: 6.192em;
-    }
-  }
+.section {
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .row {
-  @include container( $xxlarge );
+  @include container( $xxxlarge );
   position: relative;
   & + .row { margin-top: $margin; }
 }
@@ -65,7 +45,7 @@ section {
 
 .row__column + .row__column {
   margin-top: ( $margin / 2 );
-  @include bp(large) {
+  @include bp(xlarge) {
     margin-top: 0;
   }
 }
@@ -95,7 +75,7 @@ section {
 // -------- grid columns --------
 
 // breakpoint for all columns
-@include bp(large){
+@include bp(xlarge){
 
   // two columns without gutter
   .row--columns-4-8 { @include two-column-grid( 4, 8 ); }

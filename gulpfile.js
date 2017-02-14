@@ -55,7 +55,7 @@ gulp.task('htmlMinify', function() {
 gulp.task('optimiseCss', function() {
   return gulp.src('./_site/**/*.css')
   .pipe(autoprefix({
-    browsers: ['last 3 versions'],
+    browsers: ['last 3 versions', 'iOS 7'],
     cascade: false
   }))
   .pipe(cssmin())
