@@ -55,8 +55,8 @@ input, textarea, keygen, select, button {
       font-size: .55em;
     }
   }
-  &--larger      { font-size: 3.375em; }
-  &--large       { font-size: 2.986em; }
+  &--larger      { font-size: 2.986em; }
+  &--large       { font-size: 2.488em; }
   &--medium      { font-size: 2.25em; }
   &--small       { font-size: 2em; }
   &--smaller     { font-size: 1.867em; }
@@ -110,3 +110,10 @@ hr {
   background-color: $light-grey;
   margin: 1em 0;
 }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup { top: -0.5em; }

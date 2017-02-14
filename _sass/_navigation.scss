@@ -182,7 +182,7 @@ $nav-arrow-width: 66px;
     display: inline-block;
     white-space: nowrap;
     @include transition;
-    & + &:before {
+    .csstransforms.csstransforms3d & + &:before {
       // dividing lines between site nav items
       content: '';
       position: absolute;
