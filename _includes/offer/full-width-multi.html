@@ -1,9 +1,9 @@
 <div class="row row--columns-6-6 offer">
   <div class="row__column offer__image" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')">
-    <a class="offer__image-link" id="image-link-{{ offer.title | slugify }}" href="http://www.sandals.co.uk/specials/uk-twin-centre-holidays/"></a>
+    <a class="offer__image-link" id="image-link-{{ offer.title | slugify }}" href="http://www.sandals.co.uk/specials/uk-twin-centre-holidays/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17"></a>
   </div>
   <div class="row__column offer__content">
-    <h2 class="title title--dark title--smaller"><a id="title-link-{{ offer.title | slugify }}" href="http://www.sandals.co.uk/specials/uk-twin-centre-holidays/">{{ offer.title }}</a></h2>
+    <h2 class="title title--dark title--smaller"><a id="title-link-{{ offer.title | slugify }}" href="http://www.sandals.co.uk/specials/uk-twin-centre-holidays/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17">{{ offer.title }}</a></h2>
     <div class="title title--sub-heading title--upper title--expanded title--grey">Multi Centre holiday</div>
     <hr>
     {% for resort in offer.resorts %}
@@ -12,6 +12,6 @@
     {% endfor %}
     <hr>
     <p>now <strong class="title--smallest">£{{ offer.price }}</strong> per person for 10 days</p>
-    <a id="button-link-{{ offer.title | slugify }}" href="http://www.sandals.co.uk/specials/uk-twin-centre-holidays/" class="btn">View Offer</a>
+    <a id="button-link-{{ offer.title | slugify }}" href="http://www.sandals.co.uk/specials/uk-twin-centre-holidays/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17" class="btn">View Offer</a>
   </div>
 </div>

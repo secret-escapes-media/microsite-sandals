@@ -85,6 +85,12 @@ input, textarea, keygen, select, button {
   }
 }
 
+.line-length {
+  max-width: $xlarge;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 // -------- general content styles --------
 
