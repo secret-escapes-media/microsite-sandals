@@ -1,0 +1,15 @@
+
+
+{% unless page.class == 'overview' %}
+<div class="section banner invert-text" style="background-image: url('{{site.baseurl}}/img/bg/{{page.title | slugify}}-01.jpg');">
+  <div class="banner__title">
+    <div class="row row--padding align-center">
+      <h1 class="banner__divider title title--larger title--upper title--bold title--expanded">{{page.title}}</h1>
+    </div>
+  </div>
+  <div class="banner__overlay"></div>
+</div>
+{% endunless %}
+
+
+{% include microsite-navigation.html %}

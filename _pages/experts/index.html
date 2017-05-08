@@ -1,17 +1,13 @@
 ---
 layout: default
 title: Experts
+class: experts
 nav-order: 10
 intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique harum id, quis saepe facere. Sunt eaque voluptates ipsa sed ad, facere? Dolorum commodi, minima incidunt. Aspernatur eveniet, repellendus iste.
 ---
 
-<div class="section banner invert-text" style="background-image: url('{{site.baseurl}}/img/bg/{{page.title | slugify}}-01.jpg');">
-  <div class="banner__title">
-    <div class="row row--padding align-center">
-      <h1 class="banner__divider title title--larger title--upper title--bold title--expanded">{{page.title}}</h1>
-    </div>
-  </div>
-</div>
+
+{% include title-banner.html %}
 
 <section class="section bg--white">
   <div class="row row--padding align-center">
@@ -48,17 +44,17 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique h
       <h3 class="row title title--dark title--smallest title--extra-margin title--upper title--expanded title--bold align-center">Barbados</h3>
       <div class="row row--columns-4-4-4-gutters">
         <div class="row__column">
-          <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/barbados-crane-beach.jpg');"></div>
+          <div class="bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/barbados-crane-beach.jpg');"></div>
           <p class="title title--bold title--micro title--spacing">Crane Beach</p>
           <p>This was our favorite beach! The Crane is located on the lower east coast of the island. The sand here has a pinkish hue to it from the seashells – a paradise for sure! </p>
         </div>
         <div class="row__column">
-          <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/barbados-oistin-s-fish-market.jpg');"></div>
+          <div class="bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/barbados-oistin-s-fish-market.jpg');"></div>
           <p class="title title--bold title--micro title--spacing">Oistin’s Fish Market</p>
           <p>This is the place to be Friday nights for food and a party. Every night it’s a fresh seafood market with lots of stalls cooking up the day’s catch. Here I had some of the best seafood I have ever had!</p>
         </div>
         <div class="row__column">
-          <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/barbados-mullins-bay.jpg');"></div>
+          <div class="bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/barbados-mullins-bay.jpg');"></div>
           <p class="title title--bold title--micro title--spacing">Mullins Bay</p>
           <p>Located on the west coast of the island on the northern end. This was another favorite beach of ours. Again much more secluded than the beaches on the southwestern tip of the island for perfect days of serene beach bliss!</p>
         </div>
@@ -66,17 +62,17 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique h
       <h3 class="row title title--dark title--smallest title--extra-margin title--upper title--expanded title--bold align-center">Jamaica</h3>
       <div class="row row--columns-4-4-4-gutters">
         <div class="row__column">
-          <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/jamaica-diving.jpg');"></div>
+          <div class="bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/jamaica-diving.jpg');"></div>
           <p class="title title--bold title--micro title--spacing">Diving</p>
           <p>Gearing up to dive into 80° water sounds a lot more enjoyable than gearing up to shovel the snow from your doorstep. We got a few tanks in on our most recent trip to Jamaica at Sandals Ochi, and the best part was the diving which was included with our stay in Ocho Rios. Diving in Jamaica is a must.</p>
         </div>
         <div class="row__column">
-          <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/jamaica-the-pelican-bar.jpg');"></div>
+          <div class="bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/jamaica-the-pelican-bar.jpg');"></div>
           <p class="title title--bold title--micro title--spacing">The Pelican Bar</p>
           <p>What’s not to love about a bar constructed of sticks almost a Kilometer from the shore? This one of a kind bar serves beer, drinks and upon special request food from the shore. The only way to reach the pelican bar is by boat. If you take the trip out to the bar keep your eyes open for dolphins swimming as you sail out to the bar.</p>
         </div>
         <div class="row__column">
-          <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/jamaica-the-falls.jpg');"></div>
+          <div class="bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/jamaica-the-falls.jpg');"></div>
           <p class="title title--bold title--micro title--spacing">The Falls</p>
           <p>Jamaica has a few famous waterfalls to check out while on the Island. Near Ocho Rios visit Dunn’s Falls.  On the west side of the island, YS falls is worth a visit.</p>
         </div>
@@ -84,7 +80,7 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique h
       <h3 class="row title title--dark title--smallest title--extra-margin title--upper title--expanded title--bold align-center">Bahamas</h3>
       <div class="row row--columns-6-6-gutters row--columns-vertical-align">
         <div class="row__column">
-          <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/bahamas-pigs.jpg');"></div>
+          <div class="bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image: url('{{site.baseurl}}/img/content/experts/bahamas-pigs.jpg');"></div>
         </div>
         <div class="row__column">
           <p class="title title--bold title--micro title--spacing">Swimming Pigs</p>

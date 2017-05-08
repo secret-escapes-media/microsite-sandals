@@ -73,6 +73,27 @@ $small:     300px;
   }
 }
 
+@mixin min-bp($width){
+  @if $width == xxxlarge {
+    @media (max-width:$xxxlarge) {@content;}
+  }
+  @if $width == xxlarge {
+    @media (max-width:$xxlarge) {@content;}
+  }
+  @if $width == xlarge {
+    @media (max-width:$xlarge) {@content;}
+  }
+  @if $width == large {
+    @media (max-width:$large) {@content;}
+  }
+  @if $width == medium {
+    @media (max-width:$medium) {@content;}
+  }
+  @if $width == small {
+    @media (max-width:$small) {@content;}
+  }
+}
+
 // vertical breakpoint for small screen mobile
 @mixin bp-vertical {
   @media (max-height:$medium) and (max-width:$large) { @content; }
@@ -164,26 +185,6 @@ $z-nav:             10;
 $z-content-upper:   5;
 $z-content:         0;
 $z-background:      -1;
-
-
-// -------- background image ratios --------
-
-.bg-image-ratio {
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-  }
-}
-.bg-image-ratio--1-1:before   { padding-top: 100%; }
-.bg-image-ratio--4-3:before   { padding-top: 75%; }
-.bg-image-ratio--3-2:before   { padding-top: 66.666666666667%; }
-.bg-image-ratio--16-9:before  { padding-top: 56.25%; }
-.bg-image-ratio--21-9:before  { padding-top: 42.8571429%; }
 
 
 // -------- generic styles --------

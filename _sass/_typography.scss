@@ -117,3 +117,14 @@ sup {
   position: relative;
 }
 sup { top: -0.5em; }
+
+
+// -------- list styles --------
+
+ol li {
+  list-style-type: decimal;
+  ol li {
+    list-style-type: lower-latin; 
+  }
+}
+

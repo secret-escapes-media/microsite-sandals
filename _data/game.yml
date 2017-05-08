@@ -1,0 +1,39 @@
+
+########## QUESTIONS ##########
+
+- question: Active or Relaxed?
+  option-1: Active
+  option-1-description: an active holiday
+  option-2: Relaxed
+  option-2-description: a relaxed holiday
+
+- question: Private and restful, or lively and social?
+  option-1: Private and restful
+  option-1-description: private and restful
+  option-2: Lively and social
+  option-2-description: lively and social
+
+- question: Lush tropical grounds or Beach?
+  option-1: Lush tropical grounds
+  option-1-description: lush grounds
+  option-2: Beach
+  option-2-description: a beach
+
+- question: Casino or golf?
+  option-1: Casino
+  option-1-description: casino
+  option-2: Golf
+  option-2-description: golf course
+
+- question: Self-sufficient, or Butler service?
+  option-1: Self-sufficient
+  option-1-description: are self-sufficient
+  option-2: Butler service
+  option-2-description: would like the butler service
+
+- question: Variety or Luxury
+  option-1: Multi-resort
+  option-1-description: multiple resorts
+  option-2: Luxurious Rondoval suite
+  option-2-description: the Luxurious Rondoval suite
+

@@ -1,0 +1,59 @@
+<section class="section bg--light-grey game">
+
+
+  <div class="row row--padding">
+
+    <h1 class="title title--small title--expanded title--upper title--light">Be paired with the perfect Sandals resort for you</h1>
+    <hr />
+
+    <ol class="game__questions">
+      {% assign game = site.data.game %}
+      {% for question in game %}
+      <li class="game__question{% if forloop.first %} game__question--active{% endif %}" id="question-{{ forloop.index }}">
+
+        <span class="title title--smallest title--bold">{{ question.question }}</span>
+
+        <ol class="options">
+
+          <li>
+            <a href="javascript:void(0);" class="game__answer" data-question="{{ forloop.index }}" data-answer="a" data-answer-description="{{ question.option-1-description }}">
+              {{ question.option-1 }}
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" class="game__answer" data-question="{{ forloop.index }}" data-answer="b" data-answer-description="{{ question.option-2-description }}">
+              {{ question.option-2 }}
+            </a>
+          </li>
+
+        </ol>
+
+      </li>
+      {% endfor %}
+    </ol>
+
+  </div>
+
+
+  <div class="game__results" id="result">
+
+    <div class="row row--padding">
+      <hr />
+      <p class="paragraph--lead">You would like <strong id="result-answer-1">...</strong>, that is <strong id="result-answer-2">...</strong>, near <strong id="result-answer-3">...</strong> with a <strong id="result-answer-4">...</strong>. You <strong id="result-answer-5">...</strong> and would prefer to stay in <strong id="result-answer-6">...</strong>.</p>
+    </div>
+
+    <div class="row row--padding" id="result-offers">
+      {% assign offers = site.data.offers %}
+      {% for offer in offers %}
+        {% if offer.category == "Multi Centre" %}
+          {% include offer/full-width-multi.html %}
+        {% else %}
+          {% include offer/full-width.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+
+</section>

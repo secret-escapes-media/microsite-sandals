@@ -1,11 +1,19 @@
-<!-- looks for optional offer link, otherwise it uses the generic sandals link -->
+
 {% if offer.link %}
   {% assign offer-link = offer.link %}
 {% else %}
   {% assign offer-link = site.sandals-url %}
 {% endif %}
 
-<div class="row row--columns-6-6 offer">
+<div
+  class="row row--columns-6-6 offer"
+  data-q1="{{ offer.question-1 }}"
+  data-q2="{{ offer.question-2 }}"
+  data-q3="{{ offer.question-3 }}"
+  data-q4="{{ offer.question-4 }}"
+  data-q5="{{ offer.question-5 }}"
+  data-q6="{{ offer.question-6 }}">
+
   <div class="row__column offer__image" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')">
     <a class="offer__image-link" id="image-link-{{ offer.title | slugify }}" href="{{offer-link}}"></a>
   </div>

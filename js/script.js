@@ -169,5 +169,72 @@
   }
 
 
+///////////////////////////////////////
+//       Banner
+///////////////////////////////////////
+
+function bannerfade(){
+	var st = $(document).scrollTop();
+	var wh = $(window).height();
+
+	$('.banner__overlay').css({
+    "opacity": st / (wh*0.75)
+	});
+
+}
+
+$(document).scroll(function() {
+	bannerfade();
+});
+
+
+///////////////////////////////////////
+//       Game
+///////////////////////////////////////
+
+
+$('.game__answer').click(function(e){
+  e.preventDefault();
+
+  var parent = $('.game'),
+      questions = $('.game'),
+      question_number = $(this).attr('data-question'),
+      question_answer = $(this).attr('data-answer'),
+      question_answer_description = $(this).attr('data-answer-description'),
+      result = $('#result');
+
+  result.attr("data-question-" + question_number, question_answer);
+
+  // form result description
+  $('#result-answer-'+question_number).html(question_answer_description);
+
+  // next question
+  var current_question = questions.find('.game__question--active');
+  var next_question = current_question.next('.game__question');
+  current_question.removeClass('game__question--active');
+  next_question.addClass('game__question--active');
+
+  if( next_question.length == 0 ) {
+    $('.game').addClass('game--complete');
+
+    // answers
+    var resultanswer1 = result.attr('data-question-1'),
+        resultanswer2 = result.attr('data-question-2'),
+        resultanswer3 = result.attr('data-question-3'),
+        resultanswer4 = result.attr('data-question-4'),
+        resultanswer5 = result.attr('data-question-5'),
+        resultanswer6 = result.attr('data-question-6');
+
+    $('.offer').each(function(){
+      if( $(this).attr('data-q1') == resultanswer1 ){
+        $(this).addClass('offer--selected');
+      }
+    });
+
+  }
+
+});
+
+
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end

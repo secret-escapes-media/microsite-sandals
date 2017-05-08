@@ -8,6 +8,12 @@
   was-price: 2910
   price: 1575
   price-description: per person for 7 nights
+  question-1: b # active // relaxed
+  question-2: a # private // social
+  question-3: a # grounds // beach
+  question-4: b # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Sandals Negril Beach Resort & Spa
   category: Jamaica
@@ -16,6 +22,12 @@
   was-price: 2871
   price: 1599
   price-description: per person for 7 nights
+  question-1: a # active // relaxed
+  question-2: a # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Sandals South Coast European Village & Spa
   category: Jamaica
@@ -24,6 +36,12 @@
   was-price: 3398
   price: 1799
   price-description: per person for 7 nights
+  question-1: a # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Sandals Royal Plantation
   category: Jamaica
@@ -32,6 +50,12 @@
   was-price: 3409
   price: 1849
   price-description: per person for 7 nights
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: b # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Beaches Ocho Rios - A Spa, Golf & Waterpark Resort
   category: Jamaica
@@ -41,6 +65,12 @@
   price: 1725
   price-description: per person for 7 nights
   link: http://beachesresorts.co.uk/deals/uk-offers/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Sandals Royal Caribbean Resort & Private Island
   category: Jamaica
@@ -50,6 +80,12 @@
   price: 5725
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/specials/uk-love-nest-suite/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Beaches Negril Resort & Spa
   category: Jamaica
@@ -59,6 +95,12 @@
   price: 1825
   price-description: per person for 7 nights
   link: http://beachesresorts.co.uk/deals/uk-offers/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 ########## SAINT LUCIA ##########
 
@@ -69,6 +111,12 @@
   was-price: 2682
   price: 1325
   price-description: per person for 7 nights
+  question-1: a # active // relaxed
+  question-2: b # private // social
+  question-3: a # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Sandals Grande Saint Lucian Spa & Beach Resort
   category: Saint Lucia
@@ -77,6 +125,12 @@
   was-price: 3424
   price: 1749
   price-description: per person for 7 nights
+  question-1: a # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Sandals Regency La Toc Golf Resort & Spa
   category: Saint Lucia
@@ -85,6 +139,12 @@
   was-price: 2881
   price: 1449
   price-description: per person for 7 nights
+  question-1: b # active // relaxed
+  question-2: a # private // social
+  question-3: a # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 ########## ANTIGUA ##########
 
@@ -95,6 +155,12 @@
   was-price: 3165
   price: 1655
   price-description: per person for 7 nights
+  question-1: b # active // relaxed
+  question-2: a # private // social
+  question-3: a # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 ########## BAHAMAS ##########
 
@@ -105,6 +171,12 @@
   was-price: 3282
   price: 1875
   price-description: per person for 7 nights
+  question-1: b # active // relaxed
+  question-2: a # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 ########## GRENADA ##########
 
@@ -115,6 +187,12 @@
   was-price: 3198
   price: 1749
   price-description: per person for 7 nights
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 ########## BARBADOS ##########
 
@@ -125,6 +203,12 @@
   was-price: 3400
   price: 1675
   price-description: per person for 7 nights
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 ########## MULTI CENTRE ##########
 
@@ -136,6 +220,12 @@
     - title: Sandals Barbados
       room: Caribbean Village Grande Luxe Room
   price: 2255
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Grenada & Saint Lucia
   category: Multi Centre
@@ -145,6 +235,12 @@
     - title: Sandals Halcyon Beach
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 2125
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Barbados & Saint Lucia
   category: Multi Centre
@@ -154,6 +250,12 @@
     - title: Sandals Halcyon Beach
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 1949
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Barbados & Antigua
   category: Multi Centre
@@ -163,6 +265,12 @@
     - title: Sandals Grande Antigua
       room: Caribbean Club Level Veranda Suite
   price: 2195
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Antigua & Saint Lucia
   category: Multi Centre
@@ -172,6 +280,12 @@
     - title: Sandals Halcyon Beach
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 1935
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 
 - title: Jamaica & Antigua
   category: Multi Centre
@@ -181,4 +295,10 @@
     - title: Sandals Grande Antigua
       room: Caribbean Club Level Veranda Suite
   price: 2389
+  question-1: b # active // relaxed
+  question-2: b # private // social
+  question-3: b # grounds // beach
+  question-4: a # casino // golf
+  question-5: a # self-sufficient // butler service
+  question-6: a # multiple resorts // luxury suite
 

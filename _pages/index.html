@@ -1,9 +1,12 @@
 ---
 layout: default
 title: Overview
+class: overview
 nav-order: 1
 intro: From volcanic landscapes in St. Lucia, to the rocksteady saunter of Jamaica, the Caribbean is a patchwork of sheer beauty and vibrant culture, ready for any intrepid paradise seeker. From white sands and beach bars, to the sheer luxury of a Sandals resort, your perfect island getaway is just around the corner.
 ---
+
+
 
 <section class="invert-text map">
   <div class="map__bg"></div>
@@ -21,7 +24,12 @@ intro: From volcanic landscapes in St. Lucia, to the rocksteady saunter of Jamai
       <h2 class="title title--smallest title--expanded title--light title--upper">Glorious sunshine awaits</h2>
     </div>
   </div>
+  <div class="banner__overlay"></div>
 </section>
+
+{% include title-banner.html %}
+
+
 
 <div class="upper-content">
 
@@ -35,19 +43,10 @@ intro: From volcanic landscapes in St. Lucia, to the rocksteady saunter of Jamai
         <iframe class="video__iframe" src='https://www.youtube.com/embed/Riz-sqygEwg?rel=0&amp;showinfo=0' frameborder='0'></iframe>
       </div>
     </div>
+
   </section>
 
-  <section class="section offers bg--light-grey">
-    <div class="row row--padding">
-      {% assign offers = site.data.offers %}
-      {% for offer in offers %}
-        {% if offer.category == "Multi Centre" %}
-          {% include offer/full-width-multi.html %}
-        {% else %}
-          {% include offer/full-width.html %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+
+  {% include game.html %}
 
 </div>

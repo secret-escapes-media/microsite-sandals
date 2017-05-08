@@ -2,8 +2,8 @@
 
 
 $core-nav-height: 70px;
-$site-nav-height: 45px;
-$site-header-height: ($core-nav-height + $site-nav-height);
+$site-nav-height: 70px;
+// $site-header-height: ($core-nav-height + $site-nav-height);
 .site-header {
   position: absolute;
   top: 0;
@@ -11,12 +11,12 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   right: 0;
   bottom: 0;
   z-index: $z-nav-upper;
-  height: $site-header-height;
+  height: $core-nav-height;
   &__offset:before {
     // corrects header overlapping content. must
     content: '';
     display: block;
-    height: $site-header-height;
+    height: $core-nav-height;
   }
 }
 
@@ -58,10 +58,10 @@ $site-header-height: ($core-nav-height + $site-nav-height);
     &--right {
       display: none;
     }
-    @include bp(medium){
+    @include bp(small){
       &--center{ width: auto; }
     };
-    @include bp( large ){
+    @include bp( medium ){
       &--right {
         right: 0;
         display: block;
@@ -95,13 +95,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   &__divider {
     display: none;
     height: ($core-nav-height / 1.5);
-    width: 0.5em;
-    margin-left: 0.5em;
-    border-left: 1px solid $white-25;
-    @include bp( medium ) {
-      width: 1em;
-      margin-left: 1em;
-    }
+    width: 1em;
     @include bp( xlarge ){
       display: inline-block;
     }
@@ -111,7 +105,6 @@ $site-header-height: ($core-nav-height + $site-nav-height);
     text-transform: uppercase;
     font-size: .833em;
     font-weight: 700;
-    color: $se-light-grey;
     @include bp( xlarge ){
       display: inline-block;
     }
@@ -142,12 +135,15 @@ $nav-arrow-width: 66px;
   height: $site-nav-height;
   font-family: $core-font-family;
   text-align: center;
-  color: $white;
-  font-size: 13px;
-  line-height: 1.2;
-  letter-spacing: .066em;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .15em;
+  line-height: ($site-nav-height+1);
   text-transform: uppercase;
-  background-color: $se-dark-grey-66;
+  color: $text-heading;
+  background-color: $white;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
   overflow: hidden;
   &__list {
     padding-right: $nav-arrow-width;
@@ -165,48 +161,43 @@ $nav-arrow-width: 66px;
       display: block;
       width: $nav-arrow-width;
       height: $site-nav-height;
-      background-image: url("../img/icons/nav-arrow-dark.png");
+      background-image: url("../img/icons/nav-arrow-light.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: $nav-arrow-width auto;
     }
-    @include bp(xxlarge){
+    @include bp(large){
+      // remove the prompt for sideways scroll
       padding-right: 0;
       overflow: visible;
       &:before { display: none; }
     }
   }
   &__item {
-    height: $site-nav-height;
-    position: relative;
     display: inline-block;
     white-space: nowrap;
+    border-left: .5px solid $light-grey;
     @include transition;
-    .csstransforms.csstransforms3d & + &:before {
-      // dividing lines between site nav items
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      height: ($site-nav-height / 1.33);
-      width: 1px;
-      background-color: $white-15;
-      transform: translateY(-50%);
-      @include transition;
+    &:last-of-type { border-right: .5px solid $light-grey; }
+    &.is-current {
+      background-color: $light-grey;
+      border-color: $light-grey;
     }
-    &:hover,
-    &--current { color: $sandals-blue; }
-    &:hover { background-color: $black-25; }
+    &:hover {
+      background-color: $light-grey;
+      border-color: $light-grey;
+    }
+    // changes neighbour item border
+    &:hover + & { border-color: $light-grey; }
   }
   &__link {
     display: inline-block;
-    width: 100%;
-    padding: 15px 1.2em;
+    padding-left: 2em;
+    padding-right: 2em;
     &:hover,
     &--current { text-decoration: none; }
   }
-  @include bp(xlarge){
+  @include bp(large){
     overflow: visible;
     height: auto;
     .flexbox & {
@@ -216,47 +207,70 @@ $nav-arrow-width: 66px;
         justify-content: space-around;
       }
       &__item { flex-grow: 1; }
+      &__link {
+        padding: 0;
+        width: 100%;
+      }
     }
   }
-  // resets the nav for the footer to stop side scrolling
-  @media (max-width: $xlarge) {
-    &--footer {
-      height: auto;
-      background-color: $se-dark-grey-85;
+}
+
+// ---------- DROP DOWN LIST NAV ----------
+
+.category-nav {
+  display: none;
+  @include bp(large){
+    position: absolute;
+    top: ($site-nav-height)+1;
+    left: 0;
+    right: 0;
+    z-index: $z-nav;
+    display: none;
+    width: 100%;
+    margin-left: -1px;
+    margin-right: -1px;
+    text-align: center;
+    table-layout: fixed; // weird even columns table cell hack
+    transition: all ($transition-time*2) ease;
+    .csstransforms.csstransforms3d & {
+      display: table;
+      transform: scaleY(0);
+      transform-origin: top center;
     }
-    &--footer & {
-      &__list{
-        padding-right: 0;
-        border-top: 1px solid $white-15;
-        white-space: normal;
-        &:before {
-          content: none;
-        }
-        .svg & {
-          display: flex;
-          flex-flow: row wrap;
-        }
+    .site-nav__item:hover &{
+      display: table;
+      .csstransforms.csstransforms3d & {
+      transform: scaleY(1);
       }
-      &__item {
-        display: inline-block;
-        width: 33.33%;
-        border-bottom: 1px solid $white-15;
-        &:before { content: none; }
-        .svg & {
-          flex-grow: 1;
-        }
-        @media (max-width: $medium) {
-          width: 100%;
-        }
-      }
-      &__link {
-        border: 0;
-        &:hover,
-        &--current {
-          padding-bottom: ($site-nav-height / 3);
-          border: 0;
-        }
-      }
+    }
+  }
+  &__item {
+    display: table-cell;
+    width: 2%;  // weird even columns table cell hack
+    height: ($site-nav-height*3);
+    background-color: $dark-grey;
+    color: $dark-grey;
+    vertical-align: top;
+    @include background-attributes;
+  }
+  &__link {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: $white-75;
+    &-wrap {
+      display: table-cell;
+      vertical-align: middle;
+      white-space: normal;
+      font-size: 1.2em;
+      line-height: 1.33;
+      padding-left: $margin;
+      padding-right: $margin;
+    }
+    @include transition;
+    &:hover {
+      text-decoration: none;
+      letter-spacing: .225em
     }
   }
 }
@@ -300,7 +314,6 @@ $mobile-nav-width: 75%;
       display: block;
       padding-top: .694em;
       padding-bottom: .694em;
-      color: $se-light-grey;
       font-size: 1em;
       font-weight: 700;
       text-transform: uppercase;
@@ -325,33 +338,13 @@ $mobile-nav-width: 75%;
     @include bp-vertical {
       position: static;
     }
-    @include bp(large){
+    @include bp(medium){
       display: none;
     }
   }
   @include bp(xlarge){
     display: none;
   }
-}
-
-
-// ---------- SITE FOOTER ----------
-.footer {
-  background-color: $black;
-  &__logos {
-    font-size: .9em;
-    border-top: 1px solid $white-15;
-    padding-top: $margin;
-    padding-bottom: $margin;
-  }
-  .logo {
-    vertical-align: middle;
-    margin-left: ($margin/4);
-    margin-right: ($margin/4);
-  }
-  .logo--secret-escapes { max-width: 110px; }
-  .logo--sandals { max-width: 80px; }
-  .logo--beaches { max-width: 80px; }
 }
 
 
@@ -397,4 +390,26 @@ $icon-size: 27px;
   & + & {
     margin-left: 1em;
   }
+}
+
+
+
+
+// ---------- SITE FOOTER ----------
+.footer {
+  background-color: $black;
+  &__logos {
+    font-size: .9em;
+    border-top: 1px solid $white-15;
+    padding-top: $margin;
+    padding-bottom: $margin;
+  }
+  .logo {
+    vertical-align: middle;
+    margin-left: ($margin/4);
+    margin-right: ($margin/4);
+  }
+  .logo--secret-escapes { max-width: 110px; }
+  .logo--sandals { max-width: 80px; }
+  .logo--beaches { max-width: 80px; }
 }
