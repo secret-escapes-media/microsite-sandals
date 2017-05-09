@@ -106,11 +106,15 @@
 
   #result {}
 
+  #result-string {
+    .q { font-weight: bold; }
+  }
+
   &--complete {
     #result { display: block; }
     .offer {
-      display: none;
-      &--selected { display: block; }
+      display: block;
+      &--eliminated { display: none; }
     }
   }
 

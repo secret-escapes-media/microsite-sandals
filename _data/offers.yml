@@ -1,4 +1,12 @@
 
+# GAME RULES:
+# ------------------------
+# There are three possible answers for offers, either "a" or "b" which
+# correspond to the question. Or set it as "pass" as a trump card to
+# move through to the next question.
+
+
+
 ########## JAMAICA ##########
 
 - title: Sandals Ochi Beach Resort
@@ -8,12 +16,12 @@
   was-price: 2910
   price: 1575
   price-description: per person for 7 nights
-  question-1: b # active // relaxed
-  question-2: a # private // social
+  question-1: pass # active // relaxed
+  question-2: pass # private // social
   question-3: a # grounds // beach
   question-4: b # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-5: pass # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Sandals Negril Beach Resort & Spa
   category: Jamaica
@@ -23,11 +31,11 @@
   price: 1599
   price-description: per person for 7 nights
   question-1: a # active // relaxed
-  question-2: a # private // social
-  question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-2: b # private // social
+  question-3: a # grounds // beach
+  question-4: pass # casino // golf
+  question-5: pass # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Sandals South Coast European Village & Spa
   category: Jamaica
@@ -37,11 +45,11 @@
   price: 1799
   price-description: per person for 7 nights
   question-1: a # active // relaxed
-  question-2: b # private // social
+  question-2: a # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: pass # casino // golf
+  question-5: pass # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Sandals Royal Plantation
   category: Jamaica
@@ -50,12 +58,12 @@
   was-price: 3409
   price: 1849
   price-description: per person for 7 nights
-  question-1: b # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: b # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-1: pass # active // relaxed
+  question-2: pass # private // social
+  question-3: pass # grounds // beach
+  question-4: pass # casino // golf
+  question-5: pass # multiple resorts // luxury suite
+  question-6: b # self-sufficient // butler service
 
 - title: Beaches Ocho Rios - A Spa, Golf & Waterpark Resort
   category: Jamaica
@@ -65,12 +73,6 @@
   price: 1725
   price-description: per person for 7 nights
   link: http://beachesresorts.co.uk/deals/uk-offers/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17
-  question-1: b # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
 
 - title: Sandals Royal Caribbean Resort & Private Island
   category: Jamaica
@@ -80,12 +82,12 @@
   price: 5725
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/specials/uk-love-nest-suite/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17
-  question-1: b # active // relaxed
+  question-1: a # active // relaxed
   question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-3: pass # grounds // beach
+  question-4: pass # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Beaches Negril Resort & Spa
   category: Jamaica
@@ -95,12 +97,6 @@
   price: 1825
   price-description: per person for 7 nights
   link: http://beachesresorts.co.uk/deals/uk-offers/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_Feb17
-  question-1: b # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
 
 ########## SAINT LUCIA ##########
 
@@ -112,11 +108,11 @@
   price: 1325
   price-description: per person for 7 nights
   question-1: a # active // relaxed
-  question-2: b # private // social
-  question-3: a # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-2: a # private // social
+  question-3: pass # grounds // beach
+  question-4: b # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Sandals Grande Saint Lucian Spa & Beach Resort
   category: Saint Lucia
@@ -125,12 +121,12 @@
   was-price: 3424
   price: 1749
   price-description: per person for 7 nights
-  question-1: a # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-1: b # active // relaxed
+  question-2: pass # private // social
+  question-3: pass # grounds // beach
+  question-4: b # casino // golf
+  question-5: b # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Sandals Regency La Toc Golf Resort & Spa
   category: Saint Lucia
@@ -139,12 +135,12 @@
   was-price: 2881
   price: 1449
   price-description: per person for 7 nights
-  question-1: b # active // relaxed
-  question-2: a # private // social
-  question-3: a # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-1: a # active // relaxed
+  question-2: b # private // social
+  question-3: pass # grounds // beach
+  question-4: b # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: a # self-sufficient // butler service
 
 ########## ANTIGUA ##########
 
@@ -155,12 +151,12 @@
   was-price: 3165
   price: 1655
   price-description: per person for 7 nights
-  question-1: b # active // relaxed
+  question-1: a # active // relaxed
   question-2: a # private // social
-  question-3: a # grounds // beach
+  question-3: b # grounds // beach
   question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-5: b # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 ########## BAHAMAS ##########
 
@@ -174,9 +170,9 @@
   question-1: b # active // relaxed
   question-2: a # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: pass # casino // golf
+  question-5: pass # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 ########## GRENADA ##########
 
@@ -188,11 +184,11 @@
   price: 1749
   price-description: per person for 7 nights
   question-1: b # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-2: a # private // social
+  question-3: pass # grounds // beach
+  question-4: pass # casino // golf
+  question-5: b # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 ########## BARBADOS ##########
 
@@ -206,9 +202,9 @@
   question-1: b # active // relaxed
   question-2: b # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: pass # casino // golf
+  question-5: pass # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 ########## MULTI CENTRE ##########
 
@@ -223,9 +219,9 @@
   question-1: b # active // relaxed
   question-2: b # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: pass # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Grenada & Saint Lucia
   category: Multi Centre
@@ -236,11 +232,11 @@
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 2125
   question-1: b # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-2: a # private // social
+  question-3: pass # grounds // beach
+  question-4: b # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Barbados & Saint Lucia
   category: Multi Centre
@@ -253,9 +249,9 @@
   question-1: b # active // relaxed
   question-2: b # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: b # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Barbados & Antigua
   category: Multi Centre
@@ -268,9 +264,9 @@
   question-1: b # active // relaxed
   question-2: b # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: pass # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Antigua & Saint Lucia
   category: Multi Centre
@@ -280,12 +276,12 @@
     - title: Sandals Halcyon Beach
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 1935
-  question-1: b # active // relaxed
-  question-2: b # private // social
+  question-1: a # active // relaxed
+  question-2: a # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: b # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 
 - title: Jamaica & Antigua
   category: Multi Centre
@@ -295,10 +291,10 @@
     - title: Sandals Grande Antigua
       room: Caribbean Club Level Veranda Suite
   price: 2389
-  question-1: b # active // relaxed
-  question-2: b # private // social
+  question-1: a # active // relaxed
+  question-2: a # private // social
   question-3: b # grounds // beach
-  question-4: a # casino // golf
-  question-5: a # self-sufficient // butler service
-  question-6: a # multiple resorts // luxury suite
+  question-4: b # casino // golf
+  question-5: a # multiple resorts // luxury suite
+  question-6: pass # self-sufficient // butler service
 

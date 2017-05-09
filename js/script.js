@@ -197,25 +197,34 @@ $('.game__answer').click(function(e){
   e.preventDefault();
 
   var parent = $('.game'),
-      questions = $('.game'),
+      questions = $('.game__questions'),
       question_number = $(this).attr('data-question'),
       question_answer = $(this).attr('data-answer'),
       question_answer_description = $(this).attr('data-answer-description'),
       result = $('#result');
 
+
+  /* SAVE RESULTS */
+  // save results from the questions onto the #result element
   result.attr("data-question-" + question_number, question_answer);
 
-  // form result description
-  $('#result-answer-'+question_number).html(question_answer_description);
 
-  // next question
+  /* RESULT STRING */
+  // form result description sentence
+  $('#result-string .q'+question_number).html(question_answer_description);
+
+
+  /* GO TO NEXT Q */
   var current_question = questions.find('.game__question--active');
   var next_question = current_question.next('.game__question');
   current_question.removeClass('game__question--active');
   next_question.addClass('game__question--active');
 
+
+  /* REVEAL OFFER RESULTS */
+  // if last question answered, find resulting offers
   if( next_question.length == 0 ) {
-    $('.game').addClass('game--complete');
+    parent.addClass('game--complete');
 
     // answers
     var resultanswer1 = result.attr('data-question-1'),
@@ -225,9 +234,20 @@ $('.game__answer').click(function(e){
         resultanswer5 = result.attr('data-question-5'),
         resultanswer6 = result.attr('data-question-6');
 
+    /* OFFER FILTER */
+    // if (correct answer, or pass this question)
     $('.offer').each(function(){
-      if( $(this).attr('data-q1') == resultanswer1 ){
+      if(
+        ($(this).attr('data-q1') == resultanswer1 || $(this).attr('data-q1') == 'pass') &&
+        ($(this).attr('data-q2') == resultanswer2 || $(this).attr('data-q2') == 'pass') &&
+        ($(this).attr('data-q3') == resultanswer3 || $(this).attr('data-q3') == 'pass') &&
+        ($(this).attr('data-q4') == resultanswer4 || $(this).attr('data-q4') == 'pass') &&
+        ($(this).attr('data-q5') == resultanswer5 || $(this).attr('data-q5') == 'pass') &&
+        ($(this).attr('data-q6') == resultanswer6 || $(this).attr('data-q6') == 'pass')
+      ){
         $(this).addClass('offer--selected');
+      }else{
+        $(this).addClass('offer--eliminated');
       }
     });
 

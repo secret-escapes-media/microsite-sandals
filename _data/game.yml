@@ -25,15 +25,15 @@
   option-2: Golf
   option-2-description: golf course
 
-- question: Self-sufficient, or Butler service?
-  option-1: Self-sufficient
-  option-1-description: are self-sufficient
-  option-2: Butler service
-  option-2-description: would like the butler service
-
 - question: Variety or Luxury
   option-1: Multi-resort
   option-1-description: multiple resorts
   option-2: Luxurious Rondoval suite
   option-2-description: the Luxurious Rondoval suite
+
+- question: Self-sufficient, or Butler service?
+  option-1: Self-sufficient
+  option-1-description: are self-sufficient
+  option-2: Butler service
+  option-2-description: would like the butler service
 
