@@ -201,7 +201,7 @@ $('.game__answer').click(function(e){
       question_number = $(this).attr('data-question'),
       question_answer = $(this).attr('data-answer'),
       question_answer_description = $(this).attr('data-answer-description'),
-      result = $('#result');
+      result = $('.game__result');
 
 
   /* SAVE RESULTS */
@@ -211,14 +211,14 @@ $('.game__answer').click(function(e){
 
   /* RESULT STRING */
   // form result description sentence
-  $('#result-string .q'+question_number).html(question_answer_description);
+  $('.game__complete-text .q'+question_number).html(question_answer_description);
 
 
   /* GO TO NEXT Q */
   var current_question = questions.find('.game__question--active');
   var next_question = current_question.next('.game__question');
-  current_question.removeClass('game__question--active');
-  next_question.addClass('game__question--active');
+  current_question.fadeOut().removeClass('game__question--active');
+  next_question.fadeIn().addClass('game__question--active');
 
 
   /* REVEAL OFFER RESULTS */
@@ -253,6 +253,32 @@ $('.game__answer').click(function(e){
 
   }
 
+});
+
+/* RESET GAME */
+$('.game__reset').click(function(e){
+  e.preventDefault();
+
+  var parent = $('.game'),
+      questions = $('.game__questions'),
+      result = $('.game__result');
+
+  var current_question = questions.find('.game__question--active');
+  var first_question = $('.game__question').first();
+  current_question.removeClass('game__question--active');
+  first_question.show().addClass('game__question--active');
+
+  result.removeAttr('data-question-1');
+  result.removeAttr('data-question-2');
+  result.removeAttr('data-question-3');
+  result.removeAttr('data-question-4');
+  result.removeAttr('data-question-5');
+  result.removeAttr('data-question-6');
+
+  $('.offer').removeClass('offer--selected');
+  $('.offer').removeClass('offer--eliminated');
+
+  parent.removeClass('game--complete');
 });
 
 

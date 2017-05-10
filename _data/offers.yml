@@ -178,7 +178,7 @@
 
 - title: Sandals LaSource Grenada Resort & Spa
   category: Grenada
-  quote: Located on he exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandals first, a steakhouse.
+  quote: Located on the exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandals first, a steakhouse.
   detail: South Seas Waterfall River Pool Junior Suite w/Balcony Tranquillity Soaking Tub
   was-price: 3198
   price: 1749
@@ -216,8 +216,8 @@
     - title: Sandals Barbados
       room: Caribbean Village Grande Luxe Room
   price: 2255
-  question-1: b # active // relaxed
-  question-2: b # private // social
+  question-1: pass #b # active // relaxed
+  question-2: pass #b # private // social
   question-3: b # grounds // beach
   question-4: pass # casino // golf
   question-5: a # multiple resorts // luxury suite
@@ -231,8 +231,8 @@
     - title: Sandals Halcyon Beach
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 2125
-  question-1: b # active // relaxed
-  question-2: a # private // social
+  question-1: pass #b # active // relaxed
+  question-2: pass #a # private // social
   question-3: pass # grounds // beach
   question-4: b # casino // golf
   question-5: a # multiple resorts // luxury suite
@@ -246,9 +246,9 @@
     - title: Sandals Halcyon Beach
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 1949
-  question-1: b # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
+  question-1: pass #b # active // relaxed
+  question-2: pass #b # private // social
+  question-3: pass #b # grounds // beach
   question-4: b # casino // golf
   question-5: a # multiple resorts // luxury suite
   question-6: pass # self-sufficient // butler service
@@ -261,9 +261,9 @@
     - title: Sandals Grande Antigua
       room: Caribbean Club Level Veranda Suite
   price: 2195
-  question-1: b # active // relaxed
-  question-2: b # private // social
-  question-3: b # grounds // beach
+  question-1: pass #b # active // relaxed
+  question-2: pass #b # private // social
+  question-3: pass #b # grounds // beach
   question-4: pass # casino // golf
   question-5: a # multiple resorts // luxury suite
   question-6: pass # self-sufficient // butler service
@@ -276,9 +276,9 @@
     - title: Sandals Halcyon Beach
       room: Honeymoon Hideaway Walkout Poolside Room
   price: 1935
-  question-1: a # active // relaxed
-  question-2: a # private // social
-  question-3: b # grounds // beach
+  question-1: pass #a # active // relaxed
+  question-2: pass #a # private // social
+  question-3: pass #b # grounds // beach
   question-4: b # casino // golf
   question-5: a # multiple resorts // luxury suite
   question-6: pass # self-sufficient // butler service
@@ -291,10 +291,28 @@
     - title: Sandals Grande Antigua
       room: Caribbean Club Level Veranda Suite
   price: 2389
-  question-1: a # active // relaxed
-  question-2: a # private // social
-  question-3: b # grounds // beach
+  question-1: pass #a # active // relaxed
+  question-2: pass #a # private // social
+  question-3: pass #b # grounds // beach
   question-4: b # casino // golf
   question-5: a # multiple resorts // luxury suite
   question-6: pass # self-sufficient // butler service
 
+
+
+########## TRUMP OFFER ##########
+
+# - title: Trump card
+#   category: Grenada
+#   quote: Located on he exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandals first, a steakhouse.
+#   detail: South Seas Waterfall River Pool Junior Suite w/Balcony Tranquillity Soaking Tub
+#   was-price: 3198
+#   price: 1749
+#   price-description: per person for 7 nights
+#   link: "#"
+#   question-1: pass # active // relaxed
+#   question-2: pass # private // social
+#   question-3: pass # grounds // beach
+#   question-4: pass # casino // golf
+#   question-5: pass # multiple resorts // luxury suite
+#   question-6: pass # self-sufficient // butler service

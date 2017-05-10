@@ -25,6 +25,7 @@ input, textarea, keygen, select, button {
   font-family: $title-font-family;
   letter-spacing: .015em;
   line-height: 1.15;
+  color: $text-heading;
 
   + * { margin-top: .5em; }
 
@@ -33,9 +34,6 @@ input, textarea, keygen, select, button {
   }
   &--extra-margin { margin-top: 1.5em; }
   &--sub-heading { margin-top: .2em !important; }
-  &--dark { color: $text-heading; }
-  &--grey { color: $se-grey; }
-  &--white { color: $white }
 
 
   &--light     { font-weight: 300; }
@@ -75,12 +73,12 @@ input, textarea, keygen, select, button {
 
 .paragraph {
   &--lead {
-    font-size: 1.25em;
-    line-height: 1.25;
+    font-size: 1.15em;
+    line-height: 1.45;
   }
   &--large { font-size: 1.05em; }
   @include bp(large){
-    &--lead { font-size: 1.467em; }
+    &--lead { font-size: 1.25em; }
     &--large { font-size: 1.2em; }
   }
 }
@@ -107,8 +105,12 @@ strong        { font-weight: 800; }
 hr {
   border: 0;
   height: 1px;
-  background-color: $light-grey;
-  margin: 1em 0;
+  background-color: darken($light-grey,20);
+  margin: $margin 0;
+  .title + & { margin-top: $margin; }
+}
+.hr{
+  &--center { width: 80px; margin-left: auto; margin-right: auto; }
 }
 
 sup {
@@ -124,7 +126,7 @@ sup { top: -0.5em; }
 ol li {
   list-style-type: decimal;
   ol li {
-    list-style-type: lower-latin; 
+    list-style-type: lower-latin;
   }
 }
 

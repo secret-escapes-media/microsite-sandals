@@ -3,7 +3,11 @@
 
 // ---------- Section styles ----------
 
-.invert-text { color: $white; }
+.invert-text {
+  color: $white;
+  .title { color: $white; }
+}
+
 .bg {
   &--white      { background-color: $white; }
   &--black      { background-color: $black; }
@@ -15,6 +19,8 @@
   &--se-orange     { background-color: $se-orange; }
   &--se-light-grey { background-color: $se-light-grey; }
   &--se-dark-grey  { background-color: $se-dark-grey; }
+  &--sandals-green { background-color: $sandals-green; }
+  &--sandals-blue { background-color: $sandals-blue; }
 }
 
 
@@ -36,6 +42,12 @@
     text-decoration: none;
   }
   * + & { margin-top: 1em; }
+  &--large {}
+  &--small { padding: 0.5em 2em; }
+  &--solid {
+    background-color: $sandals-green; border: 0; color: white;
+    &:hover { background-color: darken($sandals-green, 10); }
+  }
 }
 
 
@@ -94,28 +106,50 @@
 // ---------- Game ----------
 .game {
 
-  &__question {
-    display: none;
-    &--active {
-      display: block;
-    }
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #dddddd 0%,#ffffff 100%);
+  background: linear-gradient(to bottom, #dddddd 0%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 );
+
+  // GAME INTRO COPY, AND RESULTS TEXT
+  &__intro {
+    padding-bottom: $margin;
   }
-  &__answer {}
-
-
-
-  #result {}
-
-  #result-string {
+  &__complete-text {
+    display: none;
     .q { font-weight: bold; }
   }
 
-  &--complete {
-    #result { display: block; }
-    .offer {
+  // GAME QUESTIONS
+  &__questions {
+    position: relative;
+  }
+  &__question {
+    position: absolute;
+    top: 0; left: $margin; right: $margin;
+    display: none;
+    &--active {
+      position: relative;
+      top: 0; left: 0; right: 0;
       display: block;
-      &--eliminated { display: none; }
     }
+    &-options {
+      padding-top: $margin/2;
+    }
+  }
+
+  // RESULTS SECTION
+  &__result { display: none; }
+
+
+  /*======  CHANGES ON GAME COMPLETE // .game--complete  ======*/
+  &--complete {
+    .game__questions { display: none; }
+    .game__complete-text { display: block; }
+    .game__result { display: block; }
+    .offer--selected { display: block; }
+    .offer--eliminated { display: none; }
   }
 
 }

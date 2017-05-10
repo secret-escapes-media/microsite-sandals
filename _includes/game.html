@@ -1,49 +1,62 @@
-<section class="section bg--light-grey game">
+<section class="section bg--white game">
 
+  <!-- INTRO -->
+  <div class="row row--padding align-center game__intro">
 
-  <div class="row row--padding">
+    <h1 class="title title--small title--expanded title--upper title--light">Be paired with the perfect Sandals resort for you</h1>
+    <hr class="hr--center" />
+    <p class="paragraph--lead">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>
 
-    <h1 class="title title--medium title--expanded title--upper title--light">Be paired with the perfect Sandals resort for you</h1>
-    <hr />
-
-    <ol class="game__questions">
-      {% assign game = site.data.game %}
-      {% for question in game %}
-      <li class="game__question{% if forloop.first %} game__question--active{% endif %}" id="question-{{ forloop.index }}">
-
-        <span class="title title--smallest title--bold">{{ question.question }}</span>
-
-        <ol class="options">
-
-          <li>
-            <a href="javascript:void(0);" class="game__answer" data-question="{{ forloop.index }}" data-answer="a" data-answer-description="{{ question.option-1-description }}">
-              {{ question.option-1 }}
-            </a>
-          </li>
-
-          <li>
-            <a href="javascript:void(0);" class="game__answer" data-question="{{ forloop.index }}" data-answer="b" data-answer-description="{{ question.option-2-description }}">
-              {{ question.option-2 }}
-            </a>
-          </li>
-
-        </ol>
-
-      </li>
-      {% endfor %}
-    </ol>
+    <div class="game__complete-text">
+      <hr class="hr--center" />
+      <p class="paragraph--lead">
+        You would like <span class="q q1">...</span>, that is <span class="q q2">...</span>, near <span class="q q3">...</span> with a <span class="q q4">...</span>. You would like to stay at <span class="q q5">...</span> and <span class="q q6">...</span>.
+      </p>
+      <a href="javascript:void(0);" class="game__reset btn btn--small btn--solid">Play again?</a>
+    </div>
 
   </div>
 
 
-  <div class="game__results" id="result">
+  <!-- CONTAINER FOR ALL QUESTIONS -->
+  <div class="row row--padding game__questions">
+
+    <!-- loop QUESTIONS -->
+    {% assign game = site.data.game %}
+    {% for question in game %}
+
+    <div class="game__question{% if forloop.first %} game__question--active{% endif %}">
+      <!-- question -->
+      <span class="title title--smallest"><span class="title--bold">{{ forloop.index }}.</span> {{ question.question }}</span>
+
+      <!-- options -->
+      <div class="game__question-options row--columns-6-6-gutters">
+
+        {% for option in question.options %}
+        <a
+          href="javascript:void(0);" class="row__column game__answer invert-text bg-image bg-image--ratio bg-image--ratio-16-9 bg-image--rounded bg-image--shadow" style="background-image: url({{ site.baseurl }}/img/content/questions/{{ option.title | slugify }}.jpg);" data-question="{{ question.number }}" data-answer="{% cycle 'a','b' %}" data-answer-description="{{ option.result-description }}">
+          <span class="bg-image__content">
+            <h4 class="bg-image__content__title bg-image__content__title-fade title title--smaller title--upper">{{ option.title }}</h4>
+            <p class="bg-image__content__description paragraph--lead">{{ option.description }}</p>
+          </span>
+        </a>
+        {% endfor %}
+
+      </div>
+
+    </div>
+    {% endfor %}
+    <!-- end .game__question loop -->
+  </div><!-- end .game__questions -->
+
+
+  <div class="section bg--light-grey align-center game__result">
 
     <div class="row row--padding">
-      <hr />
-      <p class="paragraph--lead" id="result-string">You would like <span class="q q1">...</span>, that is <span class="q q2">...</span>, near <span class="q q3">...</span> with a <span class="q q4">...</span>. You would like to stay at <span class="q q5">...</span> and <span class="q q6">...</span>.</p>
+      <h2 class="title title--expanded title--upper title--smaller">Your results</h2>
+      <hr class="hr--center" />
     </div>
-
-    <div class="row row--padding" id="result-offers">
+    <div class="row row--padding">
       {% assign offers = site.data.offers %}
       {% for offer in offers %}
         {% if offer.category == "Multi Centre" %}
@@ -52,6 +65,9 @@
           {% include offer/full-width.html %}
         {% endif %}
       {% endfor %}
+    </div>
+    <div class="row row--padding">
+      <a href="javascript:void(0);" class="game__reset btn btn--small btn--solid">Play again?</a>
     </div>
   </div>
 

@@ -1,39 +1,77 @@
 
 ########## QUESTIONS ##########
 
-- question: Active or Relaxed?
-  option-1: Active
-  option-1-description: an active holiday
-  option-2: Relaxed
-  option-2-description: a relaxed holiday
 
-- question: Private and restful, or lively and social?
-  option-1: Private and restful
-  option-1-description: private and restful
-  option-2: Lively and social
-  option-2-description: lively and social
 
-- question: Lush tropical grounds or Beach?
-  option-1: Lush tropical grounds
-  option-1-description: lush grounds
-  option-2: Beach
-  option-2-description: a beach
+- question: Do you like to get out and try new things, or is it a chance to unwind and relax?
+  number: 1
+  options:
+    - title: Relaxed
+      description: Kick-back under the palm trees and sink into spa treatments for a truly relaxing stay
+      result-description: a relaxed holiday
+    - title: Active
+      description: From water skiing to scuba diving, there’s no shortage of adrenaline-fuelled activities at these resorts
+      result-description: an active holiday
 
-- question: Casino or golf?
-  option-1: Casino
-  option-1-description: casino
-  option-2: Golf
-  option-2-description: golf course
 
-- question: Variety or Luxury
-  option-1: Multi-resort
-  option-1-description: multiple resorts
-  option-2: Luxurious Rondoval suite
-  option-2-description: the Luxurious Rondoval suite
 
-- question: Self-sufficient, or Butler service?
-  option-1: Self-sufficient
-  option-1-description: are self-sufficient
-  option-2: Butler service
-  option-2-description: would like the butler service
+- question: Would you rather let your hair down and enjoy the night life, or find somewhere private and peaceful?
+  number: 2
+  options:
+    - title: Private and restful
+      description: If your ideal holiday involves peace and quiet, and taking time to replenish oneself, these resorts are geared for privacy and tranquility
+      result-description: private and restful
+    - title: Lively and social
+      description: If you love to mingle and throw yourself into a party atmosphere, these resorts encourage a lively ambience and socialising
+      result-description: lively and social
+
+
+
+- question: Do you prefer miles of white sand beach, or getting lost in tropical gardens?
+  number: 3
+  options:
+    - title: Lush tropical gardens
+      description: If you love walking tropical gardens ripe with colourful fruits and rich flowers, we have the right places for you
+      result-description: lush grounds
+    - title: Beach
+      description: If gardens don’t do much for you but long sandy beaches are a must, click here for the resorts with the longest beaches
+      result-description: a beach
+
+
+
+- question: Would you feel at home in the electric energy of the casino lounge, or do you prefer the sun and fresh air of the golf course?
+  number: 4
+  options:
+    - title: Casino
+      description: For those that love to win big, consider a resort within close reach of a casino
+      result-description: casino
+    - title: Golf
+      description: If you love golf, these resorts have their own courses perfect for soaking up balmy weather and putting a few away
+      result-description: golf course
+
+
+
+- question: Would you be worried about missing out on some of the fun, or do you choose all-inclusive ultra luxury?
+  number: 5
+  options:
+    - title: Multi-resort
+      description: For intrepid explorers, Sandals are offering multi-resort holidays that will see you visiting a host of these famous stays in one trip
+      result-description: multiple resorts
+    - title: Luxurious Rondoval suite
+      description: If the thought of moving from resort to resort seems tiring, immerse yourself in the super-luxury of a Rondoval Suite, beset with private plunge pools, beachfront location and private butler service
+      result-description: the Luxurious Rondoval suite
+
+
+
+- question: Do you like to have total control of your holiday, or would you prefer to sit back and have one of our elite butlers take care of everything?
+  number: 6
+  options:
+    - title: Self-sufficient
+      description: If you’re happy to be left to your own devices, to have complete privacy and to make your holiday  yours, these resorts will offer just that
+      result-description: are self-sufficient
+    - title: Butler service
+      description: If you want to feel non-stop pampered, consider a resort with your own private butler for superior luxury
+      result-description: would like the butler service
+
+
 

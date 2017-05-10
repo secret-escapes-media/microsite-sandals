@@ -18,6 +18,11 @@ $margin: 2em;
 .section {
   padding-top: 4em;
   padding-bottom: 4em;
+  &--padding {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    &-none { padding-top: 0; padding-bottom: 0; }
+  }
 }
 
 .row {
