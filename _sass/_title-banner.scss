@@ -10,9 +10,9 @@
 
 .map {
   position: relative;
-  height: 500px;
+  height: 540px;
   @include bp(xxlarge){
-    height: 580px;
+    height: 620px;
   }
   &__divider:after {
     content: '';
@@ -21,7 +21,7 @@
     border-top: 1px solid $white-5;
     border-bottom: 1px solid $white-5;
     max-width: 200px;
-    margin: auto;
+    margin: 0.25em auto 0.35em;
   }
   &__title{
     position: absolute;

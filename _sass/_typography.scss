@@ -17,6 +17,7 @@ input, textarea, keygen, select, button {
   }
   color: $text-paragraph;
 }
+a,a:hover { text-decoration: none; }
 
 
 // -------- Headings --------
@@ -71,6 +72,8 @@ input, textarea, keygen, select, button {
   }
 }
 
+p { max-width: $xlarge; }
+p.align-center, .align-center p { margin-left: auto; margin-right: auto; }
 .paragraph {
   &--lead {
     font-size: 1.15em;

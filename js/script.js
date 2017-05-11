@@ -279,6 +279,32 @@ $('.game__reset').click(function(e){
   $('.offer').removeClass('offer--eliminated');
 
   parent.removeClass('game--complete');
+  parent.removeClass('game--viewoffers');
+});
+
+/* VIEW ALL OFFERS */
+$('.game__viewoffers').click(function(e){
+  e.preventDefault();
+
+  var parent = $('.game'),
+      questions = $('.game__questions'),
+      result = $('.game__result');
+
+  $('.game__question--active').removeClass('game__question--active').hide();
+  $('.game__question').first().addClass('game__question--active').show();
+
+  result.removeAttr('data-question-1');
+  result.removeAttr('data-question-2');
+  result.removeAttr('data-question-3');
+  result.removeAttr('data-question-4');
+  result.removeAttr('data-question-5');
+  result.removeAttr('data-question-6');
+
+  $('.offer').removeClass('offer--selected');
+  $('.offer').removeClass('offer--eliminated');
+
+  parent.addClass('game--complete');
+  parent.addClass('game--viewoffers');
 });
 
 

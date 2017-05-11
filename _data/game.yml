@@ -3,10 +3,10 @@
 
 
 
-- question: Do you like to get out and try new things, or is it a chance to unwind and relax?
+- question: Do you like to fuel your adrenaline, or simply unwind and relax?
   number: 1
   options:
-    - title: Relaxed
+    - title: Relax
       description: Kick-back under the palm trees and sink into spa treatments for a truly relaxing stay
       result-description: a relaxed holiday
     - title: Active
@@ -15,7 +15,7 @@
 
 
 
-- question: Would you rather let your hair down and enjoy the night life, or find somewhere private and peaceful?
+- question: Do you prefer complete seclusion and effortless relaxation, or the option to let your hair down and socialise?
   number: 2
   options:
     - title: Private and restful
@@ -27,7 +27,7 @@
 
 
 
-- question: Do you prefer miles of white sand beach, or getting lost in tropical gardens?
+- question: Do you prefer miles and miles of white, sandy beach, or getting lost in tropical gardens?
   number: 3
   options:
     - title: Lush tropical gardens
@@ -51,7 +51,7 @@
 
 
 
-- question: Would you be worried about missing out on some of the fun, or do you choose all-inclusive ultra luxury?
+- question: Do you prefer ultra-luxury at one base, or would you rather explore multiple resorts?
   number: 5
   options:
     - title: Multi-resort
@@ -63,7 +63,7 @@
 
 
 
-- question: Do you like to have total control of your holiday, or would you prefer to sit back and have one of our elite butlers take care of everything?
+- question: Do you like to have total control of your holiday, or would you prefer to sit back and have an elite butler take care of everything?
   number: 6
   options:
     - title: Self-sufficient

@@ -1,19 +1,11 @@
-<section class="section bg--white game">
+<section class="section bg--white game" id="game">
 
   <!-- INTRO -->
   <div class="row row--padding align-center game__intro">
 
-    <h1 class="title title--small title--expanded title--upper title--light">Be paired with the perfect Sandals resort for you</h1>
+    <h1 class="title title--medium title--expanded title--upper title--light">Be paired with the perfect Sandals resort for you</h1>
+    <p class="paragraph--lead">Stuck picking between these 16 opulent resorts? Play our game below to help in choosing the perfect luxury holiday for you.</p>
     <hr class="hr--center" />
-    <p class="paragraph--lead">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>
-
-    <div class="game__complete-text">
-      <hr class="hr--center" />
-      <p class="paragraph--lead">
-        You would like <span class="q q1">...</span>, that is <span class="q q2">...</span>, near <span class="q q3">...</span> with a <span class="q q4">...</span>. You would like to stay at <span class="q q5">...</span> and <span class="q q6">...</span>.
-      </p>
-      <a href="javascript:void(0);" class="game__reset btn btn--small btn--solid">Play again?</a>
-    </div>
 
   </div>
 
@@ -26,8 +18,12 @@
     {% for question in game %}
 
     <div class="game__question{% if forloop.first %} game__question--active{% endif %}">
+
       <!-- question -->
-      <span class="title title--smallest"><span class="title--bold">{{ forloop.index }}.</span> {{ question.question }}</span>
+      <span class="title title--smallest">
+        <span class="title--bold">{{ forloop.index }}.</span>
+        {{ question.question }}
+      </span>
 
       <!-- options -->
       <div class="game__question-options row--columns-6-6-gutters">
@@ -50,13 +46,22 @@
   </div><!-- end .game__questions -->
 
 
-  <div class="section bg--light-grey align-center game__result">
+  <div class="row row--padding align-center game__result">
 
-    <div class="row row--padding">
-      <h2 class="title title--expanded title--upper title--smaller">Your results</h2>
+    <div class="game__complete-text">
+      <h2 class="title title--expanded title--upper title--smaller title--light">Your results</h2>
+      <p class="paragraph--lead">
+        You would like <span class="q q1">...</span>, that is <span class="q q2">...</span>, near <span class="q q3">...</span> with a <span class="q q4">...</span>. You would like to stay at <span class="q q5">...</span> and <span class="q q6">...</span>.
+      </p>
+    </div>
+
+    <div class="row">
+      <a href="javascript:void(0);" class="game__reset game__start-btn btn btn--small btn--solid">Play the game</a>
+      <a href="javascript:void(0);" class="game__reset game__reset-btn btn btn--small btn--solid">Play again?</a>
       <hr class="hr--center" />
     </div>
-    <div class="row row--padding">
+
+    <div class="row">
       {% assign offers = site.data.offers %}
       {% for offer in offers %}
         {% if offer.category == "Multi Centre" %}
@@ -66,9 +71,13 @@
         {% endif %}
       {% endfor %}
     </div>
-    <div class="row row--padding">
-      <a href="javascript:void(0);" class="game__reset btn btn--small btn--solid">Play again?</a>
-    </div>
+  </div>
+
+
+  <div class="row row--padding align-center game__footer">
+    <a href="javascript:void(0);" class="game__reset game__start-btn btn btn--small btn--solid">Play the game</a>
+    <a href="javascript:void(0);" class="game__reset game__reset-btn btn btn--small btn--solid">Play again?</a>
+    <a href="javascript:void(0);" class="game__viewoffers game__viewoffers-btn btn btn--small">View all offers</a>
   </div>
 
 
