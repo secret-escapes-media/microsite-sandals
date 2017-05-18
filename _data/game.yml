@@ -39,12 +39,12 @@
 
 
 
-- question: Would you feel at home in the electric energy of the casino lounge, or do you prefer the sun and fresh air of the golf course?
+- question: Would you feel at home in the electric energy of a trendy beach club, or do you prefer the sun and fresh air of the golf course?
   number: 4
   options:
-    - title: Casino
-      description: For those that love to win big, consider a resort within close reach of a casino
-      result-description: casino
+    - title: Beach club
+      description: Hang out over the water sipping cocktails and watching the sun set, for idyllic moments of effortless beauty 
+      result-description: beach club
     - title: Golf
       description: If you love golf, these resorts have their own courses perfect for soaking up balmy weather and putting a few away
       result-description: golf course

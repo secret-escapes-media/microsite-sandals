@@ -3,7 +3,9 @@ layout: default
 title: Multi Centre
 class: multi-centre
 nav-order: 9
-intro: With 15 resorts spanning the most breathtaking hideaways of the Caribbean, Sandals is a byword for luxury holidays in this beautiful part of the world – and now, you don’t have to choose between them! The new multi-centre holidays offer the chance to island hop from the comfort of Sandals resorts, and explore the variety and unique cultural identities on offer in the Caribbean sea.
+intro: >
+  <p class="paragraph--large">With 15 resorts spanning the most breathtaking hideaways of the Caribbean, Sandals is a byword for luxury holidays in this beautiful part of the world – and now, you don’t have to choose between them!</p>
+  <p>The new twin-centre holidays offer the chance to island hop from the comfort of Sandals resorts, and explore the variety and unique cultural identities on offer in the Caribbean sea. </p>
 ---
 
 {% assign page-class = page.title %}
@@ -14,7 +16,7 @@ intro: With 15 resorts spanning the most breathtaking hideaways of the Caribbean
 
 <section class="section bg--white">
   <div class="row row--padding align-center">
-    <p class="paragraph--large">{{page.intro}}</p>
+    {{page.intro}}
   </div>
 </section>
 
