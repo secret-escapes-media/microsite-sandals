@@ -29,6 +29,9 @@ $margin: 2em;
   @include container( $xxxlarge );
   position: relative;
   & + .row { margin-top: $margin; }
+  &--thin { @include container( $xxlarge ); }
+  &--thinner { @include container( $xlarge ); }
+  &--thinnest { @include container( $large ); }
 }
 
 .row--padding {

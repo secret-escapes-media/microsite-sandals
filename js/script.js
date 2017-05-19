@@ -59,77 +59,90 @@
   }
 
 
-///////////////////////////////////////
-//      Parallax
-//      [ example: <div class="parallax" data-parallax-speed="0.2"> ]
-///////////////////////////////////////
-
-  // $(document).scroll(function(){
-  //   var scrolled = $(document).scrollTop();
-  //   $('.parallax').each(function(){
-  //     var speed = $(this).attr('data-parallax-speed');
-  //     var offset = $(this).offset();
-  //     var parallax = -(scrolled - offset.top) * speed ;
-  //     $(this).css('background-position', 'center ' + parallax + 'px');
-  //   });
-  // });
-
-
-///////////////////////////////////////
-//    Generic modal
-///////////////////////////////////////
+  ///////////////////////////////////////
+  //    Generic modal
+  ///////////////////////////////////////
 
   var modal          = $('.js-modal'),
       modalLaunchBtn = $('.js-open-modal'),
-      modalCloseBtn  = $('.js-close-modal');
+      modalCloseBtn  = $('.js-close-modal'),
+      modalCloseAreas  = $('.modal__wrap, .js-modal');
 
-    // opens modal
-    function modalOpen(event){
-      event.preventDefault();
-      // disable scrolling on background content (doesn't work iOS)
-      $('body').addClass('disable-scroll');
-      // // open modal
-      modal.fadeIn('250', function(){
-        $(this).removeClass('is-closed').addClass('is-open');
-      });
+  modalLaunchBtn.click(function(){
+
+    var targetModal = $(this).attr('data-modal');
+    var modalItem = $(this).attr('data-modal-item');
+
+    if(modalItem){
+      $('.modal__item').addClass('modal__item-inactive');
+      $('#modal__item-' + modalItem ).removeClass('modal__item-inactive');
     }
 
-    // closes modal
-    function modalClose(event){
-      event.preventDefault();
-      // enable scrolling
-      $('body').removeClass('disable-scroll');
-      // close modal with fade
-      modal.fadeOut('250', function(){
-        $(this).removeClass('is-open').addClass('is-closed');
-      });
+    // disable scrolling on background content (doesn't work iOS)
+    $('body').addClass('disable-scroll');
+    // // open modal
+    $('#modal-' + targetModal).fadeIn('250', function(){
+      $(this).removeClass('is-closed').addClass('is-open');
+    });
+
+    $('#modal-' + targetModal).find('.decoration').addClass('animate');
+
+  });
+
+  // closes modal
+  function modalClose(event){
+    event.preventDefault();
+    // enable scrolling
+    $('body').removeClass('disable-scroll');
+    // close modal with fade
+    modal.fadeOut('250', function(){
+      $(this).removeClass('is-open').addClass('is-closed');
+    });
+  }
+
+  // closes modal on close icon click
+  modalCloseBtn.on('click', function(event) {
+    modalClose(event);
+  });
+
+  // closes modal on background click
+  modalCloseAreas.on('click', function(event) {
+    if (event.target !== this){
+      return;
     }
+    modalClose(event);
+  });
 
-    // launches modal when offer is clicked
-    modalLaunchBtn.on('click', function(event) {
-      modalOpen(event);
-    });
-
-    // closes modal on close icon click
-    modalCloseBtn.on('click', function(event) {
-      modalClose(event);
-    });
-
-    // closes modal on background click
-    modal.on('click', function(event) {
-      if (event.target !== this){
-        return;
+  // closes modal on escape key press
+  $(document).keyup(function(event) {
+     if (event.keyCode == 27) {
+       modalClose(event);
       }
-      modalClose(event);
-    });
+  });
 
-    // closes modal on escape key press
-    $(document).keyup(function(event) {
-       if (event.keyCode == 27) {
-         modalClose(event);
-        }
-    });
 
+  function GetQueryStringParams(sParam){
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++){
+      var sParameterName = sURLVariables[i].split('=');
+      if (sParameterName[0] == sParam){
+        return sParameterName[1];
+      }
+    }
+  }​
+
+
+  // launches modal if query string
+  var modalQuery = GetQueryStringParams('modal');
+
+  if (modalQuery) {
+    var targetModal = modalQuery;
+    $('body').addClass('disable-scroll');
+    $('#modal-' + targetModal).fadeIn('250', function(){
+      $(this).removeClass('is-closed').addClass('is-open');
+    });
+  }
 
 ///////////////////////////////////////
 //      Youtube thumbnails
@@ -242,8 +255,7 @@ $('.game__answer').click(function(e){
         ($(this).attr('data-q2') == resultanswer2 || $(this).attr('data-q2') == 'pass') &&
         ($(this).attr('data-q3') == resultanswer3 || $(this).attr('data-q3') == 'pass') &&
         ($(this).attr('data-q4') == resultanswer4 || $(this).attr('data-q4') == 'pass') &&
-        ($(this).attr('data-q5') == resultanswer5 || $(this).attr('data-q5') == 'pass') &&
-        ($(this).attr('data-q6') == resultanswer6 || $(this).attr('data-q6') == 'pass')
+        ($(this).attr('data-q5') == resultanswer5 || $(this).attr('data-q5') == 'pass')
       ){
         $(this).addClass('offer--selected');
       }else{
@@ -273,7 +285,6 @@ $('.game__reset').click(function(e){
   result.removeAttr('data-question-3');
   result.removeAttr('data-question-4');
   result.removeAttr('data-question-5');
-  result.removeAttr('data-question-6');
 
   $('.offer').removeClass('offer--selected');
   $('.offer').removeClass('offer--eliminated');
@@ -298,7 +309,6 @@ $('.game__viewoffers').click(function(e){
   result.removeAttr('data-question-3');
   result.removeAttr('data-question-4');
   result.removeAttr('data-question-5');
-  result.removeAttr('data-question-6');
 
   $('.offer').removeClass('offer--selected');
   $('.offer').removeClass('offer--eliminated');

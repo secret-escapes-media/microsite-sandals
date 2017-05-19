@@ -41,7 +41,7 @@
     background-color: $sandals-green;
     text-decoration: none;
   }
-  * + & { margin-top: 1em; }
+  * + & { margin-top: 1.5em; }
   &--invert {
     border-color: white; color: white;
     &.btn--solid { background-color: white; color: $black; }
@@ -132,12 +132,18 @@
     margin-bottom: $margin;
   }
   &__question {
-    position: absolute;
-    top: 0; left: $margin; right: $margin;
     display: none;
+    position: absolute;
+    top: 0;
+    left: 1em; right: 1em;
+    padding-left: 1em; padding-right: 1em;
+    @include bp(large){
+      left: 2em; right: 2em;
+    }
     &--active {
       position: relative;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0; right: 0;
       display: block;
     }
     &-options { margin-top: $margin/2; }

@@ -43,7 +43,7 @@
   number: 4
   options:
     - title: Beach club
-      description: Hang out over the water sipping cocktails and watching the sun set, for idyllic moments of effortless beauty 
+      description: Hang out over the water sipping cocktails and watching the sun set, for idyllic moments of effortless beauty
       result-description: beach club
     - title: Golf
       description: If you love golf, these resorts have their own courses perfect for soaking up balmy weather and putting a few away
@@ -51,20 +51,8 @@
 
 
 
-- question: Do you prefer ultra-luxury at one base, or would you rather explore multiple resorts?
-  number: 5
-  options:
-    - title: Multi-resort
-      description: For intrepid explorers, Sandals are offering multi-resort holidays that will see you visiting a host of these famous stays in one trip
-      result-description: multiple resorts
-    - title: Luxurious Rondoval suite
-      description: If the thought of moving from resort to resort seems tiring, immerse yourself in the super-luxury of a Rondoval Suite, beset with private plunge pools, beachfront location and private butler service
-      result-description: the Luxurious Rondoval suite
-
-
-
 - question: Do you like to have total control of your holiday, or would you prefer to sit back and have an elite butler take care of everything?
-  number: 6
+  number: 5
   options:
     - title: Self-sufficient
       description: If you’re happy to be left to your own devices, to have complete privacy and to make your holiday  yours, these resorts will offer just that

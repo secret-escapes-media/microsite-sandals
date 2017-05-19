@@ -3,8 +3,8 @@
   <!-- INTRO -->
   <div class="row row--padding align-center game__intro">
 
-    <h1 class="title title--medium title--expanded title--upper title--light">Be paired with the perfect Sandals resort for you</h1>
-    <p class="paragraph--lead">Stuck picking between these 16 opulent resorts? Play our game below to help in choosing the perfect luxury holiday for you.</p>
+    <h1 class="title title--medium title--expanded title--upper title--light">Find out which Sandals Resort is perfect for you</h1>
+    <p class="p--lead">Stuck picking between these 15 opulent resorts? Play our game below to help in choosing the perfect luxury holiday for you.</p>
     <hr class="hr--center" />
 
   </div>
@@ -33,7 +33,7 @@
           href="javascript:void(0);" class="row__column game__answer invert-text bg-image bg-image--ratio bg-image--ratio-16-9 bg-image--rounded bg-image--shadow" style="background-image: url({{ site.baseurl }}/img/content/questions/{{ option.title | slugify }}.jpg);" data-question="{{ question.number }}" data-answer="{% cycle 'a','b' %}" data-answer-description="{{ option.result-description }}">
           <span class="bg-image__content">
             <h4 class="bg-image__content__title bg-image__content__title-fade title title--smaller title--upper">{{ option.title }}</h4>
-            <p class="bg-image__content__description paragraph--lead">{{ option.description }}</p>
+            <p class="bg-image__content__description p--lead">{{ option.description }}</p>
           </span>
         </a>
         {% endfor %}
@@ -50,8 +50,8 @@
 
     <div class="game__complete-text">
       <h2 class="title title--expanded title--upper title--smaller title--light">Your results</h2>
-      <p class="paragraph--lead">
-        You would like <span class="q q1">...</span>, that is <span class="q q2">...</span>, near <span class="q q3">...</span> with a <span class="q q4">...</span>. You would like to stay at <span class="q q5">...</span> and <span class="q q6">...</span>.
+      <p class="p--lead">
+        You would like <span class="q q1">...</span>, that is <span class="q q2">...</span>, near <span class="q q3">...</span> with a <span class="q q4">...</span> and <span class="q q5">...</span>.
       </p>
     </div>
 
