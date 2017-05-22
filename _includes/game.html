@@ -62,7 +62,7 @@
     </div>
 
     <div class="row">
-      {% assign offers = site.data.offers %}
+      {% assign offers = site.data.offers | sort: 'price' %}
       {% for offer in offers %}
         {% if offer.category == "Multi Centre" %}
           {% include offer/full-width-multi.html %}
