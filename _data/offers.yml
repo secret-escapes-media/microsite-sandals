@@ -14,7 +14,7 @@
   quote: On the beautiful north coast of Jamaica Ochi Beach Resort hugs the lush mountains of St.Ann and capitalises on its spectacular ocean views.
   detail: Butler Village Poolside One Bedroom Villa Suite
   was-price: 3491
-  price: 1399
+  price: 1419
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/ochorios/or-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
   question-1: pass # relaxed // active
@@ -23,31 +23,31 @@
   question-4: b # beach club // golf
   question-5: pass # self-sufficient // butler service
 
+- title: Sandals Royal Caribbean Resort & Private Island
+  category: Jamaica
+  quote: Hovering above turquoise seas, these gorgeous Tahiti–style bungalows feature see-through glass floors, a private infinity pool and personalized butler service.
+  detail: Kensington Cove Honeymoon Beachfront Club Level Room
+  was-price: 4076
+  price: 1549
+  price-description: per person for 7 nights
+  link: http://www.sandals.co.uk/specials/uk-love-nest-suite/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  question-1: a # relaxed // active
+  question-2: b # private // social
+  question-3: pass # grounds // beach
+  question-4: pass # beach club // golf
+  question-5: pass # self-sufficient // butler service
+
 - title: Sandals Negril Beach Resort & Spa
   category: Jamaica
   quote: Amidst a pristine tropical setting, this world-class beachfront resort spans the longest and best stretch of Jamaica’s famous seven-mile beach and has impressive eco-friendly credentials.
   detail: Caribbean Deluxe Room
-  was-price: 3011
-  price: 1379
+  was-price: 3138
+  price: 1399
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/negril/ne-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
   question-1: a # relaxed // active
   question-2: b # private // social
   question-3: a # grounds // beach
-  question-4: pass # beach club // golf
-  question-5: pass # self-sufficient // butler service
-
-- title: Sandals South Coast European Village & Spa
-  category: Jamaica
-  quote: Set on Jamaica’s undiscovered south coast, boasting over 2 miles of unspoilt beach, every room and suite enjoys ocean views.
-  detail: Honeymoon Beachfront Penthouse Club Level Room
-  was-price: 3398
-  price: 1649
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/whitehouse/wh-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
-  question-1: a # relaxed // active
-  question-2: a # private // social
-  question-3: b # grounds // beach
   question-4: pass # beach club // golf
   question-5: pass # self-sufficient // butler service
 
@@ -65,6 +65,20 @@
   question-4: pass # beach club // golf
   question-5: b # self-sufficient // butler service
 
+- title: Sandals South Coast European Village & Spa
+  category: Jamaica
+  quote: Set on Jamaica’s undiscovered south coast, boasting over 2 miles of unspoilt beach, every room and suite enjoys ocean views.
+  detail: Beachfront Grande Luxe Club Level Suite
+  was-price: 3603
+  price: 1899
+  price-description: per person for 7 nights
+  link: http://www.sandals.co.uk/main/whitehouse/wh-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  question-1: a # relaxed // active
+  question-2: a # private // social
+  question-3: b # grounds // beach
+  question-4: pass # beach club // golf
+  question-5: pass # self-sufficient // butler service
+
 - title: Beaches Ocho Rios - A Spa, Golf & Waterpark Resort
   category: Jamaica
   quote: This vibrant Luxury Included<sup>®</sup> resort is surrounded by 22 acres of tropical gardens and is perfect for families, with its huge waterpark, championship golf and private white-sand beach.
@@ -78,20 +92,6 @@
   question-3: a # grounds // beach
   question-4: pass # beach club // golf
   question-5: a # self-sufficient // butler service
-
-- title: Sandals Royal Caribbean Resort & Private Island
-  category: Jamaica
-  quote: Hovering above turquoise seas, these gorgeous Tahiti–style bungalows feature see-through glass floors, a private infinity pool and personalized butler service.
-  detail: Kensington Cove Honeymoon Beachfront Club Level Room
-  was-price: 4076
-  price: 1549
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-love-nest-suite/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
-  question-1: a # relaxed // active
-  question-2: b # private // social
-  question-3: pass # grounds // beach
-  question-4: pass # beach club // golf
-  question-5: pass # self-sufficient // butler service
 
 - title: Beaches Negril Resort & Spa
   category: Jamaica
@@ -127,8 +127,8 @@
   category: Saint Lucia
   quote: The most intimate Sandals' resort in Saint Lucia, with hammocks and cabanas in lush tropical gardens, and unspoilt views of the Caribbean
   detail: Honeymoon Hideaway Luxury Poolside Room
-  was-price: 3208
-  price: 1299
+  was-price: 3130
+  price: 1469
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/halcyon/ha-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
   question-1: a # relaxed // active
@@ -137,26 +137,12 @@
   question-4: b # beach club // golf
   question-5: pass # self-sufficient // butler service
 
-- title: Sandals Grande Saint Lucian Spa & Beach Resort
-  category: Saint Lucia
-  quote: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
-  detail: Over-the-Water Butler Honeymoon Bungalow
-  was-price: 16196
-  price: 5399
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/lucia/lu-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
-  question-1: pass # relaxed // active
-  question-2: pass # private // social
-  question-3: pass # grounds // beach
-  question-4: pass # beach club // golf
-  question-5: pass # self-sufficient // butler service
-
 - title: Sandals Regency La Toc Golf Resort & Spa
   category: Saint Lucia
   quote: Experience the executive-style golf course, luxury oceanfront suites, Five-Star Diamond French cuisine and access to a total of 27 restaurants at this glamorous Saint Lucia hideaway.
   detail: Emerald Honeymoon Oceanview Room
-  was-price: 3342
-  price: 1449
+  was-price: 3448
+  price: 1520
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/lucia/lu-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
   question-1: a # relaxed // active
@@ -165,14 +151,28 @@
   question-4: b # beach club // golf
   question-5: a # self-sufficient // butler service
 
+- title: Sandals Grande Saint Lucian Spa & Beach Resort
+  category: Saint Lucia
+  quote: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
+  detail: Caribbean Luxury Oceanview Room
+  was-price: 4153
+  price: 1599
+  price-description: per person for 7 nights
+  link: http://www.sandals.co.uk/main/lucia/lu-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  question-1: pass # relaxed // active
+  question-2: pass # private // social
+  question-3: pass # grounds // beach
+  question-4: pass # beach club // golf
+  question-5: pass # self-sufficient // butler service
+
 ########## ANTIGUA ##########
 
 - title: Sandals Grande Antigua Resort & Spa
   category: Antigua
   quote: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted 'World's Most Romantic Resort' for many years.
-  detail: Sunset Bluff Honeymoon Luxury Club Level Room
-  was-price: 3842
-  price: 1499
+  detail: Mediterranean Club Level Suite
+  was-price: 3962
+  price: 1529
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/antigua/an-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
   question-1: a # relaxed // active
@@ -188,7 +188,7 @@
   quote: Enjoy the unprecedented luxury of two holidays in one, featuring an exotic offshore island escape, this resort has it all.
   detail: Balmoral Oceanview Grande Luxe Room
   was-price: 3941
-  price: 1699
+  price: 1675
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/bahamian/ba-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
   question-1: b # relaxed // active
@@ -201,8 +201,8 @@
   category: Bahamas
   quote: Deep within the idyllic waters of the Exumas, Sandals Emerald Bay brings unprecedented luxury to the easy-going rhythms of the Bahamian Out Islands.
   detail: Beach House Oceanview Grande Luxe Walkout Club Level Room
-  was-price: 4106
-  price: 1799
+  was-price: 4325
+  price: 1765
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/emerald/em-home/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_2For1_May17
   question-1: a # relaxed // active
