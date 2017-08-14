@@ -1,0 +1,35 @@
+---
+layout: default
+title: Get Inspired
+class: get-inspired
+nav-order: 3
+intro: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+---
+
+{% assign page-class = page.title %}
+
+{% include title-banner.html %}
+
+<section class="section bg--white">
+  <div class="row row--padding align-center">
+    <p class="p--large">{{page.intro}}</p>
+  </div>
+</section>
+
+
+{% assign ugc = site.data.ugc %}
+<section class="section bg--light-grey">
+  <div class="row row--padding row--columns-4-4-4-gutters">
+
+    {% for item in ugc %}
+    <div class="row__column ugc inactive">
+      <div class="ugc__image bg-image bg-image--ratio bg-image--ratio-1-1 bg-image--rounded" style="background-image: url({{ site.baseurl }}/img/content/ugc/{{ item.class }}.jpg);"></div>
+      <div class="ugc__content">
+        {{ item.description }}
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+

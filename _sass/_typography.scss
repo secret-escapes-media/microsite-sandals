@@ -111,6 +111,7 @@ hr {
   background-color: darken($light-grey,20);
   margin: $margin 0;
   .title + & { margin-top: $margin; }
+  .invert-text & { background-color: rgba($white,0.6); }
 }
 .hr{
   &--center { width: 80px; margin-left: auto; margin-right: auto; }

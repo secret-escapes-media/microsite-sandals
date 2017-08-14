@@ -318,5 +318,40 @@ $('.game__viewoffers').click(function(e){
 });
 
 
+///////////////////////////////////////
+//       UGC Tiles
+///////////////////////////////////////
+
+
+$('.ugc__content').slideUp();
+
+function ugcExpand(target){
+
+
+  if( $(target).hasClass('active') ){
+
+    $(target).removeClass('active');
+    $(target).find('.ugc__content').slideUp();
+    $(target).addClass('inactive');
+
+  }else{
+
+    $('.ugc.active .ugc__content').slideUp();
+    $('.ugc.active').removeClass('active').addClass('inactive');
+
+    $(target).removeClass('inactive');
+    $(target).addClass('active');
+    $(target).find('.ugc__content').slideDown();
+  }
+
+}
+
+$('.ugc').click(function(){
+  ugcExpand(this);
+});
+
+
+
+
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end

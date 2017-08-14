@@ -1,0 +1,28 @@
+
+
+<section class="section bg--dark-grey invert-text">
+
+  <div class="row row--padding align-center">
+    <h2 class="title title--medium title--upper title--expanded">See our other resorts</h2>
+    <hr class="hr--center">
+  </div>
+
+  <div class="row row--padding row--columns-4-4-4-gutters">
+
+    {% assign resorts = site.pages | where: "layout","offer-category" | sort: "resort-order" %}
+    {% for resort in resorts %}
+      {% assign loopindex = forloop.index | modulo: 3 %}
+
+      {% include resort.html %}
+
+      {% unless forloop.last %}
+      {% if loopindex == 0 %}
+        </div>
+        <div class="row row--padding row--columns-4-4-4-gutters">
+      {% endif %}
+      {% endunless %}
+
+    {% endfor %}
+
+  </div>
+</section>

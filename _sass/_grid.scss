@@ -115,3 +115,48 @@ $margin: 2em;
   }
 
 }
+
+
+
+
+// Bob is a type of layout that we use frequently for featured content. We
+// couldn't think of an accurate and concise name so we called it Bob. Its
+// columns with a feature image and copy that swap columns in alternating order.
+// it needs a higher breakpoint than the rest of the grid amongst other things
+.bob {
+  @include container(100%);
+  @include layout(12 1/2);
+  text-align: center;
+  &__image {
+    max-width: $large;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+  }
+  &__text { z-index: 1; padding-top: $margin; }
+  & + & { margin-top: ($margin*2); }
+  @include bp(xxlarge){
+    text-align: left;
+    &__text { padding-top: $margin; }
+    // GRID STUFF
+    & + & { margin-top: gutter(6); }
+    .flexbox & {
+      display: flex;
+      align-items: center;
+    }
+    &__image { @include span(7); }
+    &__text {
+      @include span(5 last);
+      padding-top: 0;
+    }
+    &:nth-child(even){
+      .bob__image { @include span(7 last); }
+      .bob__text { @include span(5); }
+      .flexbox & {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
