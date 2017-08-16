@@ -60,7 +60,7 @@ a,a:hover { text-decoration: none; }
   &--small       { font-size: 2em; }
   &--smaller     { font-size: 1.867em; }
   &--smallest    { font-size: 1.5em; }
-  &--tiny        { font-size: 1.44em; }
+  &--tiny        { font-size: 1.35em; }
   &--micro       { font-size: 1.2em; }
   @include bp(xxlarge){
     &--largest     { font-size: 5.063em; }
@@ -75,11 +75,16 @@ a,a:hover { text-decoration: none; }
 p { max-width: $xlarge; }
 p.align-center, .align-center p { margin-left: auto; margin-right: auto; }
 .paragraph, .p {
+  &--light     { font-weight: 300; }
+  &--bold      { font-weight: 500; }
+  &--bolder    { font-weight: 600; }
+  
   &--lead {
     font-size: 1.15em;
     line-height: 1.45;
   }
   &--large { font-size: 1.05em; }
+  &--small { font-size: 0.85em; }
   @include bp(large){
     &--lead { font-size: 1.25em; }
     &--large { font-size: 1.2em; }

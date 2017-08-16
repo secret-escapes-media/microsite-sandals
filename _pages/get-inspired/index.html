@@ -17,6 +17,8 @@ intro: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Viva
 </section>
 
 
+
+
 {% assign ugc = site.data.ugc %}
 <section class="section bg--light-grey">
   <div class="row row--padding row--columns-4-4-4-gutters">
@@ -24,9 +26,37 @@ intro: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Viva
     {% for item in ugc %}
     <div class="row__column ugc inactive">
       <div class="ugc__image bg-image bg-image--ratio bg-image--ratio-1-1 bg-image--rounded" style="background-image: url({{ site.baseurl }}/img/content/ugc/{{ item.class }}.jpg);"></div>
-      <div class="ugc__content">
-        {{ item.description }}
+
+      {% if item.by or item.instagram %}
+      <div class="ugc__header">
+        <p class="p--small p--bolder">
+
+          {% if item.by %}
+            <span class="title title--bold">{{ item.by }}</span>
+          {% endif %}
+
+          {% if item.by and item.instagram %} | {% endif %}
+
+          {% if item.instagram %}
+            <a href="https://www.instagram.com/{{ item.instagram }}/" target="_blank">
+              <img src="{{ site.baseurl }}/img/icons/icon-ig.png" width="16">
+              {{ item.instagram }}
+            </a>
+          {% endif %}
+
+        </p>
       </div>
+      {% endif %}
+
+      <div class="ugc__content">
+        <p>{{ item.description }}</p>
+        {% if item.date %}
+        <span class="p--small title title--bold title--upper title--expanded">
+          {{ item.date | date_to_long_string }}
+        </span>
+        {% endif %}
+      </div>
+
     </div>
     {% endfor %}
 

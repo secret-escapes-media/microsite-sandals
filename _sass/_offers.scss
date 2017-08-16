@@ -14,12 +14,12 @@
     }
   }
   &__image {
+    @include transition();
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
-    background-size: cover;
     background-color: $sandals-blue;
+    background-size: auto 100% !important;
     @include bp(xlarge) {
       position: absolute;
       top: 0;
@@ -35,6 +35,9 @@
       right: 0;
       bottom: 0;
       left: 0;
+    }
+    .offer:hover & {
+      background-size: auto 105% !important;
     }
   }
   &__content {

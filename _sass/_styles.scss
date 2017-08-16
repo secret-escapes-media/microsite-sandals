@@ -29,10 +29,11 @@
 .btn {
   @include transition;
   display:inline-block;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border: 1px solid $black;
   color: $black;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: .15em;
   &:hover {
@@ -41,16 +42,21 @@
     background-color: $sandals-green;
     text-decoration: none;
   }
+  & + & { margin-left: 2em; }
   * + & { margin-top: 1.5em; }
   &--invert {
     border-color: white; color: white;
     &.btn--solid { background-color: white; color: $black; }
   }
   &--large {}
-  &--small { padding: 0.3em 2em; }
+  &--small { font-size: 0.9em; padding: 0.4em 2em; }
   &--solid {
     background-color: $sandals-green; border-color: $sandals-green; color: white;
     &:hover { background-color: darken($sandals-green, 10); border-color: darken($sandals-green, 10); }
+  }
+  &--blue {
+    background-color: $sandals-blue; border-color: $sandals-blue; color: white;
+    &:hover { background-color: darken($sandals-blue, 10); border-color: darken($sandals-blue, 10); }
   }
 }
 
@@ -175,6 +181,7 @@
     .game__complete-text { display: none; }
     .game__result { display: block; }
     .offer { display: block; }
+    .flexbox & .offer { display: flex; }
     .game__start-btn { display: inline-block; }
     .game__reset-btn { display: none; }
     .game__viewoffers-btn { display: none; }
@@ -201,10 +208,23 @@
 
   &__image { background-color: $sandals-blue; }
 
+  &__header {
+    @include transition();
+    width: 100%;
+    position: absolute;
+    top: -40px;
+    padding: 0.5em 1.2em;
+    background-color: rgba($white,0.8);
+    .active & {
+      top: 0;
+    }
+    & img { vertical-align: text-bottom; }
+  }
   &__content {
-    padding: 1em 1.5em;
+    width: 100%;
     position: absolute;
     bottom: 0;
+    padding: 1em 1.2em;
     background-color: rgba($white,0.8);
   }
 }

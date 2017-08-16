@@ -13,12 +13,15 @@ layout: default
   </div>
 
   {% if page.pois %}
-  <div class="row row--padding row--columns-4-4-4-gutters align-center">
+  <div class="row row--padding row--columns-4-4-4-gutters">
     {% for poi in page.pois %}
       <div class="row__column">
-        <div class="bg-image bg-image--ratio bg-image--ratio-16-9 bg-image--rounded" style="background-image:url({{ site.baseurl }}/img/content/pois/{{ poi.class }}.jpg);"></div>
-        <h4 class="title title--smallest title--upper title--expanded title--spacing">{{ poi.title }}</h4>
-        <p>{{ poi.description }}</p>
+        <div class="align-center invert-text bg-image bg-image--ratio bg-image--ratio-16-9 bg-image--rounded" style="background-image:url({{ site.baseurl }}/img/content/pois/{{ poi.class }}.jpg);">
+          <div class="bg-image__content">
+            <h4 class=" bg-image__content-title title title--smallest title--upper title--expanded">{{ poi.title }}</h4>
+          </div>
+        </div>
+        <p class="title--spacing">{{ poi.description }}</p>
       </div>
     {% endfor %}
   </div>

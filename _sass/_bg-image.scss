@@ -123,7 +123,6 @@
   &:hover {
     .bg-image__content {
       background-color: rgba($dark-grey, 0.5);
-      padding: 2em 0em;
       &__title { letter-spacing: 0.2em; padding: 1em 0.5em; }
       &__title-fade { letter-spacing: 0.2em; padding: 1em 0.5em; opacity: 0; }
       &__description { opacity: 1; }

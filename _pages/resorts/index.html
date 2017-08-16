@@ -21,7 +21,6 @@ intro: All resorts. Integer posuere erat a ante venenatis dapibus posuere velit 
 {% assign resorts = site.pages | where: "layout","offer-category" | sort: "resort-order" %}
 
 <section class="section bg--light-grey">
-
   <div class="row row--padding">
     {% for resort in resorts %}
       {% if resort.pois %}
@@ -29,27 +28,22 @@ intro: All resorts. Integer posuere erat a ante venenatis dapibus posuere velit 
       {% endif %}
     {% endfor %}
   </div>
-
 </section>
-<section class="section">
 
-  <div class="row row--padding align-center">
-    <h3 class="title title--smaller title--upper title--expanded">All other resorts</h3>
-  </div>
-
+<section class="section bg--light-grey">
   <div class="row row--padding row--columns-4-4-4-gutters">
-
     {% for resort in resorts %}
       {% unless resort.pois %}
         {% include resort.html %}
       {% endunless %}
     {% endfor %}
-
   </div>
+</section>
 
+<section class="section bg--sandals-blue invert-text">
   <div class="row row--padding align-center">
-    <h5 class="title title--tiny title--upper title--expanded">Still not sure?</h5>
-    <a href="{{ site.baseurl }}/get-inspired" class="btn">Get inspired</a>
+    <h5 class="title title--smaller">Still not sure?</h5>
+    <a href="{{ site.baseurl }}/#game" class="btn btn--invert">Find your perfect resort</a>
+    <a href="{{ site.baseurl }}/get-inspired" class="btn btn--invert">Get island inspiration</a>
   </div>
-
 </section>
