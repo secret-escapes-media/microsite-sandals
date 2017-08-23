@@ -7,7 +7,7 @@
   overflow: hidden;
 
   // Size div to aspect ratio with background image attributes
-  &--ratio-1-1, &--ratio-4-3, &--ratio-3-2, &--ratio-16-9, &--ratio-21-9, &--ratio-5-2 {
+  &--ratio-3-4, &--ratio-1-1, &--ratio-4-3, &--ratio-3-2, &--ratio-16-9, &--ratio-21-9, &--ratio-5-2 {
     position: relative;
     @include background-attributes();
     &:before {
@@ -17,6 +17,7 @@
     }
   }
 
+  &--ratio-3-4:before   { padding-top: 125%; }
   &--ratio-1-1:before   { padding-top: 100%; }
   &--ratio-4-3:before   { padding-top: 75%; }
   &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -26,6 +27,7 @@
 
   @include min-bp(small) {
     &--small {
+      &--ratio-3-4:before   { padding-top: 125%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -36,6 +38,7 @@
   }
   @include min-bp(medium) {
     &--medium {
+      &--ratio-3-4:before   { padding-top: 125%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -46,6 +49,7 @@
   }
   @include min-bp(large) {
     &--large {
+      &--ratio-3-4:before   { padding-top: 125%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -56,6 +60,7 @@
   }
   @include min-bp(xlarge) {
     &--xlarge {
+      &--ratio-3-4:before   { padding-top: 125%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -66,6 +71,7 @@
   }
   @include min-bp(xxlarge) {
     &--xxlarge {
+      &--ratio-3-4:before   { padding-top: 125%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -111,7 +117,6 @@
     &__title {
       opacity: 1;
       z-index: $z-content;
-      letter-spacing: 0.16em;
     }
     &__description {
       @include transition();
@@ -123,15 +128,20 @@
   &:hover {
     .bg-image__content {
       background-color: rgba($dark-grey, 0.5);
-      &__title { letter-spacing: 0.2em; padding: 1em 0.5em; }
-      &__title-fade { letter-spacing: 0.2em; padding: 1em 0.5em; opacity: 0; }
+      &__title { padding: 1em 0.5em; }
+      &__title-fade { letter-spacing: 0.1em; padding: 1em 0.5em; opacity: 0; }
       &__description { opacity: 1; }
     }
   }
 
 
   &--circle { border-radius: 9999999em; }
-  &--shadow { box-shadow: 0 0 10px 0 rgba($dark-grey,0.25); }
+  &--shadow {
+    box-shadow: 0 0 10px 0 rgba($dark-grey,0.25);
+    &:hover {
+      box-shadow: 0 5px 15px 0px rgba(26, 26, 26, 0.25)
+    }
+  }
   &--rounded { border-radius: 5px; }
   &--zoom   {
     @include transition();

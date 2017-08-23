@@ -125,13 +125,21 @@
   }
   &__title{
     position: absolute;
-    top: auto;
+    padding-top: 70px;
+    top: 50%;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: $z-content-upper;
-    padding-bottom: ($margin*3);
     text-shadow: -1px 5px 20px $black-25;
+    margin-top: -80px;
+    .csstransforms & {
+      margin-top: 0;
+      transform: translateY(-50%);
+    }
+  }
+  &__subtitle {
+    margin-top: 0.5em;
+    display: block;
   }
   &__overlay {
     position: absolute;

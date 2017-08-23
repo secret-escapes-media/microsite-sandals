@@ -6,11 +6,17 @@ layout: default
 
 {% include title-banner.html %}
 
+
+
 <section class="section bg--white">
 
+
+
   <div class="row row--padding align-center">
-    <p class="p--large">{{page.intro}}</p>
+    {{page.intro}}
   </div>
+
+
 
   {% if page.pois %}
   <div class="row row--padding row--columns-4-4-4-gutters">
@@ -18,7 +24,7 @@ layout: default
       <div class="row__column">
         <div class="align-center invert-text bg-image bg-image--ratio bg-image--ratio-16-9 bg-image--rounded" style="background-image:url({{ site.baseurl }}/img/content/pois/{{ poi.class }}.jpg);">
           <div class="bg-image__content">
-            <h4 class=" bg-image__content-title title title--smallest title--upper title--expanded">{{ poi.title }}</h4>
+            <h4 class=" bg-image__content-title title title--smallest title--upper title--expanded title--bold">{{ poi.title }}</h4>
           </div>
         </div>
         <p class="title--spacing">{{ poi.description }}</p>
@@ -27,7 +33,12 @@ layout: default
   </div>
   {% endif %}
 
+
+
 </section>
+
+
+
 
 <section class="section banner" style="background-image: url('{{site.baseurl}}/img/bg/{{page.title | slugify}}-02.jpg');"></section>
 
@@ -36,6 +47,8 @@ layout: default
     {% include category-offers.html type = "full-width" category = page-class %}
   </div>
 </section>
+
+
 
 {% include all-resorts.html %}
 

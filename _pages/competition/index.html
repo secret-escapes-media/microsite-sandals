@@ -3,7 +3,14 @@ layout: default
 title: Competition
 class: competition
 nav-order: 5
-intro: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+
+banner-intro: >
+  <span class="banner__subtitle title title--small">Win a luxurious stay at Sandals Barbados</span>
+intro: >
+  <p class="paragraph--lead">Kick back in the balmy climes of Barbados, an island buzzing with a heady atmosphere typified by active pursuits and sublime scenery. With a five-night stay at Sandals Barbados to be won, you can explore the stunning St Lawrence Gap, packed with famous nightlife and endless beaches. </p>
+  <p class="paragraph--lead">First though, you’ll have to tear yourself away from the resort’s luxurious features. Fine dining in a choice of 11 restaurants, three pools and two whirlpools, swim-up bars, unlimited scuba-diving and spa retreats plus more – it’s a list that’ll make your head spin. For a truly opulent break, Sandals excels on this island paradise. Enter below for a chance at your own slice of luxury. </p>
+  <a href="#enter" class="btn">Enter now</a>
+
 ---
 
 {% assign page-class = page.title %}
@@ -16,15 +23,21 @@ intro: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Viva
   </div>
 </section>
 
-<section class="section bg--light-grey">
-  <div class="row row--padding align-center">
-    <span class="title title--small title--upper title--expanded">Competition details TBC</span>
+<section>
+  <div class="row row--padding row--columns-4-4-4 align-center competition-prize">
+
+    <div class="row__column competition-prize__image" style="background-image: url({{site.baseurl}}/img/content/competition/01.jpg);"></div>
+
+    <div class="row__column competition-prize__image" style="background-image: url({{site.baseurl}}/img/content/competition/02.jpg);"></div>
+
+    <div class="row__column competition-prize__image" style="background-image: url({{site.baseurl}}/img/content/competition/03.jpg);"></div>
+
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="enter">
   <div class="row row--padding align-center">
-    <span class="title title--small title--upper title--expanded">Enter below to be in to win</span>
+    <span class="title title--small">Enter below to be in to win</span>
   </div>
   <div class="row row--padding align-center">
     <iframe src="https://promotion3982.strutta.me" width="100%" height="840"> </iframe>

@@ -7,7 +7,7 @@
   <div class="bob__text">
 
     <h3 class="title title--smaller">{{resort.title}}</h3>
-    <p class="paragraph--lead">{{resort.intro | truncate:120}}</p>
+    <p class="paragraph--lead">{{resort.intro | strip_html | truncate:200}}</p>
     <a href="{{ site.baseurl }}{{ resort.url }}" class="btn btn--small">Read more</a>
 
   </div>

@@ -5,6 +5,9 @@
   <div class="banner__title">
     <div class="row row--padding align-center">
       <h1 class="banner__divider title title--largest title--upper title--expanded">{{page.title}}</h1>
+      {% if page.banner-intro %}
+      {{ page.banner-intro }}
+      {% endif %}
     </div>
   </div>
   <div class="banner__overlay"></div>

@@ -40,7 +40,7 @@ a,a:hover { text-decoration: none; }
   &--light     { font-weight: 300; }
   &--bold      { font-weight: 500; }
   &--bolder    { font-weight: 600; }
-  &--expanded  { letter-spacing: .2em; }
+  &--expanded  { letter-spacing: .1em; }
   &--condense  { letter-spacing: 0; }
   &--tight     { line-height: .9; }
   &--tighter   { line-height: .8; }
@@ -48,20 +48,27 @@ a,a:hover { text-decoration: none; }
   &--italic    { font-style: italic; }
 
   &--largest {
-    font-size: 4.3em;
+    font-size: 2.8em;
     &-sub {
       display: block;
       font-size: .55em;
     }
   }
-  &--larger      { font-size: 2.986em; }
-  &--large       { font-size: 2.488em; }
-  &--medium      { font-size: 2.25em; }
-  &--small       { font-size: 2em; }
+  &--larger      { font-size: 2.4em; }
+  &--large       { font-size: 2.2em; }
+  &--medium      { font-size: 2em; }
+  &--small       { font-size: 1.867em; }
   &--smaller     { font-size: 1.867em; }
   &--smallest    { font-size: 1.5em; }
   &--tiny        { font-size: 1.35em; }
   &--micro       { font-size: 1.2em; }
+  @include bp(xxlarge){
+    &--largest     { font-size: 4.3em; }
+    &--larger      { font-size: 2.986em; }
+    &--large       { font-size: 2.488em; }
+    &--medium      { font-size: 2.25em; }
+    &--small       { font-size: 2em; }
+  }
   @include bp(xxlarge){
     &--largest     { font-size: 5.063em; }
     &--larger      { font-size: 4.3em; }
@@ -78,10 +85,10 @@ p.align-center, .align-center p { margin-left: auto; margin-right: auto; }
   &--light     { font-weight: 300; }
   &--bold      { font-weight: 500; }
   &--bolder    { font-weight: 600; }
-  
+
   &--lead {
     font-size: 1.15em;
-    line-height: 1.45;
+    line-height: 1.55;
   }
   &--large { font-size: 1.05em; }
   &--small { font-size: 0.85em; }
@@ -120,6 +127,12 @@ hr {
 }
 .hr{
   &--center { width: 80px; margin-left: auto; margin-right: auto; }
+  &--double {
+    height: 5px;
+    background-color: transparent;
+    border-top: 1px solid darken($light-grey,20);
+    border-bottom: 1px solid darken($light-grey,20);
+  }
 }
 
 sup {
