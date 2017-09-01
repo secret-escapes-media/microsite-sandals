@@ -6,17 +6,16 @@
 # move through to the next question.
 
 
-
 ########## JAMAICA ##########
 
 - title: Sandals Ochi Beach Resort
   category: Jamaica
   quote: On the beautiful north coast of Jamaica Ochi Beach Resort hugs the lush mountains of St.Ann and capitalises on its spectacular ocean views.
   detail: Honeymoon Grande Luxe Poolside Villa Club Level Room
-  was-price: 3258
-  price: 1565
+  was-price: 2821
+  price: 1485
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/ochorios/or-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/ochorios/or-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: pass # relaxed // active
   question-2: pass # private // social
   question-3: a # grounds // beach
@@ -27,10 +26,10 @@
   category: Jamaica
   quote: Hovering above turquoise seas, these gorgeous Tahiti–style bungalows feature see-through glass floors, a private infinity pool and personalized butler service.
   detail: Kensington Cove Honeymoon Beachfront Club Level Room
-  was-price: 3787
-  price: 1775
+  was-price: 3143
+  price: 1689
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-love-nest-suite/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/specials/uk-love-nest-suite/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: a # relaxed // active
   question-2: b # private // social
   question-3: pass # grounds // beach
@@ -41,10 +40,10 @@
   category: Jamaica
   quote: Amidst a pristine tropical setting, this world-class beachfront resort spans the longest and best stretch of Jamaica’s famous seven-mile beach and has impressive eco-friendly credentials.
   detail: Caribbean Luxury Honeymoon Room
-  was-price: 3441
-  price: 1639
+  was-price: 2533
+  price: 1485
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/negril/ne-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/negril/ne-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: a # relaxed // active
   question-2: b # private // social
   question-3: a # grounds // beach
@@ -55,10 +54,10 @@
   category: Jamaica
   quote: This glamorous resort boasts just 74 suites, each with stunning ocean views and Personal Butler Service.
   detail: Viceroy Honeymoon Oceanfront Butler Suite
-  was-price: 4415
-  price: 1879
+  was-price: 3409
+  price: 1739
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/plantation/rp-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/plantation/rp-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: pass # relaxed // active
   question-2: pass # private // social
   question-3: pass # grounds // beach
@@ -72,7 +71,7 @@
   was-price: 3385
   price: 1569
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/whitehouse/wh-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/whitehouse/wh-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: a # relaxed // active
   question-2: a # private // social
   question-3: b # grounds // beach
@@ -83,10 +82,10 @@
   category: Jamaica
   quote: This vibrant Luxury Included<sup>®</sup> resort is surrounded by 22 acres of tropical gardens and is perfect for families, with its huge waterpark, championship golf and private white-sand beach.
   detail: Caribbean Deluxe Family Sized Room
-  was-price: 3900
-  price: 1819
+  was-price: 3232
+  price: 1679
   price-description: per person for 7 nights
-  link: http://beachesresorts.co.uk/deals/uk-offers/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://beachesresorts.co.uk/deals/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: b # relaxed // active
   question-2: b # private // social
   question-3: a # grounds // beach
@@ -97,10 +96,10 @@
   category: Jamaica
   quote: Everything you can possibly imagine is beachside at Beaches Negril Resort &amp; Spa — from lively pools to restaurants and bars, right on the widest stretch of Jamaica’s seven-mile beach.
   detail: Negril Deluxe Room
-  was-price: 4456
-  price: 2029
+  was-price: 3653
+  price: 1935
   price-description: per person for 7 nights
-  link: http://beachesresorts.co.uk/deals/uk-offers/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://beachesresorts.co.uk/deals/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: b # relaxed // active
   question-2: b # private // social
   question-3: b # grounds // beach
@@ -111,8 +110,8 @@
   category: Jamaica
   quote: Sandals Montego Bay is Sandal's flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
   detail: Caribbean Luxury Room
-  was-price: 3208
-  price: 2005
+  was-price: 4365
+  price: 1875
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/montego/mo-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_2For1_May17
   question-1: b # relaxed // active
@@ -128,9 +127,9 @@
   quote: The most intimate Sandals' resort in Saint Lucia, with hammocks and cabanas in lush tropical gardens, and unspoilt views of the Caribbean
   detail: Honeymoon Hideaway Luxury Poolside Room
   was-price: 3208
-  price: 1425
+  price: 1359
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/halcyon/ha-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/halcyon/ha-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: a # relaxed // active
   question-2: a # private // social
   question-3: pass # grounds // beach
@@ -142,9 +141,9 @@
   quote: Experience the executive-style golf course, luxury oceanfront suites, Five-Star Diamond French cuisine and access to a total of 27 restaurants at this glamorous Saint Lucia hideaway.
   detail: Emerald Honeymoon Oceanview Room
   was-price: 3448
-  price: 1519
+  price: 1499
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/lucia/lu-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/lucia/lu-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: a # relaxed // active
   question-2: b # private // social
   question-3: pass # grounds // beach
@@ -156,9 +155,9 @@
   quote: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
   detail: Caribbean Luxury Oceanview Room
   was-price: 4153
-  price: 1795
+  price: 1775
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/lucia/lu-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/lucia/lu-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: pass # relaxed // active
   question-2: pass # private // social
   question-3: pass # grounds // beach
@@ -172,9 +171,9 @@
   quote: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted 'World's Most Romantic Resort' for many years.
   detail: Caribbean Club Level Veranda Suite
   was-price: 3927
-  price: 1685
+  price: 1665
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/antigua/an-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/antigua/an-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: a # relaxed // active
   question-2: a # private // social
   question-3: b # grounds // beach
@@ -187,10 +186,10 @@
   category: Bahamas
   quote: Enjoy the unprecedented luxury of two holidays in one, featuring an exotic offshore island escape, this resort has it all.
   detail: Balmoral Oceanview Grande Luxe Room
-  was-price: 4315
-  price: 2105
+  was-price: 3144
+  price: 1755
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/bahamian/ba-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/bahamian/ba-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: b # relaxed // active
   question-2: a # private // social
   question-3: b # grounds // beach
@@ -202,7 +201,7 @@
   quote: Deep within the idyllic waters of the Exumas, Sandals Emerald Bay brings unprecedented luxury to the easy-going rhythms of the Bahamian Out Islands.
   detail: Beach House Oceanview Grande Luxe Walkout Club Level Room
   was-price: 3604
-  price: 2055
+  price: 1889
   price-description: per person for 7 nights
   link: http://www.sandals.co.uk/main/emerald/em-home/?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_2For1_May17
   question-1: a # relaxed // active
@@ -220,7 +219,7 @@
   was-price: 4074
   price: 1695
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/grenada/ls-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/grenada/ls-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: b # relaxed // active
   question-2: a # private // social
   question-3: pass # grounds // beach
@@ -234,9 +233,9 @@
   quote: A boutique hotel lover’s dream, this heavenly hideaway offers undeniable luxury and is Barbados' only Luxury Included<sup>®</sup> 5 Star Resort.
   detail: Caribbean Village Grande Luxe Room
   was-price: 4139
-  price: 1759
+  price: 1735
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/barbados/bd-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/barbados/bd-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: b # relaxed // active
   question-2: b # private // social
   question-3: b # grounds // beach
@@ -250,7 +249,7 @@
   was-price: 4179
   price: 1835
   price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/main/royalbarbados/rb-home?utm_source=Secretescapes.co.uk&utm_medium=thirdparty_direct&utm_campaign=Secretescapes.co.uk_TOY-Microsite_May17
+  link: http://www.sandals.co.uk/main/royalbarbados/rb-home?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AutumnSale&utm_content=Link
   question-1: b # relaxed // active
   question-2: b # private // social
   question-3: b # grounds // beach
