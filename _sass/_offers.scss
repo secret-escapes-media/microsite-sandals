@@ -19,8 +19,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: $sandals-blue;
-    background-size: auto 100% !important;
     @include bp(xlarge) {
+      background-size: auto 100% !important;
       position: absolute;
       top: 0;
       right: 0;
