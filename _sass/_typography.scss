@@ -41,6 +41,7 @@ a,a:hover { text-decoration: none; }
   &--bold      { font-weight: 500; }
   &--bolder    { font-weight: 600; }
   &--expanded  { letter-spacing: .1em; }
+  &--expandeder  { letter-spacing: .15em; }
   &--condense  { letter-spacing: 0; }
   &--tight     { line-height: .9; }
   &--tighter   { line-height: .8; }
@@ -62,20 +63,14 @@ a,a:hover { text-decoration: none; }
   &--smallest    { font-size: 1.5em; }
   &--tiny        { font-size: 1.35em; }
   &--micro       { font-size: 1.2em; }
-  @include bp(xxlarge){
-    &--largest     { font-size: 4.3em; }
-    &--larger      { font-size: 2.986em; }
-    &--large       { font-size: 2.488em; }
-    &--medium      { font-size: 2.25em; }
-    &--small       { font-size: 2em; }
-  }
-  @include bp(xxlarge){
+  @include bp(xlarge){
     &--largest     { font-size: 5.063em; }
     &--larger      { font-size: 4.3em; }
     &--large       { font-size: 4em; }
     &--medium      { font-size: 2.933em; }
     &--small       { font-size: 2.467em; }
     &--smaller     { font-size: 2.25em; }
+    &--smallest    { font-size: 1.9em; }
   }
 }
 

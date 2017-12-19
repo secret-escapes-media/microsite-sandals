@@ -4,8 +4,10 @@ title: Overview
 class: overview
 nav-order: 1
 intro: >
-  <p class="p--large">Bowed palms cast shade on crystal-white beaches, with beachside rum bars offering refreshing respite from the glorious sunshine. The Caribbean is a magnificent patchwork of unique islands, offering thrilling cultural exploits and sublime island getaways. For a truly luxurious holiday, make a Sandals resort your next stop.</p>
-  <p>Whether you’re after the perfect romantic getaway in a couples-only resort, or wish to take the whole family, you needn’t compromise on comfort. Jet away to warmer climes this September, and dream of your very own island paradise. With an unmissable up to <strong>60% off</strong> in the Sandals Autumn Sale, there’s never been a better time to make your Caribbean holiday dreams a reality. But hurry – sale ends 30th September!</p>
+  <p class="p--large p--bold">Immerse yourself in the envious heat, tropical saunter and luxurious offerings of a Sandals Caribbean escape this Christmas.</p>
+  <p>Discover exotic delights and sumptuous excesses at these all-inclusive resorts – resorts that span the finest idylls the Caribbean has to offer. With <strong>The 12 Days of Christmas</strong> sale, you can stop dreaming and start planning your very own luxury escape. Whether you want to unpick the volcanic rainforests of Saint Lucia or prop up the beachside rum shacks of Barbados, <strong>save up to 55% plus up to £200 off</strong> your booking and make your Caribbean getaway reality. </p>
+  <p>Browse these coveted resorts and choose your favourite – can’t choose? Play our quick game to match the perfect resort to you! Once you’ve chosen your ideal Caribbean escape, enter one of the codes below on the Sandals website to redeem your discount, on top of <strong>The 12 Days of Christmas</strong> saving.</p>
+  <p>Hurry, offer ends 8 January 2018!</p>
 
 ---
 
@@ -25,13 +27,14 @@ intro: >
     <div class="row row--padding align-center">
       <h1 class="map__divider title title--larger title--bold title--upper">The Caribbean</h1>
       <h2 class="title title--smallest title--expanded title--light title--upper">Glorious sunshine awaits</h2>
-      <a href="#game" class="game__reset game__start-btn btn btn--small btn--invert">Find your perfect resort</a>
+      <a href="{{site.baseurl}}/game" class="btn btn--invert">Find your perfect resort</a>
     </div>
   </div>
   <div class="banner__overlay"></div>
 </section>
 
-{% include title-banner.html %}
+{% include microsite-navigation.html %}
+
 
 
 
@@ -41,6 +44,22 @@ intro: >
     <div class="row row--padding align-center">
       {{page.intro}}
     </div>
+
+    <div class="row row--thin align-center">
+      <div class="discount invert-text">
+        <div class="discount__inner">
+          <p class="title title--smallest title--expandeder">12DAYS1</p>
+          <p class="title title--bold">7 nights or more for £150 discount</p>
+        </div>
+      </div>
+      <div class="discount invert-text">
+        <div class="discount__inner">
+          <p class="title title--smallest title--expandeder">12DAYS2</p>
+          <p class="title title--bold">10 nights or more for £200 discount</p>
+        </div>
+      </div>
+    </div>
+
     <div class="row row--padding">
       <div class="video js-youtube-thumbnail" data-thumbnail-img="img/content/video.jpg">
         <iframe class="video__iframe" src='https://www.youtube.com/embed/zKZMfxlw-jE?rel=0&amp;showinfo=0' frameborder='0'></iframe>
@@ -50,6 +69,23 @@ intro: >
   </section>
 
 
-  {% include game.html %}
+
+  <section class="section bg--light-grey">
+    <div class="row row--padding">
+
+      {% assign offers = site.data.offers | sort: 'price' %}
+      {% for offer in offers %}
+        {% if offer.category == "Multi Centre" %}
+          {% include offer/full-width-multi.html %}
+        {% else %}
+          {% include offer/full-width.html %}
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </section>
+
+
+
 
 </div>

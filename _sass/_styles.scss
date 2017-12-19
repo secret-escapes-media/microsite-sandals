@@ -118,9 +118,6 @@
 
 // ---------- Game ----------
 .game {
-
-  border-top: 3px solid $sandals-blue;
-
   background: #ffffff;
   background: -moz-linear-gradient(top, #e3ebec 0%, #ffffff 100%);
   background: -webkit-linear-gradient(top, #e3ebec 0%,#ffffff 100%);
@@ -214,3 +211,19 @@
   }
 }
 
+
+
+.discounts {
+
+}
+.discount {
+  display: inline-block;
+  margin-right: 1em;
+  &__inner {
+    border-radius: 4px;
+    padding: 1em 2em;
+    background-color: $sandals-blue;
+    width: 320px;
+    & + * { color: white; }
+  }
+}
