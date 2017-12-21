@@ -36,8 +36,8 @@
       bottom: 0;
       left: 0;
     }
-    .offer:hover & {
-      background-size: auto 105% !important;
+    @include bp(xlarge){
+      .offer:hover & { background-size: auto 105% !important; }
     }
   }
   &__content {

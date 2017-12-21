@@ -318,39 +318,6 @@ $('.game__viewoffers').click(function(e){
 });
 
 
-///////////////////////////////////////
-//       UGC Tiles
-///////////////////////////////////////
-
-
-$('.ugc__content').slideUp();
-
-function ugcExpand(target){
-
-
-  if( $(target).hasClass('active') ){
-
-    $(target).removeClass('active');
-    $(target).find('.ugc__content').slideUp(250);
-    $(target).addClass('inactive');
-
-  }else{
-
-    $('.ugc.active .ugc__content').slideUp(250);
-    $('.ugc.active').removeClass('active').addClass('inactive');
-
-    $(target).removeClass('inactive');
-    $(target).addClass('active');
-    $(target).find('.ugc__content').slideDown(250);
-  }
-
-}
-
-$('.ugc').click(function(){
-  ugcExpand(this);
-});
-
-
 
 
 ///////////////////////////////////////////////////////////////////////////////

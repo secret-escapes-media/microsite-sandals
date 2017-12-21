@@ -12,7 +12,7 @@
   position: relative;
   height: 540px;
   @include bp(xxlarge){
-    height: 620px;
+    height: 660px;
   }
   &__divider:after {
     content: '';

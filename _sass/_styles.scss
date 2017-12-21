@@ -213,17 +213,17 @@
 
 
 
-.discounts {
-
-}
+// .discounts {
+//
+// }
 .discount {
   display: inline-block;
-  margin-right: 1em;
+  margin: .5em;
   &__inner {
     border-radius: 4px;
     padding: 1em 2em;
     background-color: $sandals-blue;
-    width: 320px;
+    max-width: 320px;
     & + * { color: white; }
   }
 }
