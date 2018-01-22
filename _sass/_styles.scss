@@ -223,6 +223,7 @@
   padding: 1em 2em;
   border: 3px solid $sandals-blue;
   max-width: 320px;
+  min-width: 260px;
   position: relative;
 
   &__inner {}
@@ -233,11 +234,10 @@
     background-color: white;
     display: block;
     right: 0;
-    width: 150px;
+    width: 220px;
     margin: auto;
-    font-size: 0.85em;
+    font-size: 0.8em;
     font-weight: 600;
-    letter-spacing: 0.1em;
     color: $dark-grey;
   }
 }
