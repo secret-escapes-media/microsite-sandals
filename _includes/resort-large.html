@@ -1,0 +1,16 @@
+
+<div class="bob">
+
+  <a href="{{ site.baseurl }}{{ resort.url }}" class="bob__image bg-image bg-image--rounded bg-image--ratio bg-image--ratio-16-9 bg-image--xlarge--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/bg/{{resort.title | slugify}}-01.jpg');">
+  </a>
+
+  <div class="bob__text">
+
+    <h3 class="title title--smaller">{{resort.title}}</h3>
+    <p class="paragraph--lead">{{resort.intro | strip_html | truncate:200}}</p>
+    <a href="{{ site.baseurl }}{{ resort.url }}" class="btn btn--small">Read more</a>
+
+  </div>
+
+</div>
+

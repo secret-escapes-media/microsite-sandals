@@ -17,6 +17,7 @@ input, textarea, keygen, select, button {
   }
   color: $text-paragraph;
 }
+a,a:hover { text-decoration: none; }
 
 
 // -------- Headings --------
@@ -25,6 +26,7 @@ input, textarea, keygen, select, button {
   font-family: $title-font-family;
   letter-spacing: .015em;
   line-height: 1.15;
+  color: $text-heading;
 
   + * { margin-top: .5em; }
 
@@ -33,15 +35,13 @@ input, textarea, keygen, select, button {
   }
   &--extra-margin { margin-top: 1.5em; }
   &--sub-heading { margin-top: .2em !important; }
-  &--dark { color: $text-heading; }
-  &--grey { color: $se-grey; }
-  &--white { color: $white }
 
 
   &--light     { font-weight: 300; }
   &--bold      { font-weight: 500; }
   &--bolder    { font-weight: 600; }
-  &--expanded  { letter-spacing: .2em; }
+  &--expanded  { letter-spacing: .1em; }
+  &--expandeder  { letter-spacing: .15em; }
   &--condense  { letter-spacing: 0; }
   &--tight     { line-height: .9; }
   &--tighter   { line-height: .8; }
@@ -49,38 +49,46 @@ input, textarea, keygen, select, button {
   &--italic    { font-style: italic; }
 
   &--largest {
-    font-size: 4.3em;
+    font-size: 2.8em;
     &-sub {
       display: block;
       font-size: .55em;
     }
   }
-  &--larger      { font-size: 2.986em; }
-  &--large       { font-size: 2.488em; }
-  &--medium      { font-size: 2.25em; }
-  &--small       { font-size: 2em; }
+  &--larger      { font-size: 2.4em; }
+  &--large       { font-size: 2.2em; }
+  &--medium      { font-size: 2em; }
+  &--small       { font-size: 1.867em; }
   &--smaller     { font-size: 1.867em; }
   &--smallest    { font-size: 1.5em; }
-  &--tiny        { font-size: 1.44em; }
+  &--tiny        { font-size: 1.35em; }
   &--micro       { font-size: 1.2em; }
-  @include bp(xxlarge){
+  @include bp(xlarge){
     &--largest     { font-size: 5.063em; }
     &--larger      { font-size: 4.3em; }
     &--large       { font-size: 4em; }
     &--medium      { font-size: 2.933em; }
     &--small       { font-size: 2.467em; }
     &--smaller     { font-size: 2.25em; }
+    &--smallest    { font-size: 1.9em; }
   }
 }
 
-.paragraph {
+p { max-width: $xlarge; }
+p.align-center, .align-center p { margin-left: auto; margin-right: auto; }
+.paragraph, .p {
+  &--light     { font-weight: 300; }
+  &--bold      { font-weight: 500; }
+  &--bolder    { font-weight: 600; }
+
   &--lead {
-    font-size: 1.25em;
-    line-height: 1.25;
+    font-size: 1.15em;
+    line-height: 1.55;
   }
   &--large { font-size: 1.05em; }
+  &--small { font-size: 0.85em; }
   @include bp(large){
-    &--lead { font-size: 1.467em; }
+    &--lead { font-size: 1.25em; }
     &--large { font-size: 1.2em; }
   }
 }
@@ -107,8 +115,19 @@ strong        { font-weight: 800; }
 hr {
   border: 0;
   height: 1px;
-  background-color: $light-grey;
-  margin: 1em 0;
+  background-color: darken($light-grey,20);
+  margin: $margin 0;
+  .title + & { margin-top: $margin; }
+  .invert-text & { background-color: rgba($white,0.6); }
+}
+.hr{
+  &--center { width: 80px; margin-left: auto; margin-right: auto; }
+  &--double {
+    height: 5px;
+    background-color: transparent;
+    border-top: 1px solid darken($light-grey,20);
+    border-bottom: 1px solid darken($light-grey,20);
+  }
 }
 
 sup {
@@ -117,3 +136,14 @@ sup {
   position: relative;
 }
 sup { top: -0.5em; }
+
+
+// -------- list styles --------
+
+ol li {
+  list-style-type: decimal;
+  ol li {
+    list-style-type: lower-latin;
+  }
+}
+

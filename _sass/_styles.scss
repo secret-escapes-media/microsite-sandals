@@ -3,7 +3,11 @@
 
 // ---------- Section styles ----------
 
-.invert-text { color: $white; }
+.invert-text {
+  color: $white;
+  .title { color: $white; }
+}
+
 .bg {
   &--white      { background-color: $white; }
   &--black      { background-color: $black; }
@@ -15,6 +19,8 @@
   &--se-orange     { background-color: $se-orange; }
   &--se-light-grey { background-color: $se-light-grey; }
   &--se-dark-grey  { background-color: $se-dark-grey; }
+  &--sandals-green { background-color: $sandals-green; }
+  &--sandals-blue { background-color: $sandals-blue; }
 }
 
 
@@ -23,10 +29,11 @@
 .btn {
   @include transition;
   display:inline-block;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border: 1px solid $black;
   color: $black;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: .15em;
   &:hover {
@@ -35,7 +42,25 @@
     background-color: $sandals-green;
     text-decoration: none;
   }
-  * + & { margin-top: 1em; }
+  * + & { margin-top: 1.5em; }
+  &--invert {
+    border-color: white; color: white;
+    &.btn--solid { background-color: white; color: $black; }
+  }
+  &--large {}
+  &--small { font-size: 0.9em; padding: 0.4em 2em; }
+  &--solid {
+    background-color: $sandals-green; border-color: $sandals-green; color: white;
+    &:hover { background-color: darken($sandals-green, 10); border-color: darken($sandals-green, 10); }
+  }
+  &--blue {
+    background-color: $sandals-blue; border-color: $sandals-blue; color: white;
+    &:hover { background-color: darken($sandals-blue, 10); border-color: darken($sandals-blue, 10); }
+  }
+
+  @include bp(xxlarge){
+    & + & { margin-left: 2em; }
+  }
 }
 
 
@@ -43,11 +68,17 @@
 
 .video {
   position: relative;
-  height: 0;
-  max-width: 100%;
-  padding-bottom: 56.25%;
+  max-width: $xlarge;
   background-color: #000;
   overflow: hidden;
+  margin: auto;
+  border-radius: 5px;
+  &:before {
+    padding-bottom: 56.25%;
+    display: block;
+    content: "";
+    width: 100%;
+  }
   &__iframe {
     position: absolute;
     top: 0;
@@ -84,132 +115,129 @@
 }
 
 
-// ---------- OVERVIEW MAP ----------
 
-// keeps content above markers
-.upper-content {
-  position: relative;
-  z-index: $z-content;
-}
+// ---------- Game ----------
+.game {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #e3ebec 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #e3ebec 0%,#ffffff 100%);
+  background: linear-gradient(to bottom, #e3ebec 0%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3ebec', endColorstr='#ffffff',GradientType=0 );
 
-.map {
-  position: relative;
-  height: 500px;
-  @include bp(xxlarge){
-    height: 580px;
+  // GAME INTRO COPY, AND RESULTS TEXT
+  &__intro {
   }
-  &__divider:after {
-    content: '';
-    display: block;
-    height: 6px;
-    border-top: 1px solid $white-5;
-    border-bottom: 1px solid $white-5;
+  &__complete-text {
+    display: none;
+    .q { font-weight: 600; }
   }
-  &__title{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $z-content-upper;
-    padding-bottom: ($margin*1.5);
+
+  // GAME QUESTIONS
+  &__questions {
+    position: relative;
+    margin-bottom: $margin;
   }
-  &__bg {
+  &__question {
+    display: none;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $z-background;
-    background-image: url(../img/bg/map.jpg);
-    background-position: top center;
-    @include bp(xlarge){
-      position: fixed;
+    left: 1em; right: 1em;
+    padding-left: 1em; padding-right: 1em;
+    @include bp(large){
+      left: 2em; right: 2em;
     }
-  }
-  &__markers {
-    display: none;
-    @include bp(xxlarge){
-      position: fixed;
+    &--active {
+      position: relative;
       top: 0;
-      left: 50%;
-      z-index: $z-content;
+      left: 0; right: 0;
       display: block;
     }
+    &-options { margin-top: $margin/2; }
   }
-  &__marker {
-    position: absolute;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    @include transition;
-    &:hover{
-      color: lighten($sandals-blue, 25);
-      text-decoration: none;
-    }
+
+  // RESULTS SECTION
+  &__result {
+    display: none;
+  }
+
+  // disable reset game button until game is played
+  .game__start-btn { display: none; }
+  .game__reset-btn { display: none; }
+
+  /*======  CHANGES ON GAME COMPLETE // .game--complete  ======*/
+  &--complete {
+    .game__questions { display: none; }
+    .game__complete-text { display: block; }
+    .game__result { display: block; }
+    .offer--selected { display: block; }
+    .offer--eliminated { display: none; }
+    .game__start-btn { display: none; }
+    .game__reset-btn { display: inline-block; }
+    .game__viewoffers-btn { display: inline-block; }
+  }
+  /*======  CHANGES ON GAME COMPLETE // .game--complete  ======*/
+  &--viewoffers {
+    .game__questions { display: none; }
+    .game__complete-text { display: none; }
+    .game__result { display: block; }
+    .offer { display: block; }
+    .flexbox & .offer { display: flex; }
+    .game__start-btn { display: inline-block; }
+    .game__reset-btn { display: none; }
+    .game__viewoffers-btn { display: none; }
+  }
+
+}
+
+
+
+// COMPETITION PAGE
+
+.competition-prize {
+  padding-top: 2em;
+  &__image {
+    position: relative;
+    @include background-attributes();
     &:before {
-      // Map marker
+      display: block;
       content: "";
-      position: absolute;
-      top: 3px;
-      left: -25px;
-      display: inline-block;
-      height: 20px;
-      width: 20px;
-      background-image: url( "../img/icons/map-pin-white.png" );
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-size: contain;
-      .svg & { background-image: url( "../img/icons/map-pin-white.svg" ); }
+      width: 100%;
+      padding-top: 133.33%;
     }
-    // pin positions
-    &--antigua { top: 239px; right: -395px; }
-    &--bahamas { top: 158px; left: -175px; }
-    &--jamaica { top: 342px; left: -280px;
-      // top aligned map marker
-      &:before { left: 22px; top: -30px; }
-    }
-    &--barbados { top: 345px; right: -460px;
-      // top aligned map marker
-      &:before { left: 30px; top: -25px; }
-    }
-    &--grenada { top: 357px; right: -332px;
-      // right aligned map marker
-      &:before { left: auto; right: -25px; }
-    }
-    &--saint-lucia { top: 309px; right: -341px;
-      // right aligned map marker
-      &:before { left: auto; right: -25px; }
-    }
+
+
+    &:first-child { margin-top: -2em; }
+    &:last-child { margin-top: 2em; }
   }
 }
 
 
-// ---------- OFFER CATEGORY ----------
 
-.banner {
+// .discounts {
+//
+// }
+.discount {
+  display: inline-block;
+  margin: .5em;
+  border-radius: 4px;
+  padding: 1em 2em;
+  border: 3px solid $sandals-blue;
+  max-width: 320px;
+  min-width: 260px;
   position: relative;
-  height: 75%;
-  background-color: $light-grey;
-  overflow-x: auto;
-  @include background-attributes;
-  @include bp(xlarge){
-    background-attachment: fixed;
-  }
-  &__divider:after {
-    content: '';
-    display: block;
-    height: 6px;
-    border-top: 1px solid $white-75;
-    border-bottom: 1px solid $white-75;
-  }
-  &__title{
+
+  &__inner {}
+  &__title {
     position: absolute;
-    top: auto;
+    top: -12px;
     left: 0;
+    background-color: white;
+    display: block;
     right: 0;
-    bottom: 0;
-    z-index: $z-content-upper;
-    padding-bottom: ($margin*1.5);
-    text-shadow: -1px 5px 20px $black-25;
+    width: 220px;
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: $dark-grey;
   }
 }

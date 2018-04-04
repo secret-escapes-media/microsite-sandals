@@ -1,0 +1,48 @@
+---
+layout: default
+title: Resorts
+class: resorts
+nav-order: 2
+intro: With 16 resorts spanning the six most enviable, tropical island paradises in the Caribbean, it’s time to pick your favourite. Browse Sandals destinations below, with a few top tips to help inspire your island getaway...
+
+---
+
+{% assign page-class = page.title %}
+
+{% include title-banner.html %}
+
+<section class="section bg--white">
+  <div class="row row--padding align-center">
+    <p class="p--large">{{page.intro}}</p>
+  </div>
+</section>
+
+
+
+{% assign resorts = site.pages | where: "layout","offer-category" | sort: "resort-order" %}
+
+<section class="section bg--light-grey">
+  <div class="row row--padding">
+    {% for resort in resorts %}
+      {% if resort.pois %}
+        {% include resort-large.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="row row--padding row--columns-4-4-4-gutters section--margin-top">
+    {% for resort in resorts %}
+      {% unless resort.pois %}
+        {% include resort.html %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+</section>
+
+<section class="section bg--white">
+  <div class="row row--padding align-center">
+    <h5 class="title title--medium title--upper title--expanded">Can't decide?</h5>
+    <a href="{{ site.baseurl }}/game" class="btn">Find your perfect resort</a>
+  </div>
+</section>

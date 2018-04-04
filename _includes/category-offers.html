@@ -1,5 +1,5 @@
 {% assign offer-category = include.category %}
-{% assign offers = site.data.offers | where: 'category', offer-category %}
+{% assign offers = site.data.offers | where: 'category', offer-category | sort: 'price'  %}
 {% assign offer-type = include.type %}
 
 {% case offer-type %}

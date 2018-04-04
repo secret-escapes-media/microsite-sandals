@@ -1,14 +1,23 @@
-<!-- looks for optional offer link, otherwise it uses the generic sandals link -->
+
 {% if offer.link %}
   {% assign offer-link = offer.link %}
 {% else %}
   {% assign offer-link = site.sandals-url %}
 {% endif %}
 
-<div class="row row--columns-6-6 offer">
-  <div class="row__column offer__image" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')">
+<div
+  class="row row--columns-6-6 row--columns-vertical-align offer"
+  data-q1="{{ offer.question-1 }}"
+  data-q2="{{ offer.question-2 }}"
+  data-q3="{{ offer.question-3 }}"
+  data-q4="{{ offer.question-4 }}"
+  data-q5="{{ offer.question-5 }}"
+  data-q6="{{ offer.question-6 }}">
+
+  <div class="row__column offer__image bg-image bg-image--ratio bg-image--ratio-1-1 bg-image--xlarge--ratio-16-9" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')">
     <a class="offer__image-link" id="image-link-{{ offer.title | slugify }}" href="{{offer-link}}"></a>
   </div>
+
   <div class="row__column offer__content">
     <h2 class="title title--dark title--smaller"><a id="title-link-{{ offer.title | slugify }}" href="{{offer-link}}">{{ offer.title }}</a></h2>
     <h3 class="h4 offer__location">{{ offer.category }}</h3>
@@ -16,7 +25,8 @@
     <p><em>"{{ offer.quote }}"</em></p>
     <p>{{ offer.detail }}</p>
     <hr>
-    <p>Was <strong>£{{ offer.was-price }}</strong>, now <strong class="title--tiny">£{{ offer.price }}</strong> {{ offer.price-description }}</p>
+    <p>Was <strong><strike>£{{ offer.was-price }}</strike></strong>, now <strong class="title--tiny">£{{ offer.price }}</strong> {{ offer.price-description }}</p>
     <a id="button-link-{{ offer.title | slugify }}" href="{{offer-link}}" class="btn">View Offer</a>
   </div>
+
 </div>

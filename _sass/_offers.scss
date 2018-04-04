@@ -7,21 +7,27 @@
   .row__column{
     margin-top: 0;
   }
+  hr {
+    margin: 1em 0;
+    @include bp(xlarge) {
+      margin: 2em 0;
+    }
+  }
   &__image {
+    @include transition();
     position: relative;
-    height: 22em;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
-    background-size: cover;
     background-color: $sandals-blue;
     @include bp(xlarge) {
+      background-size: auto 100% !important;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       height: auto;
+      min-height: 580px;
     }
     &-link {
       position: absolute;
@@ -29,6 +35,9 @@
       right: 0;
       bottom: 0;
       left: 0;
+    }
+    @include bp(xlarge){
+      .offer:hover & { background-size: auto 105% !important; }
     }
   }
   &__content {
