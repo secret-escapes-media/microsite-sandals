@@ -1,1 +1,14 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.bg {
+  &--white { background-color: $white; }
+  &--grey-light { background-color: $grey-light; }
+  &--grey-lighter { background-color: $grey-lighter; }
+  &--grey-lightest { background-color: $grey-lightest; }
+  &--grey { background-color: $grey; }
+  &--grey-dark { background-color: $grey-dark; }
+  &--grey-darker { background-color: $grey-darker; }
+  &--grey-darkest { background-color: $grey-darkest; }
+  // images
+  &--fixed { background-attachment: fixed; }
+}

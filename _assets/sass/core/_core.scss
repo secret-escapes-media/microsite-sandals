@@ -4,6 +4,8 @@
 // enable 100% height
 body, html { height: 100%; }
 
+.page-content { background-color: $white; position: relative; }
+
 // accessible hide element
 .hidden { display: none; visibility: hidden; height: 0 !important; overflow: hidden; }
 

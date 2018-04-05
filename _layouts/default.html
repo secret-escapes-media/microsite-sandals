@@ -9,9 +9,13 @@
 
     {% include page/header.html %}
 
-    {% include page/banner.html %}
+    {% if page.id == 'overview' %}
+      {% include page/banner-map.html %}
+    {% else %}
+      {% include page/banner.html %}
+    {% endif %}
 
-    <div class="content-spacing section-spacing">
+    <div class="page-content content-spacing section-spacing">
       {{ content }}
     </div>
 

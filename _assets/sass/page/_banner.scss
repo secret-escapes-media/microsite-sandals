@@ -1,5 +1,8 @@
 // the title banner that appears at the top of every page. sometimes animated bgs
 
+$site-nav-height:    56px;
+$site-nav-height-sm: 44px;
+
 .banner {
   position: relative;
   display: flex;
@@ -31,19 +34,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: $z-content;
+    z-index: 0;
     background-color: $grey-dark;
     @include background-attributes;
-    // &:before {
-    //   // optional colour overlay on bg image
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   background-color: rgba($black,.15);
-    // }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    background-color: rgba($black,.15);
   }
   &__nav {
     // optional container for navigation include
@@ -55,6 +57,89 @@
     &--top {
       top: 0;
       bottom: auto;
+    }
+  }
+}
+
+.map-banner {
+  position: relative;
+  height: 540px;
+  z-index: 0;
+  @include bp($xl){
+    height: 660px;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+    padding-bottom: $site-nav-height-sm*2;
+    @include bp($lg){ padding-bottom: $site-nav-height*2; }
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background;
+    background-image: url(../img/banner/overview.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    @include bp($xl){
+      position: fixed;
+    }
+  }
+  &__markers {
+    display: none;
+    @include bp($xxl){
+      position: fixed;
+      top: 0;
+      left: 50%;
+      z-index: 1;
+      display: block;
+    }
+  }
+  &__marker {
+    position: absolute;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    @include transition;
+    &:hover{
+      color: lighten($b-blue, 25);
+      text-decoration: none;
+    }
+    &:before {
+      // Map marker
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: -25px;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-image: url( "../img/icons/map-pin-white.svg" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+    }
+    // pin positions
+    &--antigua { top: 239px; right: -395px; }
+    &--bahamas { top: 158px; left: -175px; }
+    &--jamaica { top: 342px; left: -280px;
+      &:before { left: 22px; top: -30px; }
+    }
+    &--barbados { top: 345px; right: -460px;
+      &:before { left: 30px; top: -25px; }
+    }
+    &--grenada { top: 357px; right: -332px;
+      &:before { left: auto; right: -25px; }
+    }
+    &--saint-lucia { top: 309px; right: -341px;
+      &:before { left: auto; right: -25px; }
     }
   }
 }

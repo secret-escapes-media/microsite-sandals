@@ -28,3 +28,15 @@ hr {
   background-color: $grey-lightest;
   margin: $s1 0;
 }
+.hr {
+  &--left { margin-left: 0; width: 80px; }
+  &--right { margin-right: 0; width: 80px; }
+  &--center { margin-right: auto; margin-left: auto; width: 80px; }
+  &--double {
+    background-color: transparent;
+    height: 6px;
+    border-top: 1px solid $grey-lightest;
+    border-bottom: 1px solid $grey-lightest;
+  }
+  .text--white &--double { border-color: rgba($white,0.2); }
+}

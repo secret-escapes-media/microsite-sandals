@@ -4,7 +4,6 @@
 
   // custom content headline
   font-family: $font-title-01;
-  font-weight: 200;
   @include font-smoothing;
 
   &--xxxl   { font-size: $s8; line-height: 1.033; }

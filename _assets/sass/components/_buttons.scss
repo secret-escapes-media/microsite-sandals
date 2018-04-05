@@ -17,7 +17,7 @@
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
-  &--orange-outline {
+  &--outline {
     color: inherit;
     &:before {
       // button border within original padding
@@ -34,5 +34,17 @@
       color: $white;
       background-color: $orange;
     }
+  }
+  &--outline-orange {
+    &:before { border: 1px solid $orange; }
+    &:hover { background-color: $orange; }
+  }
+  &--outline-sandals {
+    &:before { border: 1px solid $b-blue; }
+    &:hover { background-color: $b-blue; }
+  }
+
+  &--solid { background-color: $b-blue;
+    &:hover { background-color: $b-blue-dark; }
   }
 }

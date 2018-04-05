@@ -4,54 +4,56 @@ id: overview
 nav: true
 nav-order: 1
 title: Overview
-intro: this is my home page
+
+intro: >
+  <p class="text--lg">Immerse yourself in the envious heat, tropical saunter and luxurious offerings of a Sandals Caribbean escape this new year! Discover exotic delights and sumptuous excesses at these all-inclusive resorts – resorts that span the finest idylls the Caribbean has to offer.</p>
+  <p class="text--lg">With The Big Sale, you can stop dreaming and start planning your very own luxury escape. Whether you want to unpick the volcanic rainforests of Saint Lucia or prop up the beachside rum shacks of Barbados, make your Caribbean getaway a reality with up to £150 off plus up to 55% savings.</p>
+  <p class="text--lg">Browse these coveted resorts and choose your favourite – can’t choose? Play our quick game to match the perfect resort to you! Once you’ve chosen your ideal Caribbean escape, enter one of the codes below on the Sandals website to redeem your discount.</p>
+  <p class="text--lg">Hurry, offer ends 30 January 2018!</p>
+
 ---
 
-<div class="container vpad--xxl">
 
-  <div class="title title--lg text--center">Bob layout</div>
+<div class="container container--xxl vpad--xxl text--center">
+  {{page.intro}}
+</div>
 
-  <div class="space--lg"></div>
 
-  <div class="bob">
-    <div class="bob__img">
-      <a href="#image-link">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </a>
-    </div>
-    <div class="bob__text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
+{% assign countries = site.html_pages | where: 'layout','country' | sort:'group-order' %}
+<div class="container--100 vpad--xxl bg--grey-lightest">
+
+  <div class="container text--center">
+    <h3 class="title title--lg text--bold">Azure seas, white beaches, or green forests?</h3>
+    <div class="space--xs"></div>
+    <div class="container container--xxl">
+      <p class="text--xl">With 16 resorts spanning the six most enviable, tropical island paradises in the Caribbean, it’s time to pick your favourite. Browse Sandals destinations below, with a few top tips to help inspire your island getaway...</p>
     </div>
   </div>
-  <div class="bob bob--swap">
-    <div class="bob__img">
-      <a href="#image-link">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </a>
+
+  <div class="container">
+    {% for country in countries %}
+    <div class="bob{% cycle '',' bob--swap'%}">
+      <div class="bob__img">
+        <a href="{{site.baseurl}}{{country.url}}">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/banner/{{country.id}}.jpg');"></div>
+        </a>
+      </div>
+      <div class="bob__text">
+        <h2 class="title title--lg text--bold">{{country.title}}</h2>
+        <p class="text--lg">{{country.intro | strip_html | truncatewords: 40 }}</p>
+        <div class="space--sm"></div>
+        <a href="{{site.baseurl}}{{country.url}}" class="btn btn--solid">Read more</a>
+      </div>
     </div>
-    <div class="bob__text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
-    </div>
+    {% endfor %}
   </div>
 
 </div>
 
-<div class="title title--lg vpad--lg text--center">Harvey layout</div>
 
-<div class="harvey">
-  <div class="harvey__img" style="background-image: url({{site.img}}/img.jpg);">
-    <a class="harvey__link" href="#image-link"></a>
-  </div>
-  <div class="harvey__text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
-  </div>
+<div class="container container--xxl vpad--xxl text--center">
+  <h3 class="title title--sm text--bold">Can't decide which island paradise is for you? Have a browse through our selection of resorts instead!</h3>
+  <div class="space--md"></div>
+  <a href="{{site.baseurl}}/offers" class="btn btn--lg btn--solid">View all offers</a>
 </div>
 
-<div class="harvey harvey--swap">
-  <div class="harvey__img" style="background-image: url({{site.img}}/img.jpg);">
-    <a class="harvey__link" href="#image-link"></a>
-  </div>
-  <div class="harvey__text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
-  </div>
-</div>
