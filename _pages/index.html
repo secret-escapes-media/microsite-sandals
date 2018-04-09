@@ -6,10 +6,9 @@ nav-order: 1
 title: Overview
 
 intro: >
-  <p class="text--lg">Immerse yourself in the envious heat, tropical saunter and luxurious offerings of a Sandals Caribbean escape this new year! Discover exotic delights and sumptuous excesses at these all-inclusive resorts – resorts that span the finest idylls the Caribbean has to offer.</p>
-  <p class="text--lg">With The Big Sale, you can stop dreaming and start planning your very own luxury escape. Whether you want to unpick the volcanic rainforests of Saint Lucia or prop up the beachside rum shacks of Barbados, make your Caribbean getaway a reality with up to £150 off plus up to 55% savings.</p>
-  <p class="text--lg">Browse these coveted resorts and choose your favourite – can’t choose? Play our quick game to match the perfect resort to you! Once you’ve chosen your ideal Caribbean escape, enter one of the codes below on the Sandals website to redeem your discount.</p>
-  <p class="text--lg">Hurry, offer ends 30 January 2018!</p>
+  <p class="text--lg">Discover luxurious all-inclusive Sandals resorts on the golden shores of the Caribbean – now half price. Your tropical getaway starts here...</p>
+  <p class="text--lg">The world’s leading all-inclusive resorts span the finest island idylls the Caribbean has to offer. In the Sandals <strong style="font-weight:600;">2&nbsp;for&nbsp;1&nbsp;sale</strong>, there’s a sumptuous variety of award-winning resorts to pick from, suiting all tastes and styles. </p>
+  <p class="text--lg">From the powder white sand of Half Moon Bay in Antigua to the famous Fish Fry in the Bahamas, choose your Caribbean adventure here.</p>
 
 ---
 
@@ -20,17 +19,17 @@ intro: >
 
 
 {% assign countries = site.html_pages | where: 'layout','country' | sort:'group-order' %}
-<div class="container--100 vpad--xxl bg--grey-lightest">
-
-  <div class="container text--center">
-    <h3 class="title title--lg text--bold">Azure seas, white beaches, or green forests?</h3>
-    <div class="space--xs"></div>
-    <div class="container container--xxl">
-      <p class="text--xl">With 16 resorts spanning the six most enviable, tropical island paradises in the Caribbean, it’s time to pick your favourite. Browse Sandals destinations below, with a few top tips to help inspire your island getaway...</p>
-    </div>
-  </div>
+<div class="vpad--xxl bg--grey-lightest">
 
   <div class="container">
+
+    <div class="container container--xxl text--center">
+      <p class="text--xxl text--italic">With 16 resorts spanning the six most enviable, tropical island paradises in the Caribbean, it’s time to pick your favourite. Browse Sandals destinations below, with a few top tips to help inspire your island getaway...</p>
+      <div class="space--xs"></div>
+      <hr class="hr--center">
+      <div class="space--xl"></div>
+    </div>
+
     {% for country in countries %}
     <div class="bob{% cycle '',' bob--swap'%}">
       <div class="bob__img">
@@ -40,7 +39,7 @@ intro: >
       </div>
       <div class="bob__text">
         <h2 class="title title--lg text--bold">{{country.title}}</h2>
-        <p class="text--lg">{{country.intro | strip_html | truncatewords: 40 }}</p>
+        <p class="text--lg">{{country.intro | strip_html | truncatewords: 43 }}</p>
         <div class="space--sm"></div>
         <a href="{{site.baseurl}}{{country.url}}" class="btn btn--solid">Read more</a>
       </div>
@@ -52,7 +51,7 @@ intro: >
 
 
 <div class="container container--xxl vpad--xxl text--center">
-  <h3 class="title title--sm text--bold">Can't decide which island paradise is for you? Have a browse through our selection of resorts instead!</h3>
+  <h3 class="title title--sm text--bold">Can't decide which island paradise is for you? Have a browse through our selection of Sandals resorts instead!</h3>
   <div class="space--md"></div>
   <a href="{{site.baseurl}}/offers" class="btn btn--lg btn--solid">View all offers</a>
 </div>
