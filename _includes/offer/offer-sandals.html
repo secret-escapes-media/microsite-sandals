@@ -1,10 +1,10 @@
-<div class="offer row row--no-gutters row--valign-center">
+<div class="offer row row--no-gutters row--valign-center row--xl-6-6">
 
-  <div class="offer__img col col--6">
-    <a href="{{offer.link}}" class="bg-img bg-img--16-9 bg-img--lg-3-4 bg-img--xxl-1-1" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></a>
+  <div class="offer__img col">
+    <a href="{{offer.link}}" class="bg-img bg-img--16-9 bg-img--xl-3-4 bg-img--xxxl-1-1" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')" id="tracking-offer-image-{{offer.id}}"></a>
   </div>
 
-  <div class="offer__text col col--6">
+  <div class="offer__text col">
     <div class="boxpad--xxl">
 
       <h3 class="title title--sm text--bold">{{offer.title}}</h3>
@@ -15,7 +15,7 @@
       <p class="text--lg text--bolder">{{offer.room-type}}</p>
       <p>Was <strike class="text--bolder">£{{offer.was-price}}</strike>, now <span class="text--lg text--bolder">£{{offer.price}}</span> {{offer.price-description}}</p>
       <div class="space--lg"></div>
-      <a href="{{offer.link}}" class="btn btn--outline btn--outline-sandals">View offer</a>
+      <a href="{{offer.link}}" class="btn btn--outline btn--outline-sandals" id="tracking-offer-button-{{offer.id}}">View offer</a>
 
     </div>
   </div>

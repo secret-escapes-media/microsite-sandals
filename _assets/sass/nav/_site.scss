@@ -31,32 +31,33 @@ $nav-text-color:     $grey-darker;
   }
 
 
-  &:before {
-    // arrow icon prompt for horizontal scroll
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $z-nav-upper;
-    width: $site-nav-height-sm;
-    background-image: url("../img/icons/nav-arrow.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: $site-nav-height-sm auto;
-    @include site-nav-height;
-    @include bp($md){
-      width: $site-nav-height;
-      background-size: $site-nav-height auto;
-    }
-    // remove arrow icon when no overflow
-    @include bp($nav-width-bp){ display: none; }
-  }
+
 
   &__scroll-wrap {
     overflow-x: auto;
     overflow-y: hidden;
     @include bp($nav-width-bp){ overflow: visible; }
+    &:before {
+      // arrow icon prompt for horizontal scroll
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-nav-upper;
+      width: $site-nav-height-sm;
+      background-image: url("../img/icons/nav-arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: $site-nav-height-sm auto;
+      @include site-nav-height;
+      @include bp($md){
+        width: $site-nav-height;
+        background-size: $site-nav-height auto;
+      }
+      // remove arrow icon when no overflow
+      @include bp($nav-width-bp){ display: none; }
+    }
   }
   &__wrap {
     display: flex;
@@ -66,7 +67,7 @@ $nav-text-color:     $grey-darker;
     margin-left: auto;
     margin-right: auto;
     @include site-nav-height;
-    &:after {
+    .site-nav__scroll-wrap &:after {
       // additional spacing for end of list so content can scroll past the overlaid arrow icon
       content: '';
       min-width: $site-nav-height-sm;

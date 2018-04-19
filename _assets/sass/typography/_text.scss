@@ -2,10 +2,14 @@
 
 .text {
   // sizes
-  &--xxl { font-size: $s3; }
-  &--xl  { font-size: $s2; }
+  &--xxl { font-size: $s1; }
+  &--xl  { font-size: $s1; }
   &--lg  { font-size: $s1; }
   &--sm  { font-size: $s-1; }
+  @include bp($lg) {
+    &--xxl { font-size: $s3; }
+    &--xl  { font-size: $s2; }
+  }
 
   // styles
   &--italic       { font-style: italic; }

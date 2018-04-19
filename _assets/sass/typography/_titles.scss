@@ -86,7 +86,7 @@
 
   // custom banner headline
   font-family: $font-title-01;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.2;
   text-transform: uppercase;
   @include font-smoothing;
@@ -96,6 +96,9 @@
   @include bp($md){
     letter-spacing: 1rem;
     font-size: $s7;
+  }
+  @include bp($lg){
+    font-weight: 200;
   }
   @include bp($xl){
     letter-spacing: 2rem;
