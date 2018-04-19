@@ -1,11 +1,24 @@
 # Site settings
 title: Sandals
+client:
+  name: Sandals
+  link: "http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite"
+core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  Jet away to warmer climes for a truly luxurious holiday, make a Sandals resort your next stop. There’s never been a better time with up to 60% off, but hurry – sale ends 30th September!
+  Discover luxurious all-inclusive Sandals resorts on the golden shores of the Caribbean – now half price. Your tropical getaway starts here...
+
+# file paths
+url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
 baseurl: "/sandals" # the subpath of your site, e.g. /blog/
-url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
-sandals-url: "http://www.sandals.co.uk/specials/uk-offers?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=Toy&utm_content=Text_Links"
+img:     "/sandals/_assets/img"
+css:     "/sandals/_assets/css"
+js:      "/sandals/_assets/js"
+
 
 # Build settings
 markdown: kramdown
-exclude: [node_modules, gulpfile.js, package.json, package-lock.json, bower_components, bower.json, README.md]
+exclude: [node_modules, gulpfile.js, package.json, package-lock.json, js/script.js]
+keep_files: [_assets]
+sass:
+    sass_dir: css
+    style: compressed

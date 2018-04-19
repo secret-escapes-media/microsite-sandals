@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+
+
+<div class="container vpad--xxl">
+
+  <div class="container container--xxl text--center">
+    {{page.intro}}
+  </div>
+
+  {% if page.features %}
+  <div class="space--xxl"></div>
+
+  <div class="row row--4-4-4 row--gutters">
+    {% for feature in page.features %}
+    <div class="col">
+      <div class="bg-img bg-img--16-9" style="background-image:url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></div>
+      <div class="space--sm"></div>
+      <h4 class="title title--xs text--bold">{{feature.title}}</h4>
+      {{feature.content}}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+
+
+
+<div class="container--100 vpad--xxl bg-img bg-img--1-3 bg--fixed image-banner" style="background-image:url({{site.img}}/content/{{page.id}}/banner.jpg);"></div>
+
+
+
+<div class="bg--grey-lightest">
+  <div class="container vpad--xxl">
+    {% assign offers = site.data.offers | where: 'page',page.id | sort: 'price' %}
+    {% for offer in offers %}
+      {% include offer/offer-sandals.html %}
+    {% endfor %}
+    <div class="space--xxxl text--center">
+      <a href="{{site.baseurl}}/offers" class="btn btn--solid btn--lg">View all offers</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% assign countries = site.html_pages | where: 'layout','country' | sort:'group-order' %}
+<div class="bg--grey-">
+  <div class="container vpad--xxl text--center">
+    <h3 class="title title--lg text--bold">Explore our other resort islands</h3>
+    <div class="space--lg"></div>
+    <div class="row row--4-4-4">
+      {% for country in countries %}
+      {% unless country.id == page.id %}
+      <div class="col">
+        <div class="country-tile">
+          <a href="{{site.baseurl}}{{country.url}}">
+            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/banner/{{country.id}}.jpg');"></div>
+          </a>
+          <div class="boxpad--md">
+            <h2 class="title title--xs text--bold">{{country.title}}</h2>
+          </div>
+        </div>
+      </div>
+      {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

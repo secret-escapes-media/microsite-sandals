@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="container--100 bg--grey-lightest">
+  <div class="container vpad--xxxl">
+    {% assign offers = site.data.offers | sort: 'price' %}
+    {% for offer in offers %}
+      {% include offer/offer-sandals.html %}
+    {% endfor %}
+  </div>
+</div>

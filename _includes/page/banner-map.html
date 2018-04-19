@@ -1,0 +1,24 @@
+
+<div class="map-banner text--white">
+  <div class="map-banner__bg"></div>
+  <div class="map-banner__markers">
+    {% assign locations = site.html_pages %}
+    {% for location in locations %}
+    {% if location.layout == 'country' %}
+    <a class="map-banner__marker map-banner__marker--{{ location.title | slugify }}" href="{{ site.baseurl }}{{ location.url }}">{{ location.title }}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="map-banner__content">
+    <div class="container text--center">
+      <h1 class="title title--xxxl text--bold">The Caribbean</h1>
+      <hr class="hr--double hr--center">
+      <h2 class="title title--xxs text--wide-kern text--upper text--bold">Glorious sunshine awaits</h2>
+    </div>
+  </div>
+  <div class="banner__overlay"></div>
+  <div class="banner__nav">
+    {% include nav/site.html %}
+  </div>
+</div>

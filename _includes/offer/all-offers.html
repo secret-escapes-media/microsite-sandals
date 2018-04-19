@@ -1,0 +1,7 @@
+{% include offer/variables.html %}
+
+<div class="container vpad--xxxl">
+  {% for offer in offers-by-saving %}
+    {% include offer/offer.html %}
+  {% endfor %}
+</div>

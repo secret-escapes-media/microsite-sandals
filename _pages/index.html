@@ -1,94 +1,59 @@
 ---
 layout: default
-title: Overview
-class: overview
+id: overview
+nav: true
 nav-order: 1
+title: Overview
+
 intro: >
-  <p>Immerse yourself in the envious heat, tropical saunter and luxurious offerings of a Sandals Caribbean escape this new year! Discover exotic delights and sumptuous excesses at these all-inclusive resorts – resorts that span the finest idylls the Caribbean has to offer. </p>
-  <p>With <strong>The Big Sale</strong>, you can stop dreaming and start planning your very own luxury escape. Whether you want to unpick the volcanic rainforests of Saint Lucia or prop up the beachside rum shacks of Barbados, make your Caribbean getaway a reality with <strong>up to £150 off plus up to 55% savings.</strong></p>
-  <p>Browse these coveted resorts and choose your favourite – can’t choose? Play our quick game to match the perfect resort to you! Once you’ve chosen your ideal Caribbean escape, enter one of the codes below on the Sandals website to redeem your discount.</p>
-  <p>Hurry, offer ends 30 January 2018!</p>
+  <p class="text--lg">Discover luxurious all-inclusive Sandals resorts on the golden shores of the Caribbean – now half price. Your tropical getaway starts here...</p>
+  <p class="text--lg">The world’s leading all-inclusive resorts span the finest island idylls the Caribbean has to offer. In the Sandals <strong style="font-weight:600;">2&nbsp;for&nbsp;1&nbsp;sale</strong>, there’s a sumptuous variety of award-winning resorts to pick from, suiting all tastes and styles. </p>
+  <p class="text--lg">From the powder white sand of Dickenson Bay in Antigua to the famous Fish Fry in the Bahamas, choose your Caribbean adventure here.</p>
+  <p class="text--lg">Hurry, offers end 22 May 2018!</p>
 
 ---
 
 
+<div class="container container--xxl vpad--xxl text--center">
+  {{page.intro}}
+</div>
 
-<section class="invert-text map">
-  <div class="map__bg"></div>
-  <div class="row map__markers">
-    {% assign locations = site.pages %}
-    {% for location in locations %}
-    {% if location.layout == 'offer-category' %}
-    <a class="map__marker map__marker--{{ location.title | slugify }}" href="{{ site.baseurl }}{{ location.url }}">{{ location.title }}</a>
-    {% endif %}
+
+{% assign countries = site.html_pages | where: 'layout','country' | sort:'group-order' %}
+<div class="vpad--xxl bg--grey-lightest">
+
+  <div class="container">
+
+    <div class="container container--xxl text--center">
+      <p class="text--xxl text--italic">With 16 resorts spanning the six most enviable, tropical island paradises in the Caribbean, it’s time to pick your favourite. Browse Sandals destinations below, with a few top tips to help inspire your island getaway...</p>
+      <div class="space--xs"></div>
+      <hr class="hr--center">
+      <div class="space--xl"></div>
+    </div>
+
+    {% for country in countries %}
+    <div class="bob{% cycle '',' bob--swap'%}">
+      <div class="bob__img">
+        <a href="{{site.baseurl}}{{country.url}}">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/banner/{{country.id}}.jpg');"></div>
+        </a>
+      </div>
+      <div class="bob__text">
+        <h2 class="title title--lg text--bold">{{country.title}}</h2>
+        <p class="text--lg">{{country.intro | strip_html | truncatewords: 43 }}</p>
+        <div class="space--sm"></div>
+        <a href="{{site.baseurl}}{{country.url}}" class="btn btn--solid">Read more</a>
+      </div>
+    </div>
     {% endfor %}
   </div>
-  <div class="map__title">
-    <div class="row row--padding align-center">
-      <h1 class="map__divider title title--larger title--bold title--upper">The Caribbean</h1>
-      <h2 class="title title--smallest title--expanded title--light title--upper">Glorious sunshine awaits</h2>
-      <a href="{{site.baseurl}}/game" class="btn btn--invert">Find your perfect resort</a>
-    </div>
-  </div>
-  <div class="banner__overlay"></div>
-</section>
-
-{% include microsite-navigation.html %}
-
-
-
-
-<div class="upper-content">
-
-  <section class="section bg--white">
-    <div class="row row--padding align-center">
-      {{page.intro}}
-    </div>
-
-    <div class="row row--thin row--padding align-center">
-
-      <div class="discount">
-        <span class="discount__title">7 nights or more for £75 discount</span>
-        <div class="discount__inner">
-          <span class="title title--smallest title--expandeder title--bolder">JAN75</span>
-        </div>
-      </div>
-
-      <div class="discount">
-        <span class="discount__title">14 nights or more for £150 discount</span>
-        <div class="discount__inner">
-          <span class="title title--smallest title--expandeder title--bolder">JAN150</span>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row row--padding">
-      <div class="video js-youtube-thumbnail" data-thumbnail-img="img/content/video.jpg">
-        <iframe class="video__iframe" src='https://www.youtube.com/embed/zKZMfxlw-jE?rel=0&amp;showinfo=0' frameborder='0'></iframe>
-      </div>
-    </div>
-
-  </section>
-
-
-
-  <section class="section bg--light-grey">
-    <div class="row row--padding">
-
-      {% assign offers = site.data.offers | sort: 'price' %}
-      {% for offer in offers %}
-        {% if offer.category == "Multi Centre" %}
-          {% include offer/full-width-multi.html %}
-        {% else %}
-          {% include offer/full-width.html %}
-        {% endif %}
-      {% endfor %}
-
-    </div>
-  </section>
-
-
-
 
 </div>
+
+
+<div class="container container--xxl vpad--xxl text--center">
+  <h3 class="title title--sm text--bold">Can't decide which island paradise is for you? Have a browse through our selection of Sandals resorts instead!</h3>
+  <div class="space--md"></div>
+  <a href="{{site.baseurl}}/offers" class="btn btn--lg btn--solid">View all offers</a>
+</div>
+

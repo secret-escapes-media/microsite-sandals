@@ -1,0 +1,42 @@
+// element styles for written content
+
+em      { font-style: italic; }
+strong  { font-weight: 700; }
+sup {
+  font-size: $s-1;
+  line-height: 0;
+  vertical-align: super;
+}
+
+// standard inline link style
+a[href]:not([class]) {
+  color: $orange;
+  @include transition;
+  &:hover { color: $orange-darker; }
+}
+
+li {
+  list-style-position:
+  outside; margin-left: $s1;
+}
+ul li   { list-style-type: disc; }
+ol li   { list-style-type: decimal; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: rgba($grey-darkest,0.2);
+  margin: $s1 0;
+}
+.hr {
+  &--left { margin-left: 0; width: 80px; }
+  &--right { margin-right: 0; width: 80px; }
+  &--center { margin-right: auto; margin-left: auto; width: 80px; }
+  &--double {
+    background-color: transparent;
+    height: 6px;
+    border-top: 1px solid $grey-lightest;
+    border-bottom: 1px solid $grey-lightest;
+  }
+  .text--white &--double { border-color: rgba($white,0.2); }
+}

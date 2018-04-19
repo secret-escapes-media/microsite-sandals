@@ -1,0 +1,14 @@
+// moidifiers for the site footer theme, is passed as an option on include
+
+$footer-nav-color: $grey-lightest;
+
+.site-nav {
+  &--footer {
+    background-color: $footer-nav-color;
+    &:before { background-image: url("../img/icons/nav-arrow-footer.svg"); }
+  }
+  &--footer &__link {
+    &.is-current      { background-color: $grey-lighter; }
+    .no-touch &:hover { background-color: $grey-lighter; }
+  }
+}
