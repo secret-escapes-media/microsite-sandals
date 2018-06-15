@@ -10,7 +10,10 @@
   &--grey-darker { background-color: $grey-darker; }
   &--grey-darkest { background-color: $grey-darkest; }
   // images
-  &--fixed { background-attachment: fixed; }
+  &--fixed {
+    background-attachment: fixed;
+    .touch & { background-attachment: scroll; }
+  }
 }
 
 .rounded-corners { border-radius: 4px; overflow: hidden; }
@@ -31,4 +34,17 @@
 
 .image-banner {
   min-height: 460px;
+}
+
+// general width limits for content
+.width {
+  margin-right: auto;
+  margin-left: auto;
+  &--xxs { max-width: ($sm / 3); }
+  &--xs  { max-width: ($sm / 2); }
+  &--sm  { max-width: $sm; }
+  &--md  { max-width: $md; }
+  &--lg  { max-width: $lg; }
+  &--xl  { max-width: $xl; }
+  &--xxl { max-width: $xxl; }
 }

@@ -24,24 +24,8 @@
   pages:
     - id: all
   content: >
-    <div class="title title--sm text--bold">Terms and Conditions</div>
+    <div class="title title--md text--bold">Terms and Conditions</div>
     <hr class="hr--left">
-    <p>Half price holidays are valid on air inclusive packages for travel up to 31 Mar 2020. Book by 22 May ’18. Offer varies depending on resort, room type and travel date. Minimum stay 5 nights. This offer cannot be combined with any other promo code offers. Free wedding can be applied. Sandals Select points can be used and earned in conjunction with this offer. Offers subject to availability. Prices are correct at the time of publishing, are subject to availability and can change or be withdrawn without notice. Advertised price is based on selected departure dates within the date-bands specified. Prices are per person based on 2 people sharing a room on an all-inclusive basis (all meals, drinks, selected land and water sports) and include return economy flights with British Airways or Virgin Atlantic from London. Terms and conditions and blackout dates apply.</p>
-
-- id: image-credits
-  image: img.jpg
-  pages:
-    - id: all
-  content: >
-    <div class="core-title core-title--md">Image Credits</div>
-    <ol>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tenetur dolorem quod, perspiciatis explicabo harum doloremque aut eveniet reprehenderit voluptatibus.</li>
-      <li>Cupiditate fugiat voluptatibus molestias soluta perspiciatis deserunt eum officia autem laboriosam, fugit provident harum architecto delectus iure dolores quis corrupti.</li>
-      <li>Adipisci eligendi, ut. Voluptas optio a rerum perferendis eligendi esse minus voluptate consequatur, ullam cupiditate distinctio ad, est, vitae beatae!</li>
-      <li>Odit alias, expedita quis. Quibusdam soluta odit architecto labore. Vel quaerat dignissimos minus accusamus deserunt et, fugit a odit provident!</li>
-      <li>Inventore voluptate, quis quibusdam consectetur excepturi officia ipsum fugit, itaque sapiente, rem, saepe sunt libero ducimus reiciendis officiis nobis et?</li>
-      <li>Minima aperiam fuga voluptate cupiditate commodi sed enim! Dolore qui, accusamus accusantium iste asperiores quidem molestias officiis quia necessitatibus minus.</li>
-      <li>Id illum non atque perspiciatis alias natus, laboriosam nihil dolorum voluptatum libero cum vel ex commodi deserunt debitis maxime sed.</li>
-      <li>Ab cum voluptas hic asperiores accusantium et voluptatem, architecto a saepe modi culpa laudantium, unde eveniet fugiat nobis excepturi molestias?</li>
-    </ol>
-
+    <div>
+      <p>For the extra £100 off book by midnight on 20th June 2018, for travel up to 31 March 2020. Quote ISLAND100 for £100 discount per booking. Min stay 7 nights. Not combinable with any other promo code offer. Prices are based on selected departure dates within the date-bands specified. Prices are correct at the time of going to print, are subject to availability and can change or be withdrawn without notice. Prices are based on 2 people sharing a room on an all-inclusive basis (all meals, drinks, selected land and water sports) and include return economy flights with British Airways or Virgin Atlantic from London (unless otherwise stated). Prices also include Sandals airport transfers, tips and taxes. Other transfers may be additional. Full terms & conditions apply, visit www.sandals.co.uk. Unique Caribbean Holidays Ltd, registered office 32 Ives Street, London SW3 2ND, acts as an agent for Sandals & Beaches Resort Intl. All holidays are ABTA (Y6413) and ATOL (11174) protected</p>
+    </div>

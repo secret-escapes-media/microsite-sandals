@@ -1,5 +1,3 @@
-
-
 ########## JAMAICA ##########
 
 - title: Sandals Ochi Beach Resort
@@ -7,39 +5,30 @@
   id: sandals-ochi-beach-resort
   location: Jamaica
   description: On the beautiful north coast of Jamaica, Sandals Ochi Beach Resort hugs the lush mountains of St.Ann and capitalises on its spectacular ocean views.
-  room-type: Honeymoon Grande Luxe Poolside Villa Club Level Room
-  was-price: 2999
-  price: 1399
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SGO
-
-
+  room-type: Honeymoon Hideaway Luxury Club Level Villa
+  was-price: 2354
+  price: 1389
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SGO
 
 - title: Sandals Royal Caribbean Resort & Private Island
   page: jamaica
   id: sandals-royal-caribbean-resort-private-island
   location: Jamaica
   description: From the Georgian-style Great House to the resort's private offshore island, expect everything from afternoon tea to night-time beachside extravaganzas
-  room-type: Kensington Cove Honeymoon Beachfront Club Level Room
-  was-price: 3385
-  price: 1599
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SRC
-
-
+  room-type: Caribbean Deluxe
+  was-price: 2534
+  price: 1679
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SRC
 
 - title: Sandals Negril Beach Resort & Spa
   page: jamaica
   id: sandals-negril-beach-resort-spa
   location: Jamaica
   description: Amidst a pristine tropical setting, this world-class beachfront resort spans the longest and best stretch of Jamaica’s famous seven-mile beach and has impressive eco-friendly credentials.
-  room-type: Caribbean Luxury Honeymoon Room
-  was-price: 3209
-  price: 1499
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SNG
-
-
+  room-type: Caribbean Deluxe Room
+  was-price: 2721
+  price: 1725
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SNG
 
 - title: Sandals Royal Plantation
   page: jamaica
@@ -48,11 +37,8 @@
   description: This glamorous resort boasts just 74 suites, each with stunning ocean views and Personal Butler Service.
   room-type: Viceroy Honeymoon Oceanfront Butler Suite
   was-price: 3625
-  price: 1699
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SRP
-
-
+  price: 1865
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SRP
 
 - title: Sandals South Coast
   page: jamaica
@@ -60,50 +46,39 @@
   location: Jamaica
   description: Set on Jamaica’s undiscovered south coast, boasting over 2 miles of unspoilt beach, every room and suite enjoys ocean views.
   room-type: Honeymoon Beachfront Grande Luxe Room
-  was-price: 2751
-  price: 1299
-  price-description: per person for 7 nights, (flying from Manchester Airport)
-  link: http://www.sandals.co.uk/specials/uk-manchester-travel-deals/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SWH
-
-
+  was-price: 2928
+  price: 1499
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SWH
 
 - title: Beaches Ocho Rios - A Spa, Golf & Waterpark Resort
   page: jamaica
   id: beaches-ocho-rios-a-spa-golf-waterpark-resort
   location: Jamaica
   description: This vibrant Luxury Included<sup>®</sup> resort is surrounded by 22 acres of tropical gardens and is perfect for families, with its huge waterpark, championship golf and private white-sand beach.
-  room-type: Caribbean Oceanview Luxury Veranda Suite
-  was-price: 3026
-  price: 1399
-  price-description: per person for 7 nights (flying from Manchester Airport)
-  link: http://www.beachesresorts.co.uk/deals/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_BBO
-
-
+  room-type: Caribbean Grande Luxe Suite
+  was-price: 2571
+  price: 1499
+  link:  http://www.beachesresorts.co.uk/deals/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=BBO
 
 - title: Beaches Negril Resort & Spa
   page: jamaica
   id: beaches-negril-resort-spa
   location: Jamaica
   description: Everything you can possibly imagine is beachside at Beaches Negril Resort &amp; Spa — from lively pools to restaurants and bars, right on the widest stretch of Jamaica’s seven-mile beach.
-  room-type: Negril Beachfront Grande Luxe Room
-  was-price: 3876
-  price: 1799
-  price-description: per person for 7 nights
-  link: http://www.beachesresorts.co.uk/deals/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_BNG
-
-
+  room-type: Negril Deluxe Room
+  was-price: 3131
+  price: 2035
+  link:  http://www.beachesresorts.co.uk/deals/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=BNG
 
 - title: Sandals Montego Bay
   page: jamaica
   id: sandals-montego-bay
   location: Jamaica
   description: Sandals Montego Bay is Sandal's flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
-  room-type: Oceanfront Penthouse Club Level Junior Suite with Balcony Tranquility Soaking Tub
-  was-price: 3783
-  price: 1799
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SMB
-
+  room-type: Caribbean Deluxe
+  was-price: 2655
+  price: 1729
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SMB
 
 
 ########## SAINT LUCIA ##########
@@ -113,26 +88,20 @@
   id: sandals-halcyon-beach
   location: Saint Lucia
   description: The most intimate Sandals' resort in Saint Lucia, with hammocks and cabanas in lush tropical gardens, and unspoilt views of the Caribbean
-  room-type: Honeymoon Hideaway Luxury Poolside Room
-  was-price: 2975
-  price: 1299
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SHC
-
-
+  room-type: Halcyon Hideaway Deluxe Room
+  was-price: 2308
+  price: 1639
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=microsite_SHC
 
 - title: Sandals Regency La Toc Golf Resort & Spa
   page: saint-lucia
   id: sandals-regency-la-toc-golf-resort-spa
   location: Saint Lucia
   description: Experience the executive-style golf course, luxury oceanfront suites, Five-Star Diamond French cuisine and access to a total of 27 restaurants with Sandals’ exclusive Stay at One, Play at All exchange programme.
-  room-type: Emerald Honeymoon Oceanview Room
-  was-price: 2981
-  price: 1399
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SLU
-
-
+  room-type: Emerald Honeymoon Hideaway Grande Luxe Room
+  was-price: 2517
+  price: 1579
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SLU
 
 - title: Sandals Grande St Lucian Spa & Beach Resort
   page: saint-lucia
@@ -141,10 +110,8 @@
   description: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
   room-type: Caribbean Luxury Oceanview Room
   was-price: 3566
-  price: 1659
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SGL
-
+  price: 1835
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SGL
 
 
 ########## ANTIGUA ##########
@@ -153,13 +120,11 @@
   page: antigua
   id: sandals-grande-antigua-resort-spa
   location: Antigua
-  description: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted 'World's Most Romantic Resort' for many years.
+  description: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted 'Caribbean’s Most Romantic Resort' for many years.
   room-type: Caribbean Grande Luxe Poolside Room
-  was-price: 3179
-  price: 1449
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SAT
-
+  was-price: 2946
+  price: 1599
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SAT
 
 
 ########## BAHAMAS ##########
@@ -169,25 +134,20 @@
   id: sandals-royal-bahamian-spa-resort-offshore-island
   location: Bahamas
   description: Enjoy the unprecedented luxury of two holidays in one, featuring an exotic offshore island escape, this resort has it all.
-  room-type: Windsor Honeymoon Club Level Oversized Junior Suite
-  was-price: 3695
-  price: 1799
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SRB
-
-
+  room-type: Balmoral Oceanview Luxury Room
+  was-price: 3315
+  price: 1819
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SRB
 
 - title: Sandals Emerald Bay Golf, Tennis & Spa Resort
   page: bahamas
   id: sandals-emerald-bay-golf-tennis-spa-resort
   location: Bahamas
   description: Deep within the idyllic waters of the Exumas, Sandals Emerald Bay Golf, Tennis & Spa Resort brings unprecedented luxury to the easy-going rhythms of the Bahamian Out Islands.
-  room-type: Beach House Oceanview Grande Luxe Walkout Club Level Room
-  was-price: 3696
-  price: 1749
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SEB
-
+  room-type: Beach House Oceanview Grande Luxe Club Level Room
+  was-price: 3432
+  price: 1759
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SEB
 
 
 ########## GRENADA ##########
@@ -197,12 +157,10 @@
   id: sandals-grenada-resort-spa
   location: Grenada
   description: Located on the exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandals first, a steakhouse.
-  room-type: South Seas Premium Room with Outdoor Tranquility Soaking Tub
-  was-price: 3045
-  price: 1479
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SLS
-
+  room-type: Lovers Lagoon Hideaway Junior Suite with Balcony Tranquility Soaking Tub
+  was-price: 2886
+  price: 1699
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SLS
 
 
 ########## BARBADOS ##########
@@ -212,22 +170,17 @@
   id: sandals-barbados
   location: Barbados
   description: A boutique hotel lover's dream, this heavenly hideaway offers undeniable luxury with inventive accommodations spanning three unique villages.
-  room-type: Caribbean Village Grande Luxe Room
-  was-price: 3525
-  price: 1599
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SBD
-
-
+  room-type: Caribbean Deluxe
+  was-price: 2935
+  price: 1835
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SBD
 
 - title: Sandals Royal Barbados
   page: barbados
   id: sandals-royal-barbados
   location: Barbados
   description: Experience the royal treatment at Sandals Royal Barbados, the all-new, all-suite resort in the Spirited St. Lawrence Gap area
-  room-type: Royal Seaside Oceanview Crystal Lagoon Club Level Barbados Suite with Balcony Tranquility Soaking Tub
-  was-price: 4091
-  price: 1849
-  price-description: per person for 7 nights
-  link: http://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.co.uk&utm_campaign=2For1&utm_content=microsite_SBR
-
+  room-type: South Seas Club Level Junior Palm Suite with Outdoor Tranquility Soaking Tub
+  was-price: 2967
+  price: 1925
+  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SBR
