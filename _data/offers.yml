@@ -6,7 +6,7 @@
   location: Jamaica
   description: On the beautiful north coast of Jamaica, Sandals Ochi Beach Resort hugs the lush mountains of St.Ann and capitalises on its spectacular ocean views.
   room-type: Honeymoon Hideaway Luxury Club Level Villa
-  price: 1425
+  price: 1525
   link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SGO
 
 - title: Sandals Royal Caribbean Resort & Private Island
@@ -60,7 +60,7 @@
   location: Jamaica
   description: Everything you can possibly imagine is beachside at Beaches Negril Resort &amp; Spa — from lively pools to restaurants and bars, right on the widest stretch of Jamaica’s seven-mile beach.
   room-type: Negril Deluxe Room
-  price: 2069
+  price: 2125
   link:  http://www.beachesresorts.co.uk/deals/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=BNG
 
 - title: Sandals Montego Bay
@@ -69,20 +69,11 @@
   location: Jamaica
   description: Sandals Montego Bay is Sandal's flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
   room-type: Caribbean Deluxe Room
-  price: 1729
+  price: 1785
   link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SMB
 
 
 ########## SAINT LUCIA ##########
-
-- title: Sandals Halcyon Beach
-  page: saint-lucia
-  id: sandals-halcyon-beach
-  location: Saint Lucia
-  description: The most intimate Sandals' resort in Saint Lucia, with hammocks and cabanas in lush tropical gardens, and unspoilt views of the Caribbean
-  room-type: Halcyon Hideaway Deluxe Room
-  price: 1615
-  link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=microsite_SHC
 
 - title: Sandals Regency La Toc Golf Resort & Spa
   page: saint-lucia
@@ -90,7 +81,7 @@
   location: Saint Lucia
   description: Experience the executive-style golf course, luxury oceanfront suites, Five-Star Diamond French cuisine and access to a total of 27 restaurants with Sandals’ exclusive Stay at One, Play at All exchange programme.
   room-type: Emerald Honeymoon Hideaway Grande Luxe Room
-  price: 1555
+  price: 1589
   link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SLU
 
 - title: Sandals Grande St Lucian Spa & Beach Resort
@@ -99,7 +90,7 @@
   location: Saint Lucia
   description: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
   room-type: Caribbean Luxury Oceanview Room
-  price: 1809
+  price: 1849
   link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SGL
 
 
@@ -123,7 +114,7 @@
   location: Bahamas
   description: Enjoy the unprecedented luxury of two holidays in one, featuring an exotic offshore island escape, this resort has it all.
   room-type: Balmoral Oceanview Luxury Room
-  price: 1845
+  price: 1799
   link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SRB
 
 - title: Sandals Emerald Bay Golf, Tennis & Spa Resort
@@ -144,7 +135,7 @@
   location: Grenada
   description: Located on the exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandals first, a steakhouse.
   room-type: Lovers Lagoon Hideaway Junior Suite with Balcony Tranquility Soaking Tub
-  price: 1675
+  price: 1765
   link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SLS
 
 
@@ -156,7 +147,7 @@
   location: Barbados
   description: A boutique hotel lover's dream, this heavenly hideaway offers undeniable luxury with inventive accommodations spanning three unique villages.
   room-type: Caribbean Village Deluxe Room
-  price: 1855
+  price: 1875
   link:  http://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=AlwaysOn&utm_content=SBD
 
 - title: Sandals Royal Barbados
