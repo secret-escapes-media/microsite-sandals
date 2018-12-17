@@ -75,8 +75,8 @@ $site-nav-height-sm: 44px;
     right: 0;
     bottom: 0;
     z-index: $z-content-upper;
-    padding-bottom: $site-nav-height-sm*2;
-    @include bp($lg){ padding-bottom: $site-nav-height*2; }
+    padding-bottom: ($site-nav-height-sm + 25) ;
+    @include bp($lg){ padding-bottom: ($site-nav-height + 33); }
   }
   &__bg {
     position: absolute;
