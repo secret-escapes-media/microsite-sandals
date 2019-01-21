@@ -4,7 +4,7 @@
   location: Antigua
   description: 'Set on Antigua''s best beach, Dickenson Bay, this seaside garden retreat has been voted ''Caribbean’s Most Romantic Resort'' for many years.'
   room-type: Caribbean Premium
-  price: 1719
+  price: 1735
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=TOY&utm_content=SAT
 
 - id: royalbah
@@ -102,7 +102,7 @@
   page: jamaica
   location: Jamaica
   description: 'Sandals Montego Bay is Sandals'' flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.'
-  room-type: Caribbean Seaside Oceanview Luxury Room
+  room-type: Caribbean Deluxe
   price: 1599
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=TOY&utm_content=SMB
 
@@ -139,7 +139,7 @@
   location: Saint Lucia
   description: Find your own slice of beach paradise at Sandals Halcyon Beach. Experience the all-new Beachfront Honeymoon Butler Suites with private deck and plunge pool or indulge in gourmet dining at six speciality restaurants.
   room-type: Crystal Lagoon Poolside Luxury
-  price: 1799
+  price: 1779
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=display&utm_source=secretescapes.co.uk&utm_campaign=TOY&utm_content=SHC
 
 - id: stlucian
