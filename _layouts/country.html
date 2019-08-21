@@ -16,7 +16,7 @@ layout: default
   <div class="row row--4-4-4 row--gutters">
     {% for feature in page.features %}
     <div class="col">
-      <div class="bg-img bg-img--16-9" style="background-image:url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></div>
+      <div class="bg-img bg-img--16-9" style="background-image:url({{site.img}}/content/{{page.id}}/pois/{{feature.id}}.jpg);"></div>
       <div class="space--sm"></div>
       <h4 class="title title--xs text--bold">{{feature.title}}</h4>
       {{feature.content}}
@@ -29,7 +29,7 @@ layout: default
 
 
 
-<div class="container--100 vpad--xxl bg-img bg-img--1-3 bg--fixed image-banner" style="background-image:url({{site.img}}/content/{{page.id}}/banner.jpg);"></div>
+<div class="container--100 vpad--xxl bg-img bg-img--1-3 bg--fixed image-banner" style="background-image:url({{site.img}}/content/{{page.id}}/feature.jpg);"></div>
 
 
 
@@ -59,7 +59,7 @@ layout: default
       <div class="col">
         <div class="country-tile">
           <a href="{{site.baseurl}}{{country.url}}">
-            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/banner/{{country.id}}.jpg');"></div>
+            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{country.id}}/nav.jpg');"></div>
           </a>
           <div class="boxpad--md">
             <h2 class="title title--xs text--bold">{{country.title}}</h2>
