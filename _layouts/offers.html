@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<div class="container--100 bg--grey-lightest">
-  <div class="container vpad--xxxl">
+<div class="container--100 bg--grey-lightest vpad--xxl">
+  <p class="text--xl text--center">{{page.intro}}</p>
+  <div class="space--xl"></div>
+  <div class="container">
     {% assign offers = site.data.offers | sort: 'price' %}
     {% for offer in offers %}
       {% include offer/offer-sandals.html %}
