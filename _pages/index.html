@@ -5,6 +5,15 @@ nav: true
 nav-order: 1
 title: Overview
 
+banner:
+  locations:
+    - title: Antigua
+    - title: Barbados
+    - title: Bahamas
+    - title: Grenada
+    - title: Jamaica
+    - title: Saint Lucia
+
 intro: >
   <p class="text--lg">Ease into autumn and discover the island life. From the Bahamas to Saint Lucia, explore resorts that span the finest islands in the Caribbean.</p>
   <p class="text--lg">Escape the onset of blustery autumnal days and trade them in for year-round sun, kicking back on white-sand beaches – what’s more, you can enjoy your luxury escape with savings of up to 45% in the Sandals Biggest Autumn Sale. Save a further 5% on selected resorts, rooms and dates – the island life has never been so easy to discover.</p>
@@ -20,7 +29,7 @@ intro: >
 </div>
 
 
-{% assign countries = site.html_pages | where: 'layout','country' | sort:'group-order' %}
+{% assign topics = site.html_pages | where: 'layout','topic' | sort:'nav-order' %}
 <div class="vpad--xxl bg--grey-lightest">
 
   <div class="container">
@@ -32,18 +41,18 @@ intro: >
       <div class="space--xl"></div>
     </div>
 
-    {% for country in countries %}
+    {% for topic in topics %}
     <div class="bob{% cycle '',' bob--swap'%}">
       <div class="bob__img">
-        <a href="{{site.baseurl}}{{country.url}}">
-          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{country.id}}/overview.jpg');"></div>
+        <a href="{{site.baseurl}}{{topic.url}}">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{topic.id}}/overview.jpg');"></div>
         </a>
       </div>
       <div class="bob__text">
-        <h2 class="title title--lg text--bold">{{country.title}}</h2>
-        <p class="text--lg">{{country.intro | strip_html | truncatewords: 43 }}</p>
+        <h2 class="title title--lg text--bold">{{topic.title}}</h2>
+        <p class="text--lg">{{topic.intro | strip_html | truncatewords: 43 }}</p>
         <div class="space--sm"></div>
-        <a href="{{site.baseurl}}{{country.url}}" class="btn btn--solid">Read more</a>
+        <a href="{{site.baseurl}}{{topic.url}}" class="btn btn--solid">Read more</a>
       </div>
     </div>
     {% endfor %}

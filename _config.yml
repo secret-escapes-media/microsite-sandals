@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/sandals" # the subpath of your site, e.g. /blog/
-img:     "/sandals/_assets/img"
-css:     "/sandals/_assets/css"
-js:      "/sandals/_assets/js"
+baseurl: "/uk/2019/sandals" # the subpath of your site, e.g. /blog/
+img:     "/uk/2019/sandals/_assets/img"
+css:     "/uk/2019/sandals/_assets/css"
+js:      "/uk/2019/sandals/_assets/js"
 
 
 # Build settings

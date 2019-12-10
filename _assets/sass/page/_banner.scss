@@ -103,14 +103,11 @@ $site-nav-height-sm: 44px;
     }
   }
   &__marker {
+    pointer-events: none;
     position: absolute;
     letter-spacing: .1em;
     text-transform: uppercase;
     @include transition;
-    &:hover{
-      color: lighten($b-blue, 25);
-      text-decoration: none;
-    }
     &:before {
       // Map marker
       content: "";

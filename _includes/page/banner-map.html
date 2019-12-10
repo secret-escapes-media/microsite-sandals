@@ -2,11 +2,9 @@
 <div class="map-banner text--white">
   <div class="map-banner__bg"></div>
   <div class="map-banner__markers">
-    {% assign locations = site.html_pages %}
+    {% assign locations = page.banner.locations %}
     {% for location in locations %}
-    {% if location.layout == 'country' %}
-    <a class="map-banner__marker map-banner__marker--{{ location.title | slugify }}" href="{{ site.baseurl }}{{ location.url }}">{{ location.title }}</a>
-    {% endif %}
+    <div class="map-banner__marker map-banner__marker--{{ location.title | slugify }}">{{ location.title }}</div>
     {% endfor %}
   </div>
 
