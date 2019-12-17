@@ -45,29 +45,3 @@ layout: default
   </div>
 </div>
 
-
-
-
-{% assign countries = site.html_pages | where: 'layout','country' | sort:'group-order' %}
-<div class="bg--grey-">
-  <div class="container vpad--xxl text--center">
-    <h3 class="title title--lg text--bold">Explore our other resort islands</h3>
-    <div class="space--lg"></div>
-    <div class="row row--4-4-4">
-      {% for country in countries %}
-      {% unless country.id == page.id %}
-      <div class="col">
-        <div class="country-tile">
-          <a href="{{site.baseurl}}{{country.url}}">
-            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{country.id}}/nav.jpg');"></div>
-          </a>
-          <div class="boxpad--md">
-            <h2 class="title title--xs text--bold">{{country.title}}</h2>
-          </div>
-        </div>
-      </div>
-      {% endunless %}
-      {% endfor %}
-    </div>
-  </div>
-</div>

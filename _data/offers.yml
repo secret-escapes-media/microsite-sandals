@@ -1,70 +1,14 @@
 
+
+
 - title: Sandals Barbados
   id: barbados
   room-type: Caribbean Deluxe
   location: Barbados
   description: A boutique hotel lover's dream, this heavenly hideaway offers undeniable luxury with inventive accommodations spanning three unique villages.
   price: 1845
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=sbd
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=sbd
   page: foodie
-
-- title: Sandals Emerald Bay
-  id: emerald
-  room-type: Beach House Luxury Club Level Room
-  location: Bahamas
-  description: Deep within the idyllic waters of the Exumas, Sandals Emerald Bay Golf, Tennis & Spa Resort brings unprecedented luxury to the easy-going rhythms of the Bahamian Out Islands.
-  price: 2549
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=seb
-  page: adventure
-
-- title: Sandals Grande Antigua
-  id: antigua
-  room-type: Caribbean Deluxe
-  location: Antigua
-  description: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted "Caribbean’s Most Romantic Resort" for many years.
-  price: 1685
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=sat
-  page: relaxation
-
-- title: Sandals Grande St. Lucian
-  id: stlucian
-  room-type: Caribbean Deluxe
-  location: Saint Lucia
-  description: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
-  price: 1849
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=sgl
-
-- title: Sandals Grenada
-  id: grenada
-  room-type: South Seas Premium Room with Outdoor Tranquility Soaking Tub
-  location: Grenada
-  description: Located on the exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandals first, a steakhouse.
-  price: 1665
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=sls
-
-- title: Sandals Halcyon Beach
-  id: halcyon
-  room-type: Crystal Lagoon Poolside Luxury
-  location: Saint Lucia
-  description: Find your own slice of beach paradise at Sandals Halcyon Beach. Experience the all-new Beachfront Honeymoon Butler Suites with private deck and plunge pool or indulge in gourmet dining at six speciality restaurants.
-  price: 1789
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=shc
-
-- title: Sandals Montego Bay
-  id: montego
-  room-type: Caribbean Deluxe
-  location: Jamaica
-  description: Sandals Montego Bay is Sandals' flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
-  price: 1689
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=smb
-
-- title: Sandals Negril
-  id: negril
-  room-type: Caribbean Deluxe
-  location: Jamaica
-  description: Amidst a pristine tropical setting, this world-class beachfront resort spans the longest and best stretch of Jamaica’s famous seven-mile beach and has impressive eco-friendly credentials.
-  price: 1609
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=sng
 
 - title: Sandals Ochi Beach
   id: ochi
@@ -72,7 +16,8 @@
   location: Jamaica
   description: On the beautiful north coast of Jamaica, Sandals Ochi Beach Resort hugs the lush mountains of St. Ann and capitalises on its spectacular ocean views.
   price: 1385
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=sgo
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=sgo
+  page: foodie
 
 - title: Sandals Regency La Toc
   id: latoc
@@ -80,23 +25,49 @@
   location: Saint Lucia
   description: Experience the executive-style golf course, luxury oceanfront suites, Five-Star Diamond French cuisine and access to a total of 27 restaurants with Sandals’ exclusive Stay at One, Play at All exchange programme.
   price: 1535
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=slu
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=slu
+  page: foodie
 
-- title: Sandals Royal Bahamian
-  id: royalbah
-  room-type: Balmoral Premium
+
+
+
+
+
+- title: Sandals Emerald Bay
+  id: emerald
+  room-type: Beach House Luxury Club Level Room
   location: Bahamas
-  description: Enjoy the unprecedented luxury of two holidays in one, featuring an exotic offshore island escape, this resort has it all.
-  price: 2049
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=srb
+  description: Deep within the idyllic waters of the Exumas, Sandals Emerald Bay Golf, Tennis & Spa Resort brings unprecedented luxury to the easy-going rhythms of the Bahamian Out Islands.
+  price: 2549
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=seb
+  page: relaxation
 
-- title: Sandals Royal Barbados
-  id: royalbar
-  room-type: South Seas Crystal Lagoon Club Level Barbados Suite w/ Balcony Tranquility Soaking Tub
-  location: Barbados
-  description: Experience the royal treatment at Sandals Royal Barbados, the all-new, all-suite resort in the Spirited St. Lawrence Gap area
-  price: 2115
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=sbr
+- title: Sandals Grande Antigua
+  id: antigua
+  room-type: Caribbean Deluxe
+  location: Antigua
+  description: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted "Caribbean’s Most Romantic Resort" for many years.
+  price: 1685
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=sat
+  page: relaxation
+
+- title: Sandals Grenada
+  id: grenada
+  room-type: South Seas Premium Room with Outdoor Tranquility Soaking Tub
+  location: Grenada
+  description: Located on the exclusive Pink Gin Beach, this new resort defies every convention of traditional design and is home to 10 restaurants including a Sandals first, a steakhouse.
+  price: 1665
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=sls
+  page: relaxation
+
+- title: Sandals Halcyon Beach
+  id: halcyon
+  room-type: Crystal Lagoon Poolside Luxury
+  location: Saint Lucia
+  description: Find your own slice of beach paradise at Sandals Halcyon Beach. Experience the all-new Beachfront Honeymoon Butler Suites with private deck and plunge pool or indulge in gourmet dining at six speciality restaurants.
+  price: 1789
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=shc
+  page: relaxation
 
 - title: Sandals Royal Caribbean
   id: royalcar
@@ -104,7 +75,8 @@
   location: Jamaica
   description: From the Georgian-style Great House to the resort's private offshore island, expect everything from afternoon tea to night-time beachside extravaganzas
   price: 1599
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=src
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=src
+  page: relaxation
 
 - title: Sandals Royal Plantation
   id: royalplan
@@ -112,7 +84,8 @@
   location: Jamaica
   description: This glamorous resort boasts just 74 suites, each with stunning ocean views and Personal Butler Service.
   price: 2025
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=srp
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=srp
+  page: relaxation
 
 - title: Sandals South Coast
   id: southcoast
@@ -120,4 +93,61 @@
   location: Jamaica
   description: Set on Jamaica’s undiscovered south coast, boasting over 2 miles of unspoilt beach, every room and suite enjoys ocean views.
   price: 1599
-  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes.com&utm_campaign=autumnsale&utm_content=swh
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=swh
+  page: relaxation
+
+
+
+
+
+
+- title: Sandals Grande St. Lucian
+  id: stlucian
+  room-type: Caribbean Deluxe
+  location: Saint Lucia
+  description: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
+  price: 1849
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=sgl
+  page: adventure
+
+- title: Sandals Montego Bay
+  id: montego
+  room-type: Caribbean Deluxe
+  location: Jamaica
+  description: Sandals Montego Bay is Sandals' flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
+  price: 1689
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=smb
+  page: adventure
+
+- title: Sandals Negril
+  id: negril
+  room-type: Caribbean Deluxe
+  location: Jamaica
+  description: Amidst a pristine tropical setting, this world-class beachfront resort spans the longest and best stretch of Jamaica’s famous seven-mile beach and has impressive eco-friendly credentials.
+  price: 1609
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=sng
+  page: adventure
+
+- title: Sandals Royal Bahamian
+  id: royalbah
+  room-type: Balmoral Premium
+  location: Bahamas
+  description: Enjoy the unprecedented luxury of two holidays in one, featuring an exotic offshore island escape, this resort has it all.
+  price: 2049
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=srb
+  page: adventure
+
+- title: Sandals Royal Barbados
+  id: royalbar
+  room-type: South Seas Crystal Lagoon Club Level Barbados Suite w/ Balcony Tranquility Soaking Tub
+  location: Barbados
+  description: Experience the royal treatment at Sandals Royal Barbados, the all-new, all-suite resort in the Spirited St. Lawrence Gap area
+  price: 2115
+  link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=email&utm_source=secretescapes.com&utm_campaign=TOY&utm_content=sbr
+  page: adventure
+
+
+
+
+
+
