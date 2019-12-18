@@ -62,7 +62,7 @@
 
 - title: Sandals Halcyon Beach
   id: halcyon
-  room-type: Grand Luxe Club Level Room w/ Balcony Tranquility Soaking Tub
+  room-type: Grand Luxe Club Level Room with Balcony Tranquility Soaking Tub
   location: Saint Lucia
   description: Find your own slice of beach paradise at Sandals Halcyon Beach. Experience the all-new Beachfront Honeymoon Butler Suites with private deck and plunge pool or indulge in gourmet dining at six speciality restaurants.
   price: 1649
@@ -112,7 +112,7 @@
 
 - title: Sandals Montego Bay
   id: montego
-  room-type: Crystal Lagoon Honeymoon Oceanview Luxury Room w/ Balcony Tranquility Soaking Tub
+  room-type: Crystal Lagoon Honeymoon Oceanview Luxury Room with Balcony Tranquility Soaking Tub
   location: Jamaica
   description: Sandals Montego Bay is Sandals' flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
   price: 1799
@@ -139,7 +139,7 @@
 
 - title: Sandals Royal Barbados
   id: royalbar
-  room-type: South Seas Crystal Lagoon Club Level Barbados Suite w/ Balcony Tranquility Soaking Tub
+  room-type: South Seas Crystal Lagoon Club Level Barbados Suite with Balcony Tranquility Soaking Tub
   location: Barbados
   description: Experience the royal treatment at Sandals Royal Barbados, the all-new, all-suite resort in the Spirited St. Lawrence Gap area
   price: 1969
