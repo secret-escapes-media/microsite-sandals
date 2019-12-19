@@ -19,19 +19,6 @@
 .rounded-corners { border-radius: 4px; overflow: hidden; }
 .box-shadow { box-shadow: 0 5px 30px rgba($grey-darkest,0.2); }
 
-.country-tile {
-  @include transition();
-  transform: scale(1);
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 5px 10px rgba($grey-darkest,0.1);
-  background-color: $grey-lightest;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 30px rgba($grey-darkest,0.2);
-  }
-}
-
 .image-banner {
   min-height: 460px;
 }
