@@ -16,6 +16,7 @@
   &--xxs    { font-size: $s1; line-height: 1.4; }
   &--xxxs   { font-size: $s0; line-height: 1.45; }
   @include bp($lg){
+    &--xxxxl  { font-size: $s10; }
     &--xxxl   { font-size: $s9; }
     &--xxl    { font-size: $s8; }
     &--xl     { font-size: $s7; }
