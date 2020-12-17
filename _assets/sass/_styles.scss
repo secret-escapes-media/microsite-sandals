@@ -35,3 +35,11 @@
   &--xl  { max-width: $xl; }
   &--xxl { max-width: $xxl; }
 }
+
+.link-sandals {
+  color: $b-blue;
+  &:hover {
+    color: $b-blue-dark;
+    text-decoration: underline;
+  }
+}
