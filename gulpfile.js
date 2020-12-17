@@ -3,6 +3,7 @@ var path         = require('path');
 var del          = require('del');
 var cp           = require('child_process');
 var browserSync  = require('browser-sync');
+var watch        = require('gulp-watch');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefix   = require('gulp-autoprefixer');
@@ -17,16 +18,19 @@ var htmlmin      = require('gulp-htmlmin');
 
 // starts with fresh asset files - this is a jekyll work around to not use its built in sass engine
 function cleanAssets() {
-  return del(['./_site/_assets/**/*']);
+  return del(["./_site/_assets/**/*"]);
 }
 
 // start browserSync local server and show under site subdirectory
 function browserSyncServe() {
+  const baseurl = '/uk/2020/sandals';
   browserSync.init({
+    baseDir: '_site/',
+    ui: false,
+    startPath: baseurl,
     server: {
-      baseDir: '_site/',
       routes: {
-        '/uk/2019/sandals': '_site/'
+        [baseurl]: '_site/'
       }
     }
   });
@@ -45,34 +49,40 @@ function browserSyncReload(done) {
 // build the jekyll site
 function buildJekyll(done) {
   return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-    .on('close', done);
+  .on('close', done);
 }
 
 // build for sass
 function buildSass() {
   return gulp.src('./_assets/sass/**/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.init())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./_site/_assets/css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+  .pipe(sourcemaps.init())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(sourcemaps.init())
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest('./_site/_assets/css/'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
 }
 
 // build for image files
 function buildImages() {
   return gulp.src('./_assets/img/**/*.*')
-    .pipe(gulp.dest('./_site/_assets/img/'));
+  .pipe(gulp.dest('./_site/_assets/img/'));
+}
+
+// build for font files
+function buildFonts() {
+  return gulp.src('./_assets/font/**/*.*')
+  .pipe(gulp.dest('./_site/_assets/font/'));
 }
 
 // build for main js file
-function buildJsMain() {
+function buildJsMain(cb) {
   return gulp.src([
 
-    //  JS MAIN FILE BUILD
-    // --------------------
+  //  JS MAIN FILE BUILD
+  // --------------------
 
     // plugins
     './node_modules/jquery/dist/jquery.min.js',
@@ -84,14 +94,14 @@ function buildJsMain() {
 
     // components
     './_assets/js/_components/standard.js',
-    // './_assets/js/_components/offer-countdown.js',
     './_assets/js/_components/modal.js',
     // './_assets/js/_components/modal-nav.js',
     // './_assets/js/_components/sticky-nav.js',
     // './_assets/js/_components/form/functions.js',
     // './_assets/js/_components/form/validation.js',
     // './_assets/js/_components/competition.js',
-    // './_assets/js/_components/simple-form.js',
+    // './_assets/js/_components/offer-sheet.js',
+    // './_assets/js/_components/offer-countdown.js',
 
     // custom js for project
     './_assets/js/main.js',
@@ -100,20 +110,20 @@ function buildJsMain() {
     // end custom js
 
   ])
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('./_site/_assets/js/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+  .pipe(concat('main.js'))
+  .pipe(gulp.dest('./_site/_assets/js/'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
 }
 
 // build for other js files - excludes main and files in sub folders
-function buildJs() {
+function buildJs(cb) {
   return gulp.src(['./_assets/js/*.js','!./_assets/js/main.js'])
-    .pipe(gulp.dest('./_site/_assets/js/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+  .pipe(gulp.dest('./_site/_assets/js/'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
 }
 
 
@@ -160,36 +170,38 @@ function cleanSass() {
 // compress sass files for live
 function compressSass() {
   return gulp.src('./_site/_assets/css/**/*.css')
-    .pipe(autoprefix({
+  .pipe(autoprefix({
       browsers: ['last 3 versions', 'iOS 7'],
       cascade: false
     }))
-    .pipe(cssmin())
-    .pipe(gulp.dest('./_site/_assets/css'));
+  .pipe(cssmin())
+  .pipe(gulp.dest('./_site/_assets/css'));
 }
 
 // compress js files for live
 function compressJs() {
   return gulp.src('./_site/_assets/js/**/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./_site/_assets/js'));
+  .pipe(uglify())
+  .pipe(gulp.dest('./_site/_assets/js'));
 }
 
 // compress images files for live
 function compressImages() {
   return gulp.src('./_site/_assets/img/**/*')
-    .pipe(image())
-    .pipe(gulp.dest('./_site/_assets/img'));
+  .pipe(image({
+    svgo: ['--disable', 'removeViewBox']
+  }))
+  .pipe(gulp.dest('./_site/_assets/img'));
 }
 
 // compress html files for live
 function compressHtml() {
   return gulp.src('./_site/**/*.html')
-    .pipe(htmlmin({
+  .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true
     }))
-    .pipe(gulp.dest('./_site'));
+  .pipe(gulp.dest('./_site'));
 }
 
 
@@ -206,6 +218,7 @@ var build = gulp.series(
     buildJekyll,
     buildSass,
     buildImages,
+    // buildFonts,
     buildJsMain,
     buildJs
   )
