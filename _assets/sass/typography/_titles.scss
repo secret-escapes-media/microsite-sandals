@@ -84,26 +84,30 @@
 
 
 .banner-title {
-
   // custom banner headline
   font-family: $font-title-01;
+  font-size: $s6;
   font-weight: 400;
   line-height: 1.2;
-  text-transform: uppercase;
-  @include font-smoothing;
-
-  font-size: $s5;
   letter-spacing: .5rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  @include font-smoothing;
   @include bp($md){
-    letter-spacing: 1rem;
     font-size: $s7;
+    word-break: normal;
   }
   @include bp($lg){
-    font-weight: 200;
+    font-size: $s8;
+    letter-spacing: 1rem;
   }
-  @include bp($xl){
-    letter-spacing: 2rem;
+  @include bp($xl) {
+    font-size: $s9;
+    font-weight: 300;
+    letter-spacing: 1.5rem;
+  }
+  @include bp($xxl){
     font-size: $s10;
+    letter-spacing: 2rem;
   }
-
 }
