@@ -33,7 +33,7 @@
   location: Jamaica
   description: From the Georgian-style Great House to the resort's private offshore island, expect everything from afternoon tea to night-time beachside extravaganzas
   room-type: Caribbean Deluxe
-  price: 1475
+  price: 1485
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SRC
   page: relaxation
@@ -53,7 +53,7 @@
   location: Jamaica
   description: Sandals Montego Bay is Sandals' flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
   room-type: Caribbean Deluxe
-  price: 1849
+  price: 1535
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SMB
   page: adventure
@@ -83,7 +83,7 @@
   location: Saint Lucia
   description: Experience the executive-style golf course, luxury oceanfront suites, Five-Star Diamond French cuisine and access to a total of 27 restaurants with Sandals’ exclusive Stay at One, Play at All exchange programme.
   room-type: Honeymoon Luxury
-  price: 1369
+  price: 1499
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SLU
   page: foodie
@@ -93,7 +93,7 @@
   location: Saint Lucia
   description: Find your own slice of beach paradise at Sandals Halcyon Beach. Experience the all-new Beachfront Honeymoon Butler Suites with private deck and plunge pool or indulge in gourmet dining at six speciality restaurants.
   room-type: Crystal Lagoon Poolside Luxury
-  price: 1589
+  price: 1739
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SHC
   page: relaxation
@@ -102,8 +102,8 @@
   id: stlucian
   location: Saint Lucia
   description: Located on its own peninsula, this magnificent resort showcases awe-inspiring panoramic views of the ocean, mountains and the island of Martinique's distant shores.
-  room-type: Crystal Lagoon Poolside Luxury
-  price: 1645
+  room-type: Caribbean Deluxe
+  price: 1789
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SGL
   page: foodie
@@ -112,8 +112,8 @@
   id: antigua
   location: Antigua
   description: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted "Caribbean’s Most Romantic Resort" for many years.
-  room-type: Caribbean Premium
-  price: 1555
+  room-type: Mediterranean Club Level Suite
+  price: 1499
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SAT
   page: relaxation
