@@ -32,16 +32,23 @@ layout: default
 <div class="container--100 vpad--xxl bg-img bg-img--1-3 bg--fixed image-banner" style="background-image:url({{site.img}}/content/{{page.id}}/feature.jpg);"></div>
 
 
-
+{% assign offers = site.data.offers | where: 'page',page.id | sort: 'price' %}
+{% assign offers-size = offers | size %}
 <div class="bg--grey-lightest">
   <div class="container vpad--xxl">
-    {% assign offers = site.data.offers | where: 'page',page.id | sort: 'price' %}
-    {% for offer in offers %}
-      {% include offer/offer-sandals.html %}
-    {% endfor %}
-    <div class="space--xxxl text--center">
-      <a href="{{site.baseurl}}/offers" class="btn btn--solid btn--lg">View all offers</a>
-    </div>
+    {% if offers-size == 0 %}
+      <div class="width width--xl text--center">
+        <h3 class="title title--sm text--bold">Discover your resort here. All packages include flights with either Virgin or British Airways.</h3>
+        <div class="space--md"></div>
+        <a href="{{site.baseurl}}/offers" class="btn btn--lg btn--solid">View all offers</a>
+      </div>
+    {% else %}
+      {% for offer in offers %}
+        {% include offer/offer-sandals.html %}
+      {% endfor %}
+      <div class="space--xxxl text--center">
+        <a href="{{site.baseurl}}/offers" class="btn btn--solid btn--lg">View all offers</a>
+      </div>
+    {% endif %}
   </div>
 </div>
-
