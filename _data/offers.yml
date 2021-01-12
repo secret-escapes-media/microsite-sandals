@@ -42,7 +42,7 @@
   id: southcoast
   location: Jamaica
   description: Set on Jamaica’s undiscovered south coast, boasting over 2 miles of unspoilt beach, every room and suite enjoys ocean views.
-  room-type: Caribbean Deluxe
+  room-type: French Beachfront Deluxe
   price: 1599
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SWH
@@ -52,7 +52,7 @@
   id: montego
   location: Jamaica
   description: Sandals Montego Bay is Sandals' flagship resort and a true original. Spanning the best private, white-sand beach in Jamaica, this resort is where the world first fell in love with Sandals.
-  room-type: Caribbean Deluxe
+  room-type: Oceanfront Penthouse Club Level Junior Suite with Balcony Tranquility Soaking Tub
   price: 2149
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SMB
@@ -72,7 +72,7 @@
   id: barbados
   location: Barbados
   description: A boutique hotel lover's dream, this heavenly hideaway offers undeniable luxury with inventive accommodations spanning three unique villages.
-  room-type: Caribbean Deluxe
+  room-type: Caribbean Grand Luxe
   price: 1769
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SBD
@@ -88,7 +88,7 @@
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SLU
   page: foodie
 
-- title: Sandals Halcyon
+- title: Sandals Halcyon Beach
   id: halcyon
   location: Saint Lucia
   description: Find your own slice of beach paradise at Sandals Halcyon Beach. Experience the all-new Beachfront Honeymoon Butler Suites with private deck and plunge pool or indulge in gourmet dining at six speciality restaurants.
@@ -112,7 +112,7 @@
   id: antigua
   location: Antigua
   description: Set on Antigua's best beach, Dickenson Bay, this seaside garden retreat has been voted "Caribbean’s Most Romantic Resort" for many years.
-  room-type: Mediterranean Club Level Suite
+  room-type: Sunset Bluff Honeymoon Luxury Club Level Room
   price: 1699
   price-description: per person for 7 nights including flights
   link: https://www.sandals.co.uk/specials/uk-offers/?utm_medium=referral&utm_source=secretescapes&utm_campaign=TOY&utm_content=SAT
